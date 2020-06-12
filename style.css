@@ -1,14 +1,17 @@
 * {
     margin: 0px;
+    padding: 0px;
 }
 body {
     background-color: grey;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 main{
     background-color: white;
-    margin: auto;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 nav{
     height: 100px;
@@ -17,15 +20,31 @@ nav{
     display: hidden;
 }
 header{
+    position: relative;
+    left: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    background-image: url(/imagenes/hero.jpg);
-    background-position: bottom;
+    background: url(/imagenes/hero.jpg);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: 0px -390px;
 }
+.mask{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    mask: url(/imagenes/Heromask.svg);
+    -webkit-mask: url(/imagenes/Heromask.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-position: center;
+    ;
+    width: 100%;
+    height: 100%;
+}
+
 .seccion2{
     height: 100vh;
     background-color: khaki;
@@ -34,8 +53,11 @@ header{
 h1{
     font-size: 12em;
     height: 350px;
+    width: 100%;
     text-align: center;
     color: whitesmoke;
+    position: fixed;
+    top: 35vh;
     
 
 }
