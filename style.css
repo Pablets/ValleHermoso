@@ -26,7 +26,7 @@ header{
     padding: 0px;
     width: 100%;
     height: 100vh;
-    background: url(/imagenes/hero.jpg);
+    background-image: url(/imagenes/hero.jpg);
     background-size: cover;
     background-position: 0px -390px;
 }
@@ -36,7 +36,8 @@ header{
     width: 100%;
     bottom: 42vh;
     /* background-color: teal; */
-    mask: url(/imagenes/Heromask1.png);
+    /* mask: url(/imagenes/Heromask1.png); */
+    background-image: url(/imagenes/Heromask1.png);
     -webkit-mask: url(/imagenes/Heromask1.png);
     mask-size: cover;
     -webkit-mask-size: cover;
