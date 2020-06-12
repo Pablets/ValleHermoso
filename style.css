@@ -36,9 +36,9 @@ header{
     width: 100%;
     bottom: 42vh;
     /* background-color: teal; */
-    /* mask: url(/imagenes/Heromask1.png); */
-    background-image: url(/imagenes/Heromask1.png);
-    /* -webkit-mask: url(/imagenes/Heromask1.png); */
+    mask: url(/imagenes/Heromask1.png);
+    /* background-image: url(/imagenes/Heromask1.png); */
+    -webkit-mask: url(/imagenes/Heromask1.png);
     mask-size: cover;
     -webkit-mask-size: cover;
 }
