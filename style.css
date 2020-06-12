@@ -80,6 +80,9 @@ ul{
     margin-left: auto;
     margin-right: auto;
 }
+li{
+    color: tomato;
+}
 /* body {
 	overflow: hidden;
 	margin: 0;
