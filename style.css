@@ -28,20 +28,18 @@ header{
     height: 100vh;
     background: url(/imagenes/hero.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: 0px -390px;
 }
 .mask{
     position: absolute;
     height: 100vh;
     width: 100%;
-    mask: url(/imagenes/Heromask.svg);
-    -webkit-mask: url(/imagenes/Heromask.svg);
+    bottom: 42vh;
+    /* background-color: teal; */
+    mask: url(/imagenes/Heromask1.png);
+    -webkit-mask: url(/imagenes/Heromask1.png);
     mask-size: cover;
     -webkit-mask-size: cover;
-    mask-position: center;
-    width: 100%;
-    height: 100%;
 }
 
 .seccion2{
