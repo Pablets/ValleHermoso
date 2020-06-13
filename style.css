@@ -14,10 +14,25 @@ main{
     width: 100%;
 }
 nav{
-    height: 100px;
+    background-color: black;
+    height: 62px;
+    width: 100%;
+    margin: auto;
     position: fixed;
     top: 0px;
-    display: hidden;
+    z-index: 100;
+    text-align: center;
+
+
+}
+nav:hover {
+    display: block;
+
+}
+#logo{
+    width: 62px;
+    margin: auto;
+    display: inline-block;
 }
 header{
     position: relative;
@@ -26,7 +41,7 @@ header{
     padding: 0px;
     width: 100%;
     height: 100vh;
-    background-image: url(/imagenes/hero.jpg);
+    background-image: url(imagenes/hero.jpg);
     background-size: cover;
     background-position: 0px -390px;
 }
@@ -36,12 +51,13 @@ header{
     width: 100%;
     bottom: 42vh;
     /* background-color: teal; */
-    mask: url(/imagenes/Heromask1.png);
+    mask: url(imagenes/Heromask1.png);
     /* background-image: url(/imagenes/Heromask1.png); */
-    -webkit-mask: url(/imagenes/Heromask1.png);
+    -webkit-mask: url(imagenes/Heromask1.png);
     mask-size: cover;
     -webkit-mask-size: cover;
 }
+
 
 .seccion2{
     height: 100vh;
