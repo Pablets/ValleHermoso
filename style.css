@@ -52,7 +52,7 @@ ul{
 }
 
 .menu{
-    background-image: url(imagenes/LOGO.png);
+    background-image: url(imagenes/logo.png);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@ li a:hover {
     background-image: url(imagenes/exploraBG.jpg);
 }
 .seccion3{
-    background-image: url(imagenes/saboreaBG.jpg);   
+    background-image: url(imagenes/saboreabg1.jpg);   
 }
 .seccion4{
     background-image: url(imagenes/disfrutaBG.jpg);   
@@ -167,8 +167,8 @@ header{
     height: 100vh;
     width: 100%;
     bottom: 42vh;
-    -webkit-mask-image: url(imagenes/Heromask1.png);
-    mask-image: url(imagenes/Heromask1.png);
+    -webkit-mask-image: url(imagenes/heromask1.png);
+    mask-image: url(imagenes/heromask1.png);
     mask-size: cover;
     -webkit-mask-size: cover;
     /* top: 0px; */
@@ -196,7 +196,7 @@ header{
     bottom: 10px;
     color: whitesmoke;
     text-align: center;
-    background-image: url(imagenes/Arrow.svg);
+    background-image: url(imagenes/arrow.svg);
     background-position: center;
     background-size: 32px;
     background-repeat: no-repeat;
