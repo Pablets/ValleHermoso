@@ -6,32 +6,34 @@
     <title>Valle hermoso - Ciudad que enamora</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
+    <script type="text/javascript" src="scripts/jQueryv3.5.1.js"></script>
 </head>
-<body>    
-<nav>
+<body>
+<main id="fullpage">    
+<nav id="menu">
     <div class="menu">
         <ul class="animate">
-            <li><a href="#anchor2">Explorá</a></li>
-            <li><a href="#anchor3">Saboreá</a></li>
-            <a href="#anchor1"><img id="menucentro" src="imagenes/LOGO.png" alt="logo"></a>
-            <li><a href="#anchor4">Disfrutá</a></li>
-            <li><a href="#anchor5">Descubrí</a></li>
+            <li data-menuanchor="Explora"><a href="#Explora">Explorá</a></li>
+            <li data-menuanchor="Saborea"><a href="#Saborea">Saboreá</a></li>
+            <li data-menuanchor="Inicio" class="active"><a href="#Inicio"><img id="menucentro" src="imagenes/LOGO.png" alt="logo"></a></li>
+            <li data-menuanchor="Disfruta"><a href="#Disfruta">Disfrutá</a></li>
+            <li data-menuanchor="Descubri"><a href="#Descubri">Descubrí</a></li>
         </ul>
     </div>
 </nav>
-    <header id="anchor1">        
+    <header class="section">        
         <div class="mask"> 
             <h1>Valle Hermoso</h1>            
         </div>
-        <a class="link" href="#anchor2">
+        <a class="link" href="#Explora">
             <div class="btn">
             <span class="btn-text">VER MÁS</span>
             </div>
         </a>
           
     </header>   
-    <!-- <div class="text-button"></div> -->
-    <div id="anchor2" class="seccion seccion2">
+    <div class="seccion seccion2 section">
         <div>
             <h4  class="indice">01 ----- Explorá</h4>
             <h2>Explorá</h2>          
@@ -40,7 +42,7 @@
                 tenes miles de opciones para disfrutar en familia. </h3>
         </div>
     </div>
-    <div id="anchor3" class="seccion seccion3">
+    <div class="seccion seccion3 section">
         <div>
             <h4 class="indice">02 ----- Saboreá</h4>
             <h2>Saboreá</h2>          
@@ -50,7 +52,7 @@
                  sigue de generación en generación .</h3>
         </div>
     </div>
-    <div id="anchor4" class="seccion seccion4">
+    <div class="seccion seccion4 section">
         <div>
             <h4 class="indice">03 ----- Disfrutá</h4>
             <h2>Disfrutá</h2>          
@@ -61,7 +63,7 @@
                 este es tu lugar.</h3>
         </div>
     </div>
-    <div id="anchor5" class="seccion seccion5">
+    <div class="seccion seccion5 section">
         <div>
             <h4 class="indice">04 ----- Descubrí</h4>
             <h2>Descubrí</h2>          
@@ -73,15 +75,26 @@
                 vení y descubrí el porqué 
                 de nuestro nombre.</h3>
         </div>
-    </div>
-    
-</main>    
+    </div>    
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+<script>
+    var myFullpage = new fullpage('#fullpage', {
+    //options here
+	autoScrolling:true,
+    scrollHorizontally: true,
+    easing: 'easeInOutCubic',
+    menu: '#menu',
+    navigation: true,
+    anchors: ['Inicio', 'Explora', 'Saborea', 'Disfruta', 'Descubri'],
+    navigationTooltips: ['Inicio', 'Explorá', 'Saboreá', 'Disfrutá', 'Descubrí'],
+    showActiveTooltip: false,
+    verticalCentered: false,
+
+});
+
+//methods
+fullpage_api.setAllowScrolling(true);
+</script>
 </body>
 </html>
-<!-- <div class="well" id="well">
-	<div class="panel">one</div>
-	<div class="panel ">two <span class="top">&uarr;</span></div>
-	<div class="panel red">three <span class="top">&uarr;</span></div>
-	<div class="panel">four <span class="top">&uarr;</span></div>
-	<div class="panel">five <span class="top">&uarr;</span></div>
-</div> -->
