@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-    <script type="text/javascript" src="scripts/jQueryv3.5.1.js"></script>
 </head>
-<body>
-<main id="fullpage">    
+<body>   
 <nav id="menu">
     <div class="menu">
         <ul class="animate">
@@ -22,6 +20,7 @@
         </ul>
     </div>
 </nav>
+<main id="fullpage"> 
     <header class="section">        
         <div class="mask"> 
             <h1>Valle Hermoso</h1>            
@@ -30,10 +29,9 @@
             <div class="btn">
             <span class="btn-text">VER MÁS</span>
             </div>
-        </a>
-          
+        </a>          
     </header>   
-    <div class="seccion seccion2 section">
+    <div  class="seccion seccion2 section">
         <div>
             <h4  class="indice">01 ----- Explorá</h4>
             <h2>Explorá</h2>          
@@ -75,13 +73,43 @@
                 vení y descubrí el porqué 
                 de nuestro nombre.</h3>
         </div>
-    </div>    
+    </div>
+    <footer  class="section fp-auto-height">
+        <div class="collogo">
+            <div class="logo"></div>
+            <h6>© Valle Hermoso 2020</h6>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Turismo</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="colbig">            
+            <ul id="redes">
+                <li id="fb"><a href="#Facebook"></a></li>
+                <li id="ig"><a href="#Instagram"></a></li>
+                <li id="pt"><a href="#Pinterest"></a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul>
+                <li>Alumno: Pablo Godoy</li>
+                <li>Materia: Maquetado web</li>
+                <li>Profesora: Mabel Lopez</li>
+                <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
+            </ul>
+        </div>
+    </footer>    
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
 <script>
     var myFullpage = new fullpage('#fullpage', {
     //options here
 	autoScrolling:true,
+    fitToSection: false,
     scrollHorizontally: true,
     easing: 'easeInOutCubic',
     menu: '#menu',
@@ -90,6 +118,12 @@
     navigationTooltips: ['Inicio', 'Explorá', 'Saboreá', 'Disfrutá', 'Descubrí'],
     showActiveTooltip: false,
     verticalCentered: false,
+    navigationPosition: 'left',
+    loopBottom: false,
+    dragAndMove: true,
+    // fixedElements: '.foo',
+    offsetSections: true,
+
 
 });
 
