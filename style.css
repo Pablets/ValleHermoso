@@ -183,7 +183,7 @@ header{
     mask-size: cover;
     -webkit-mask-size: cover;
 }
-.btn-text{
+/* .btn-text{
     z-index: 20;
     font-weight: 400;
     letter-spacing: 3px;
@@ -194,15 +194,14 @@ header{
     bottom: 70px;
     color: whitesmoke;
     text-decoration: none;
-}
-@keyframes zoom {
+} */
+@keyframes move {
     from {
-      transform: scale(1);
-      transform-origin: center;
+      transform: translateY(0px);
     }
   
     to {
-        transform: scale(1.1);
+        transform: translateY(15px);
         transform-origin: center;
     }
   }
@@ -210,13 +209,14 @@ header{
     z-index: 200;
     position: absolute;
     width: 100%;
+    height: 45px;
     bottom: 10px;
     color: whitesmoke;
     text-align: center;
     background-image: url(imagenes/plantaRecurso1a.png);
     background-position: center;
     background-repeat: no-repeat;
-    animation-name: zoom;
+    animation-name: move;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
