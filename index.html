@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valle hermoso - Ciudad que enamora</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>   
 <nav id="menu">
@@ -39,6 +39,11 @@
                 Desde balnearios en el río hasta un castillo del siglo XIX, 
                 tenes miles de opciones para disfrutar en familia. </h3>
         </div>
+        <a class="link" href="#Saborea">
+            <div class="btn">
+            <span class="btn-text">VER MÁS</span>
+            </div>
+        </a> 
     </div>
     <div class="seccion seccion3 section">
         <div>
@@ -49,6 +54,11 @@
                  desde hace más de 70 años en una tradición que 
                  sigue de generación en generación .</h3>
         </div>
+        <a class="link" href="#Disfruta">
+            <div class="btn">
+            <span class="btn-text">VER MÁS</span>
+            </div>
+        </a> 
     </div>
     <div class="seccion seccion4 section">
         <div>
@@ -60,6 +70,11 @@
                 en el medio de la paz de las sierras 
                 este es tu lugar.</h3>
         </div>
+        <a class="link" href="#Descubri">
+            <div class="btn">
+            <span class="btn-text">VER MÁS</span>
+            </div>
+        </a> 
     </div>
     <div class="seccion seccion5 section">
         <div>
@@ -73,6 +88,11 @@
                 vení y descubrí el porqué 
                 de nuestro nombre.</h3>
         </div>
+        <a class="link" href="#Footer">
+            <div class="btn">
+            <span class="btn-text">SITEMAP</span>
+            </div>
+        </a> 
     </div>
     <footer  class="section fp-auto-height">
         <div class="collogo">
@@ -81,7 +101,7 @@
         </div>
         <div class="col">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a class="link" href="#Inicio">Home</a></li>
                 <li><a href="">Turismo</a></li>
                 <li><a href="">Noticias</a></li>
                 <li><a href="">Contacto</a></li>
@@ -114,11 +134,11 @@
     easing: 'easeInOutCubic',
     menu: '#menu',
     navigation: true,
-    anchors: ['Inicio', 'Explora', 'Saborea', 'Disfruta', 'Descubri'],
-    navigationTooltips: ['Inicio', 'Explorá', 'Saboreá', 'Disfrutá', 'Descubrí'],
+    anchors: ['Inicio', 'Explora', 'Saborea', 'Disfruta', 'Descubri','Footer'],
+    navigationTooltips: ['Inicio', 'Explorá', 'Saboreá', 'Disfrutá', 'Descubrí','Pie de página'],
     showActiveTooltip: false,
     verticalCentered: false,
-    navigationPosition: 'left',
+    navigationPosition: 'right',
     loopBottom: false,
     dragAndMove: true,
     // fixedElements: '.foo',
