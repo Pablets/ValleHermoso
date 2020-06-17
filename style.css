@@ -678,3 +678,186 @@ article {
 #appstore {
     background-image: url(imagenes/appstore.png);
 }
+
+/* CSS novedades */
+
+.novedades .seccion2 {
+    background-image: none;
+    background-color: whitesmoke;
+    color: #434343;
+}
+
+div .slide {
+    height: 500px;
+    text-align: center;
+}
+
+.info-box {
+    display: inline-block;
+    height: 600px;
+    width: 500px;
+    margin: 100px 20px 100px 20px;
+    background: #f5f5f5;
+    box-shadow: -20px 20px 60px #acacac, 20px -20px 60px #ffffff;
+    transition: ease-in-out 0.2s all;
+    text-align: right;
+    z-index: 1;
+}
+
+.info-box:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s all;
+    box-shadow: -20px 20px 60px #acacac;
+    z-index: 2;
+}
+
+.info-box h3 {
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 250px;
+    background-color: #3d5071;
+    width: 500px;
+    padding: 50px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.info-box:hover h3 {
+    background-color: #5dc5c4;
+    transition: ease-in-out 0.2s all;
+}
+
+.info-box p {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0px;
+    width: 500px;
+    text-align: left;
+    padding: 20px 50px;
+    color: #434343;
+}
+
+.seccion3 {
+    background-image: none;
+    background-color: whitesmoke;
+    text-align: right;
+}
+
+.seccion3 .info-box {
+    position: absolute;
+    display: inline-block;
+    left: -250px;
+    z-index: 10;
+}
+
+.videocontainer {
+    position: relative;
+    display: inline-block;
+    width: 1500px;
+    height: 800px;
+    border: red solid 1px;
+    z-index: 1;
+    text-align: right;
+    /* margin-top: -500px; */
+    /* margin-left: 500px; */
+}
+
+.videocontainer iframe {
+    margin: 0px;
+    height: 800px;
+    width: 1500px;
+    border: aqua 1px solid;
+}
+
+.seccion4 {
+    background-image: none;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+.seccion4 .info-box {
+    position: absolute;
+    display: inline-block;
+    right: -250px;
+    z-index: 10;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.seccion4 .container {
+    display: inline-block;
+    position: relative;
+    width: 1508px;
+    height: 780px;
+    border: yellow solid 1px;
+    z-index: 1;
+}
+
+.novedades .seccion5 {
+    margin: 0px;
+    padding: 0px;
+    width: 1920px;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.seccion5 h2, .seccion5 h3 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.seccion5 .info-box {
+    margin: 0px;
+}
+
+.seccion5 ul {
+    background-image: none;
+    position: relative;
+    border: red 1px solid;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: purple; */
+}
+
+ul li .cuarto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 960px;
+    margin: 0px;
+    background-color: rgb(255, 174, 0);
+    z-index: 2;
+}
+
+.seccion5 ul li {
+    display: inline-block;
+    position: absolute;
+}
+
+ul li .cuartotext {
+    bottom: 0px;
+    left: 0px;
+    height: 50%;
+    width: 600px;
+    margin: 0px;
+    background-color: rgb(30, 205, 236);
+    z-index: 1;
+}
+
+
+li .medio {
+    box-sizing: border-box;
+    /* right: 0px; */
+    height: 750px;
+    width: 500px;
+    left: 0px;
+    background-color: rgb(255, 0, 200);
+    padding: 100px 300px 100px 100px;
+    border: powderblue 1px solid;
+}
