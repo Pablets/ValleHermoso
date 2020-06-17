@@ -970,3 +970,17 @@ div .slide {
     width: 800px;
     height: 600px;
 }
+/* para que quede el texto centrado debajo */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
