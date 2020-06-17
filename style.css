@@ -130,6 +130,11 @@ nav li a:active {
     background-repeat: no-repeat;
 }
 
+.index .seccion {
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
 .seccion2 {
     background-image: url(imagenes/exploraBG.jpg);
 }
@@ -428,6 +433,11 @@ article {
     justify-content: space-between;
 }
 
+.destinos .seccion2 {
+    background-image: none;
+    background-color: whitesmoke;
+}
+
 .default {
     right: 0;
     position: absolute;
@@ -468,24 +478,23 @@ iframe {
     margin-top: 100px;
 }
 
-.destinos ul {
-    width: 100%;
+.text-container-small ul {
+    border: whitesmoke 1px solid;
     margin-left: 100px;
-    margin-top: 100px;
     list-style: none;
-    z-index: 100;
 }
 
-.destinos ul li {
+.text-container-small ul li {
     box-sizing: border-box;
     text-decoration: none;
     font-size: 2em;
     font-weight: 500;
-    margin: 20px 0px;
-    width: 65%;
+    text-align: right;
+    margin-right: 20px;
 }
 
-.destinos ul li a {
+.text-container-small ul li a {
+    display: inline-block;
     text-decoration: none;
     color: whitesmoke;
 }
@@ -498,11 +507,10 @@ iframe {
 }
 
 .text-container-small {
-    position: absolute;
-    left: 0;
     height: 100%;
-    width: 20%;
     background-color: black;
+    display: flex;
+    align-items: center;
 }
 
 .red {
@@ -561,16 +569,16 @@ iframe {
     background-color: whitesmoke;
 }
 
-.seccion3 div {
+.destinos .seccion3 div {
     width: 50%;
 }
 
-.seccion3 h2, .seccion3 h3 {
+.destinos .seccion3 h2, .destinos .seccion3 h3 {
     text-align: right;
     margin-right: 50px;
 }
 
-.seccion3 h3 {
+.destinos .seccion3 h3 {
     width: 50%;
     right: 0px;
     margin-left: 45%;
@@ -611,7 +619,8 @@ iframe {
     text-align: right;
     box-shadow: -20px 20px 60px #3c9fc7, 20px -20px 60px #52d7ff;
 }
-.destinos .seccion4{
+
+.destinos .seccion4 {
     background: #47bbea;
 }
 
