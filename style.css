@@ -864,7 +864,7 @@ div .slide {
 .galeria :first-child, .galeria :last-child {
     margin: 0px;
     padding: 0px;
-    display: inline;
+    display: inline-block;
     text-align: left;
     width: 800px;
     height: 275px;
@@ -916,7 +916,7 @@ div .slide {
 .galerialarge :first-child, .galerialarge :last-child {
     margin: 0px;
     padding: 0px;
-    display: inline;
+    display: inline-block;
     text-align: left;
     width: 800px;
     height: 600px;
@@ -953,7 +953,7 @@ div .slide {
 }
 
 .seccion5 .large .div {
-    display: inline;
+    display: inline-block;
     width: 50%;
     margin: 0px;
     margin-left: 800px;
