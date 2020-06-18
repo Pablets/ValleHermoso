@@ -59,6 +59,74 @@
     background-position: center;
 }
 
+/* ------------------formateo de select------------------ */
+
+/* The container must be positioned relative: */
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: red;
+}
+
+/* Style the arrow inside the select element: */
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -824,19 +892,21 @@ div .slide {
     background-color: whitesmoke;
     text-align: right;
 }
-.seccion4 .seccion4container  {
+
+.seccion4 .seccion4container {
     position: relative;
     display: inline-block;
     z-index: 1;
     margin-left: 100px;
-    
 }
+
 .seccion4 .seccion4container .info-box {
     position: absolute;
     right: -300px;
     z-index: 10;
 }
-.seccion4 .seccion4container img{
+
+.seccion4 .seccion4container img {
     display: block;
     margin: 0px;
     height: 800px;
@@ -848,7 +918,6 @@ img[alt="fachada de Castillo Hotel"] {
     border-radius: 9px;
 }
 
-
 .seccion5 {
     background-image: none;
     box-sizing: border-box;
@@ -859,18 +928,18 @@ img[alt="fachada de Castillo Hotel"] {
 }
 
 /* seccion de galeria novedades */
-.novedades .seccion3{
+
+.novedades .seccion3 {
     display: flex;
     align-items: center;
 }
-.novedades .seccion4{
+
+.novedades .seccion4 {
     display: flex;
     align-items: center;
 }
-.container1,
-.container2,
-.container3,
-.container4 {
+
+.container1, .container2, .container3, .container4 {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -881,14 +950,15 @@ img[alt="fachada de Castillo Hotel"] {
     margin-left: 30px;
     margin-right: 30px;
 }
-.container1, .container2{
+
+.container1, .container2 {
     margin-top: 100px;
     margin-bottom: 65px;
 }
-.container3, .container4{
+
+.container3, .container4 {
     margin-bottom: 100px;
 }
-
 
 .centered {
     position: absolute;
@@ -953,3 +1023,21 @@ div:hover .text-container img {
     opacity: 0.5;
     transition: ease-in-out 0.5s all;
 }
+
+/* CSS de CONTACTO */
+
+.contacto header {
+    background-image: url(imagenes/background1.jpg);
+}
+
+.contacto .seccion2 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background: #eceffc;
+}
+
+/* --------------------------- CSS Form -----------------------------------------*/
