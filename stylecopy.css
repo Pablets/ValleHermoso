@@ -108,6 +108,11 @@ nav ul {
 #menucentro {
     margin: 0px;
     padding: 0px;
+    background-image: url(imagenes/logo.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 0px;
 }
 
 #menucentro:hover {
@@ -181,20 +186,20 @@ nav li a:active {
     box-sizing: border-box;
 }
 
-.seccion2 {
-    background-image: url(imagenes/exploraBG.jpg);
+.index .seccion2 {
+    background-image: url(imagenes/explorabg.jpg);
 }
 
-.seccion3 {
+.index .seccion3 {
     background-image: url(imagenes/saboreabg1.jpg);
 }
 
-.seccion4 {
-    background-image: url(imagenes/disfrutaBG.jpg);
+.index .seccion4 {
+    background-image: url(imagenes/disfrutabg.jpg);
 }
 
-.seccion5 {
-    background-image: url(imagenes/DescubriBG.jpg);
+.index .seccion5 {
+    background-image: url(imagenes/Descubribg.jpg);
 }
 
 h1 {
@@ -315,7 +320,6 @@ header {
     left: 50%;
     bottom: -100px;
     background-color: tomato;
-    border: turquoise solid 1px;
     bottom: 0px;
     width: 50px;
     height: 200px;
@@ -344,7 +348,6 @@ footer .col {
     width: 15%;
     margin: 0px 10px 0px;
     /* background-color: rgb(0, 235, 252); */
-    /* border: 1px solid red; */
 }
 
 footer .collogo {
@@ -353,7 +356,6 @@ footer .collogo {
     width: 15%;
     padding: 0px 10px 0px;
     /* background-color: lavenderblush; */
-    /* border: 1px solid red; */
     text-align: center;
     position: relative;
 }
@@ -401,7 +403,7 @@ footer ul li a {
 }
 
 #redes a:hover {
-    border-bottom: 0px solid transparent;
+    border: none;
 }
 
 #redes #fb a {
@@ -727,11 +729,16 @@ article {
 
 /* CSS novedades */
 
-.novedades .seccion2 {
+.novedades .seccion {
     background-image: none;
     background-color: whitesmoke;
     color: #434343;
 }
+
+/* .novedades .seccion3,
+.novedades .seccion4{
+    padding-top: 100px;
+} */
 
 div .slide {
     height: 500px;
@@ -744,7 +751,7 @@ div .slide {
     width: 500px;
     margin: 100px 20px 100px 20px;
     background: #f5f5f5;
-    box-shadow: -20px 20px 60px #acacac, 20px -20px 60px #ffffff;
+    box-shadow: -6px 6px 12px #626262, 6px -6px 12px #ffffff;
     transition: ease-in-out 0.2s all;
     text-align: right;
     z-index: 1;
@@ -793,52 +800,54 @@ div .slide {
 .seccion3 .info-box {
     position: absolute;
     display: inline-block;
-    left: -250px;
+    left: -400px;
     z-index: 10;
 }
 
-.videocontainer {
+.seccion3 .videocontainer {
     position: relative;
     display: inline-block;
-    width: 1500px;
+    width: 1900px;
     height: 800px;
-    border: red solid 1px;
     z-index: 1;
-    text-align: right;
-    /* margin-top: -500px; */
-    /* margin-left: 500px; */
+    margin-left: 500px;
 }
 
 .videocontainer iframe {
     margin: 0px;
     height: 800px;
-    width: 1500px;
-    border: aqua 1px solid;
+    width: 1300px;
 }
 
 .seccion4 {
     background-image: none;
     background-color: whitesmoke;
-    text-align: left;
+    text-align: right;
 }
-
-.seccion4 .info-box {
-    position: absolute;
-    display: inline-block;
-    right: -250px;
-    z-index: 10;
-    margin-bottom: 0px;
-    overflow: hidden;
-}
-
-.seccion4 .container {
-    display: inline-block;
+.seccion4 .seccion4container  {
     position: relative;
-    width: 1508px;
-    height: 780px;
-    border: yellow solid 1px;
+    display: inline-block;
     z-index: 1;
+    margin-left: 100px;
+    
 }
+.seccion4 .seccion4container .info-box {
+    position: absolute;
+    right: -300px;
+    z-index: 10;
+}
+.seccion4 .seccion4container img{
+    display: block;
+    margin: 0px;
+    height: 800px;
+    width: 1300px;
+}
+
+img[alt="fachada de Castillo Hotel"] {
+    box-shadow: -10px 10px 20px #626262;
+    border-radius: 9px;
+}
+
 
 .seccion5 {
     background-image: none;
@@ -846,79 +855,40 @@ div .slide {
     margin: 0px;
     padding: 0px;
     background-color: whitesmoke;
-}
-
-.galeria {
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: 50px;
-    top: 150px;
-}
-
-.galeria :first-child, .galeria :last-child {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    text-align: left;
-    width: 800px;
-    height: 275px;
-}
-
-.galeria :nth-child(1) {
-    margin-bottom: 50px;
-    ;
-}
-
-.galeria :nth-child(2), .galeria :nth-child(1) {
-    display: inline-block;
-    opacity: 1;
-    visibility: visible;
-    /* background-color: rgba(0, 128, 128,1); */
-    border-radius: 9px;
-    background: linear-gradient(225deg, #dddddd, #ffffff);
-    box-shadow: -10px 10px 20px #626262, 10px -10px 20px #ffffff;
-    background-size: cover;
-    transition: ease-in 0.5s all;
-    height: 275px;
-    width: 800px;
-}
-
-.galeria :nth-child(1):hover, .galeria :nth-child(2):hover {
-    background-color: rgba(0, 128, 128, 1);
-    transition: ease-in 0.5s all;
-}
-
-.galeria :nth-child(1):hover img, .galeria :nth-child(2):hover img {
-    opacity: 0;
-    transition: ease-in 0.5s all;
-}
-
-.galeria .div img {
-    display: block;
-    width: 800px;
-    height: 275px;
-}
-
-/* asdad */
-
-.seccion5 {
-    text-align: right;
-    padding: 0px;
-    margin: 0px;
     text-align: center;
 }
 
-.container {
+/* seccion de galeria novedades */
+.novedades .seccion3{
+    display: flex;
+    align-items: center;
+}
+.novedades .seccion4{
+    display: flex;
+    align-items: center;
+}
+.container1,
+.container2,
+.container3,
+.container4 {
     position: relative;
     display: inline-block;
+    box-sizing: border-box;
     text-align: center;
     color: white;
-    width: 500px;
-    height: 500px;
-    margin: 0px 30px 30px 0px;
+    width: 600px;
+    height: 350px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
+.container1, .container2{
+    margin-top: 100px;
+    margin-bottom: 65px;
+}
+.container3, .container4{
+    margin-bottom: 100px;
+}
+
 
 .centered {
     position: absolute;
@@ -975,20 +945,11 @@ div .text-container img {
     visibility: visible;
     opacity: 1;
     transition: ease-in-out 0.5s all;
-    height: 500px;
-    width: 500px;
+    width: 600px;
+    height: 350px;
 }
 
 div:hover .text-container img {
     opacity: 0.5;
     transition: ease-in-out 0.5s all;
-}
-
-.seccion5 {
-    background-image: none;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    background-color: whitesmoke;
-    border: green solid 1px;
 }
