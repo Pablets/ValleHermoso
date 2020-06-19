@@ -316,7 +316,21 @@ h6 {
     text-align: center;
 }
 
-header {
+abbr {
+    display: inline;
+    font-style: italic;
+    font-family: 'montserrat';
+    font-weight: bolder;
+    text-decoration: none;
+    color: cadetblue;
+}
+strong{
+    color: rgb(44, 44, 44);
+    /* background-color: rgba(255, 166, 0, 0.664); */
+    line-height: 10px;
+}
+
+.index header {
     left: 0px;
     margin-left: 0px;
     padding: 0px;
@@ -324,32 +338,10 @@ header {
     height: 100vh;
     background-image: url(imagenes/hero.jpg);
     background-size: cover;
-    background-position: 0px -390px;
+    /* background-position: 0px -390px; */
 }
 
-.mask {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    bottom: 42vh;
-    -webkit-mask-image: url(imagenes/heromask1.png);
-    mask-image: url(imagenes/heromask1.png);
-    mask-size: cover;
-    -webkit-mask-size: cover;
-}
 
-/* .btn-text{
-    z-index: 20;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: 13px;
-    position: relative;
-    line-height: 10px;
-    writing-mode: vertical-lr;
-    bottom: 70px;
-    color: whitesmoke;
-    text-decoration: none;
-} */
 
 @keyframes move {
     from {
@@ -668,6 +660,10 @@ article {
     color: whitesmoke;
 }
 
+.destinos .text-container-small h5:hover{
+    border-bottom: 6px solid rgb(255, 174, 0);
+}
+
 .destinos header {
     background-image: url(imagenes/herodestinos.jpg);
     background-position: bottom;
@@ -832,6 +828,12 @@ article {
 }
 
 /* CSS novedades */
+.novedades header{
+    background-image: url(imagenes/novedades.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
 
 .novedades .seccion {
     background-image: none;
@@ -840,15 +842,20 @@ article {
 }
 
 div .slide {
-    height: 500px;
-    text-align: center;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-box {
-    display: inline-block;
-    height: 600px;
+    display: block;
+    height: auto;
     width: 500px;
     margin: 100px 20px 100px 20px;
+    /* margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px; */
     background: #f5f5f5;
     box-shadow: -6px 6px 12px #626262, 6px -6px 12px #ffffff;
     transition: ease-in-out 0.2s all;
@@ -870,7 +877,7 @@ div .slide {
     height: 250px;
     background-color: #3d5071;
     width: 500px;
-    padding: 50px;
+    padding: 20px;
     font-weight: 600;
     font-size: 40px;
 }
@@ -884,9 +891,10 @@ div .slide {
     font-weight: 400;
     font-size: 30px;
     margin: 0px;
-    width: 500px;
+    width: auto;
+    height: 500px;
     text-align: left;
-    padding: 20px 50px;
+    padding: 20px 20px;
     color: #434343;
 }
 
@@ -901,6 +909,16 @@ div .slide {
     display: inline-block;
     left: -400px;
     z-index: 10;
+}
+
+.seccion3  .info-box p{
+    display: inline-block;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 40px;
 }
 
 .seccion3 .videocontainer {
@@ -935,7 +953,18 @@ div .slide {
     position: absolute;
     right: -300px;
     z-index: 10;
+    margin: 100px 20px 100px 20px;
 }
+.seccion4 .seccion4container .info-box p{
+    display: inline-block;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
 
 .seccion4 .seccion4container img {
     display: block;
@@ -948,8 +977,16 @@ img[alt="fachada de Castillo Hotel"] {
     box-shadow: -10px 10px 20px #626262;
     border-radius: 9px;
 }
+.novedades .seccion3 {
+    display: flex;
+    align-items: center;
+}
 
-.seccion5 {
+.novedades .seccion4 {
+    display: flex;
+    align-items: center;
+}
+.novedades .seccion5 {
     background-image: none;
     box-sizing: border-box;
     margin: 0px;
@@ -960,17 +997,9 @@ img[alt="fachada de Castillo Hotel"] {
 
 /* seccion de galeria novedades */
 
-.novedades .seccion3 {
-    display: flex;
-    align-items: center;
-}
 
-.novedades .seccion4 {
-    display: flex;
-    align-items: center;
-}
 
-.container1, .container2, .container3, .container4 {
+div .container1, .container2, .container3, .container4 {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -1030,12 +1059,12 @@ img[alt="fachada de Castillo Hotel"] {
     text-align: left;
 }
 
-div .centered {
+.text-container .centered {
     opacity: 0;
     transition: ease-in-out 0.5s all;
 }
 
-div:hover .centered {
+.text-container:hover .centered {
     opacity: 1;
     transition: ease-in-out 0.5s all;
 }
@@ -1050,7 +1079,7 @@ div .text-container img {
     height: 350px;
 }
 
-div:hover .text-container img {
+.text-container img {
     opacity: 0.5;
     transition: ease-in-out 0.5s all;
 }
