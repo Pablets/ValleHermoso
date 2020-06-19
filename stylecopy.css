@@ -176,7 +176,7 @@ nav ul {
 #menucentro {
     margin: 0px;
     padding: 0px;
-    background-image: url(imagenes/logo.png);
+    background-image: url(imagenes/logo.svg);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ nav ul {
 }
 
 .menu {
-    background-image: url(imagenes/logo.png);
+    background-image: url(imagenes/logo.svg);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -259,15 +259,15 @@ nav li a:active {
 }
 
 .index .seccion3 {
-    background-image: url(imagenes/SaboreaBG.jpg);
+    background-image: url(imagenes/saboreabg.jpg);
 }
 
 .index .seccion4 {
-    background-image: url(imagenes/DisfrutaBG.jpg);
+    background-image: url(imagenes/disfrutabg.jpg);
 }
 
 .index .seccion5 {
-    background-image: url(imagenes/Descubribg.jpg);
+    background-image: url(imagenes/descubribg.jpg);
 }
 
 h1 {
@@ -463,7 +463,7 @@ footer ul li a {
 #redes li a {
     display: inline-block;
     text-decoration: none;
-    background-image: url(imagenes/Socialsprite.png);
+    background-image: url(imagenes/socialsprite.svg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
     opacity: 1;
@@ -572,7 +572,7 @@ article {
 
 .destinos .seccion2 {
     background-color: whitesmoke;  
-    background-image:url(imagenes/exploraBG.jpg);
+    background-image:url(imagenes/explorabg.jpg);
 }
 #vallehermoso:target {
     visibility: visible;
