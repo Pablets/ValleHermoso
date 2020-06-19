@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valle hermoso - Ciudad que enamora</title>
+    <title>Valle hermoso - Destinos</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecopy.css">
 </head>
 
 <body>
     <nav id="menu">
         <div class="menu">
             <ul class="animate">
-                <li data-menuanchor="Explora"><a href="#Explora">Explorá</a></li>
-                <li data-menuanchor="Saborea"><a href="#Saborea">Saboreá</a></li>
-                <li data-menuanchor="Inicio" class="active"><a href="#Inicio"><img id="menucentro"
-                            src="imagenes/LOGO.png" alt="logo"></a></li>
-                <li data-menuanchor="Disfruta"><a href="#Disfruta">Disfrutá</a></li>
-                <li data-menuanchor="Descubri"><a href="#Descubri">Descubrí</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li class="active"><a href="index.html" id="menucentro"></a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Institucional</a></li>
             </ul>
         </div>
     </nav>
@@ -32,36 +31,54 @@
                 <h1>Destinos</h1>
             </div>
         </header>
-        <article class="seccion seccion2 section" data-anchor="Explora">
+        <article class="seccion seccion2 section" data-anchor="Lugares">
             <div class="text-container-small">
                 <h2>Lugares que no te podés perder</h2>
                 <p>De lugares al aire libre hasta museos, te damos una lista de lugares que no podés dejar sin visitar.
                 </p>
                 <ul>
+                    <li><a href="#vallehermoso">
+                            <h5>Valle Hermoso</h5>
+                        </a></li>
                     <li><a href="#castillohotel">
                             <h5>Castillo Hotel</h5>
                         </a></li>
                     <li><a href="#diquecito">
                             <h5>Diquecito</h5>
                         </a></li>
-                    <li><a href="#fatima">
-                            <h5>Virgen de Fátima</h5>
+                    <li><a href="#cascada">
+                            <h5>Cascada de los helechos</h5>
                         </a></li>
-                    <li><a href="#ceballos">
+                    <li><a href="#zevallos">
                             <h5>Museo Zeballos</h5>
                         </a></li>
                 </ul>
             </div>
+            <div id="vallehermoso" class=" mapcontainer">
+                <div class="text-container">
+                    <h3>Valle Hermoso</h3>
+                    <p>Valle Hermoso es una localidad situada en el departamento Punilla, provincia de Córdoba,
+                        Argentina. Se encuentra situada a 75 km de la Ciudad de Córdoba por la RN 38. La principal
+                        actividad económica es el turismo, debido a sus balnearios y ríos de aguas cristalinas, que
+                        atraen a los turistas.
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.8768751401312!2d-64.4775356848593!3d-31.11315398150613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8260ec49c459%3A0xa2be9f063d028ada!2sEl%20Castillo%20Hotel!5e0!3m2!1ses!2sar!4v1592362083812!5m2!1ses!2sar"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             <div id="castillohotel" class=" mapcontainer">
                 <div class="text-container">
                     <h3>Castillo Hotel</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat ipsam eius maxime a neque
-                        non
-                        expedita esse est laudantium et nulla quae, consectetur impedit dolores mollitia, deserunt,
-                        atque
-                        laboriosam. Cumque laudantium, dolorum voluptatum doloremque laboriosam illo, necessitatibus
-                        vero
-                        inventore aperiam harum itaque. Illo aperiam voluptas laudantium exercitationem sed dolorem quae
+                    <p>Este hotel lujoso todo incluido, ubicado en un castillo de estilo medieval en el pintoresco valle
+                        de Punilla, está abierto por temporadas y se encuentra a 3 km del Museo Arqueológico Argentino
+                        Ambato.
+                        Las imponentes habitaciones y suites tienen piso de madera, baño integrado y escritorio. Las
+                        suites mejoradas incluyen sala de estar, y algunas tienen habitaciones adicionales como un salón
+                        en la entrada.
+                        Las comidas se sirven en un restaurante elegante con candelabros. Otros servicios incluyen bar,
+                        sala de juegos y sala de proyecciones, además de un estudio para artistas y salas de
+                        conferencia.
                     </p>
                 </div>
                 <iframe
@@ -72,61 +89,62 @@
             <div id="diquecito" class=" mapcontainer">
                 <div class="text-container">
                     <h3>Diquecito</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nemo libero aspernatur
-                        debitis
-                        quia laudantium doloremque vero et ipsum ad. Assumenda dolorem ea voluptates molestias
-                        repudiandae
-                        laudantium repellendus, quae labore. Delectus dolores asperiores blanditiis labore aperiam
-                        incidunt
-                        nisi quos exercitationem, illo doloribus rem quod at eaque voluptates suscipit eos dolorem.</p>
+                    <p>Partiendo desde la Reserva Vaquerías y siguiendo el curso del arroyo homónimo, se llega al
+                        fenomenal Dique, antigua obra concretada sobre una cascada natural de 20 metros de altura. El
+                        atractivo no termina allí. Continuando el trayecto hacia las sierras, se hallan otros saltos
+                        naturales de los cuales es un grato ejemplo la Garganta del Diablo. Pero si existe una imagen
+                        majestuosa en este circuito, ella es la de la Cascada de los Helechos, un accidente natural en
+                        la roca, de unos 15 metros de alto, con aguas de vertiente y hermosa vegetación de helechos y
+                        molles, bajo la protección de un microclima único. A 7Km. del centro.
+
+                    </p>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.739886256711!2d-64.47465238946972!3d-31.116960845351255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8261fd7a0a4b%3A0x5e03c62c58334c0f!2sNono%20Chichin%20(Chacinados%20Artesanales)!5e0!3m2!1ses!2sar!4v1592361729295!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
-            <div id="fatima" class=" mapcontainer">
+            <div id="cascada" class=" mapcontainer">
                 <div class="text-container">
-                    <h3 class="textodestinos">Virgen de Fátima</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero a reprehenderit cumque itaque!
-                        Placeat ipsam eos, consequatur culpa rem repellendus sit! Nemo temporibus totam et eligendi
-                        ipsam
-                        consectetur harum assumenda, enim cum nostrum, natus esse magni excepturi atque nihil dolorem
-                        omnis
-                        commodi, ea architecto autem blanditiis! Magnam, officia! Quibusdam, architecto.</p>
+                    <h3 class="textodestinos">Cascada de los Helechos</h3>
+                    <p>Uno de los lugares fascinantes de los alrededores de Valle Hermoso es la mágica Cascada de los
+                        Helechos. Siguiendo el recorrido de un arroyo que se va mimetizando con el paisaje serrano se
+                        arriba a este lugar atrapante dónde el verde de los helechos se mezcla con la cristalinidad de
+                        las aguas, que se deslizan a través de un paredón y caen 15 metros para retomar un cauce
+                        tranquilo.
+
+                        Coronada por la presencia de frondosos molles y diferentes especies epifitas, el lugar invita a
+                        recorrerlo con una caminata, o simplemente admirarlo en toda su extensión.</p>
                 </div>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8362.169647416815!2d-64.46040165087184!3d-31.116135818000316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d82728d4590f3%3A0x88375362bb6eefad!2sReserva%20Natural%20Vaquer%C3%ADas!5e0!3m2!1ses!2sar!4v1592361776720!5m2!1ses!2sar"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19322.65988673214!2d-64.44512836294543!3d-31.11540265463419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb44f590e9f837a8e!2sCascada%20De%20Los%20Helechos!5e0!3m2!1ses!2sar!4v1592515293922!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
 
-            <div id="ceballos" class=" mapcontainer">
+            <div id="zevallos" class=" mapcontainer">
                 <div class="text-container">
-                    <h3 class="textodestinos">Museo Zeballos</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iste molestias fugiat sapiente
-                        officia, iusto distinctio voluptas eum, accusamus nihil aperiam ad incidunt repellendus eveniet
-                        neque ut. Magnam quae ut ab recusandae atque facere itaque temporibus vel quibusdam, quo veniam
-                        facilis corporis saepe fuga debitis, corrupti est. Cumque, repellat. Odio?</p>
+                    <h3 class="textodestinos">Museo Juan de Zevallos</h3>
+                    <p>Homenajeando con su nombre al Capitán Juan de Zevallos, el Museo Municipal funciona en lo que fuera la estación de trenes del lugar Cuenta con seis salas, cada una de las cuales se orienta a la exposición de material propio de una disciplina específica: paleontología, petrología, arqueología, biología, fotografía y numismática. Entre sus destacadas exposiciones, resulta imperdible la muestra fotográfica retrospectiva de la localidad de Valle Hermoso.</p>
                 </div>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13665.955059791557!2d-64.441363!3d-31.096144699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d81f46b598065%3A0x6ff36f4a4db2e8b0!2sEstancia%20El%20Silencio!5e0!3m2!1ses!2sar!4v1592362008341!5m2!1ses!2sar"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13663.332290120568!2d-64.4862503581139!3d-31.11437128331475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9cdcfca054efc48!2sMuseo%20Municipal%20Capit%C3%A1n%20Juan%20de%20Zevallos!5e0!3m2!1ses!2sar!4v1592515444655!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </article>
-        <div class="seccion section seccion3" data-anchor="Saborea">
+        <div class="seccion section seccion3" data-anchor="Explora">
             <div>
                 <h2 class="">Explorá</h2>
                 <h3>Explorá una ciudad llena de historia y naturaleza.
                     Desde balnearios en el río hasta un castillo del siglo XIX,
                     tenes miles de opciones para disfrutar en familia. </h3>
             </div>
-            <div class="videocontainer">
+            <div class="destinos-videocontainer">
                 <iframe src="https://player.vimeo.com/video/429858629?byline=0&portrait=0" allow="autoplay; fullscreen"
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div class="seccion seccion4 section" data-anchor="Disfruta">
+        <div class="seccion seccion4 section" data-anchor="Descarga">
             <div class="rectangulo">
                 <div class="text-container">
                     <h3>
@@ -139,20 +157,20 @@
                 <a id="appstore" href="#"></a>
             </div>
         </div>
-        <footer class="section fp-auto-height">
+        <footer  class="section fp-auto-height">
             <div class="collogo">
                 <div class="logo"></div>
                 <h6>© Valle Hermoso 2020</h6>
             </div>
             <div class="col">
                 <ul>
-                    <li><a class="link" href="#Inicio">Home</a></li>
-                    <li><a href="">Turismo</a></li>
-                    <li><a href="">Noticias</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="colbig">
+            <div class="colbig">            
                 <ul id="redes">
                     <li id="fb"><a href="#Facebook"></a></li>
                     <li id="ig"><a href="#Instagram"></a></li>
@@ -167,8 +185,7 @@
                     <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
                 </ul>
             </div>
-        </footer>
-
+        </footer>    
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script>
@@ -180,8 +197,8 @@
             easing: 'easeInOutCubic',
             menu: '#menu',
             navigation: true,
-            anchors: ['Inicio', 'Explora', 'Saborea', 'Disfruta', 'Descubri', 'Footer'],
-            navigationTooltips: ['Inicio', 'Explorá', 'Saboreá', 'Disfrutá', 'Descubrí', 'Pie de página'],
+            anchors: ['Inicio', 'Lugares', 'Explora', 'Descarga', 'Descubri', 'Footer'],
+            navigationTooltips: ['Inicio', 'Lugares', 'Explorá', 'Nuestra App', 'Pié de página'],
             showActiveTooltip: false,
             verticalCentered: false,
             navigationPosition: 'right',

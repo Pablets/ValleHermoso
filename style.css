@@ -162,8 +162,12 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover, footer li a:hover, .destinos li:hover {
+nav li a:hover, footer li a:hover, .destinos .seccion2 li:hover {
     border-bottom: 6px solid rgb(255, 174, 0);
+}
+
+#redes:hover {
+    border: none;
 }
 
 nav li a:active {
@@ -401,7 +405,7 @@ footer ul li a {
 }
 
 #redes a:hover {
-    border-bottom: 0px solid transparent;
+    border:none;
 }
 
 #redes #fb a {
@@ -476,6 +480,20 @@ article {
     opacity: 0;
     transition: all 0.7s ease-in-out;
 }
+.mapcontainerdefaul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 500px;
+    background-color: whitesmoke;
+    margin: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
 
 .mapcontainer iframe {
     position: absolute;
@@ -497,11 +515,22 @@ article {
     line-height: 27px;
     width: 100%;
 }
-
 .destinos .seccion2 {
-    background-color: whitesmoke;
+    background-color: whitesmoke;    
+    background-image:url(imagenes/exploraBG.jpg);
+    /* opacity: 0; */
+}
+#explora:target{
+    background-image:url(imagenes/exploraBG.jpg);
+    opacity: 1;
 }
 
+#vallehermoso:target {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+    z-index: 100;
+}
 #castillohotel:target {
     visibility: visible;
     opacity: 1;
@@ -516,7 +545,7 @@ article {
     z-index: 100;
 }
 
-#fatima:target {
+#cascada:target {
     visibility: visible;
     opacity: 1;
     transition: all 0.7s ease-in-out;
@@ -632,6 +661,24 @@ article {
     margin-left: 45%;
     margin-right: 50px;
     display: inline-block;
+}
+.destinos .videocontainer {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    /* border: red solid 1px; */
+    z-index: 1;
+    text-align: right;
+    /* margin-top: -500px; */
+    /* margin-left: 500px; */
+}
+
+.destinos .videocontainer iframe {
+    margin: 0px;
+    height: 800px;
+    width: 800px;
+    /* border: aqua 1px solid; */
 }
 
 .black-overlay {
@@ -802,7 +849,7 @@ div .slide {
     display: inline-block;
     width: 1500px;
     height: 800px;
-    border: red solid 1px;
+    /* border: red solid 1px; */
     z-index: 1;
     text-align: right;
     /* margin-top: -500px; */
@@ -813,7 +860,7 @@ div .slide {
     margin: 0px;
     height: 800px;
     width: 1500px;
-    border: aqua 1px solid;
+    /* border: aqua 1px solid; */
 }
 
 .seccion4 {
@@ -983,4 +1030,5 @@ div .slide {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
 
