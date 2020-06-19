@@ -33,42 +33,63 @@
         </header>
 
         <div class="seccion section seccion2" data-anchor="Saborea">
-            <!-- <h2 class="form-title" >Contacto</h2> -->
-            <form class="login-form" action="javascript:void(0);" method="http://recursos.grodriguez.com.ar/FORM/"
+            <h2 class="form-title">Contacto</h2>
+            <form class="form" action="http://recursos.grodriguez.com.ar/FORM/" method="post"
                 enctype="application/x-www-form-urlencoded">
-                <h3 class="form-subtitle">Dejanos tus datos para comunicarte con nosotros</h3>
-                <div class="form-control">
-                    <input type="text" name="username" id="username" placeholder=" " autocomplete="off" required />
-                    <label for="username">Nombre y Apellido</label>
+                <div class="form-container">
+                    <h3 class="form-subtitle">Dejanos tus datos para comunicarte con nosotros</h3>
                 </div>
-                <div class="form-control">
-                    <input type="password" name="password" id="password" placeholder=" " autocomplete="off" required />
-                    <label for="password">Email</label>
-                </div>
-                <div class="form-control">
-                    <input type="" name="password" id="password" placeholder=" " autocomplete="off" required />
-                    <label for="motivo">Motivo de contacto</label>
-                    <select name="motivo" id="motivo">
-                        <option value="turismo">Turismo</option>
-                        <option value="profesional">Profesional</option>
-                        <option value="municipal">Muicipal</option>
-                        <option value="otro">Otro</option>
-                    </select>               
-                </div>
-                <div class="form-control">
-                    <input type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" required />
-                    <label for="password">Email</label>
-                </div>
-                <div class="form-control">
-                    <label for="checkbox">¿Es residente de Córdoba?</label>
+                <div class="form-container">
+                    <!-- nombre y apellido -->
                     <div>
-                    <input type="radio" id="residente" name="residente" value="si" placeholder=" " autocomplete="off" required>
-                    <label for="residente">Si</label>
-                    <input type="radio" id="noresidente" name="residente" value="no" placeholder=" " autocomplete="off" required>
-                    <label for="noresidente">No</label>
+                        <!-- <label>Nombre y Apellido</label> -->
+                        <input class="input-css" type="text" name="fullname" id="fullname"
+                            placeholder="Nombre y Apellido" autocomplete="off" required
+                            oninvalid="this.setCustomValidity('No olvide ingresar su nombre y apellido')"
+                            oninput="this.setCustomValidity('')" />
+                    </div>
+                    <!-- email -->
+                    <div>
+                        <!-- <label>Email</label> -->
+                        <input class="input-css" type="email" name="email" id="email" placeholder="Correo electrónico"
+                            oninvalid="this.setCustomValidity('Ingrese su mail correctamente')"
+                            oninput="this.setCustomValidity('')" autocomplete="off" required />
+                    </div>
+                    <!-- telefono -->
+                    <div>
+                        <!-- <label>Teléfono</label> -->
+                        <input class="input-css" type="tel" name="tel" id="tel" placeholder=" Teléfono "
+                            oninvalid="this.setCustomValidity('Ingrese su número de teléfono')"
+                            oninput="this.setCustomValidity('')" autocomplete="off" required />
+                    </div>
+                    <!-- select -->
+                    <div>
+                        <!-- <label>Select area</label> -->
+                        <select class="select-css">
+                            <option value="" selected disabled hidden>Elija el motivo de su contacto </option>
+
+                            <option value="Turismo">Turismo</option>
+                            <option value="Negocios">Negocios</option>
+                            <option value="Municipal">Municipal</option>
+                            <option value="Otros">Otros</option>
+
+                        </select>
+                        <div>
+                            <!--checkbox  -->
+                            <div class="check-container">
+                                <label for="si">
+                                    <p><input class="check" type="checkbox" id="si" name="sino" value="si">Acepto la
+                                        <span class="check-text"><a id="privacidad" href="#">Política de
+                                                privacidad</a></span>
+                                </label>
+                            </div>
+                            <!--fin de formulario  -->
+                        </div>
+                        <div class="btn-container">
+                            <button type="submit" class="form-btn">Enviar</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                <button type="submit" class="form-btn">Login</button>
             </form>
         </div>
         </div>
