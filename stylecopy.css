@@ -235,7 +235,7 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover, footer li a:hover, .destinos li:hover {
+nav li a:hover, footer li a:hover{
     border-bottom: 6px solid rgb(255, 174, 0);
 }
 
@@ -259,7 +259,7 @@ nav li a:active {
 }
 
 .index .seccion3 {
-    background-image: url(imagenes/saboreabg1.jpg);
+    background-image: url(imagenes/SaboreaBG.jpg);
 }
 
 .index .seccion4 {
@@ -438,6 +438,7 @@ footer ul li {
     list-style: none;
     margin-bottom: 10px;
     color: whitesmoke;
+    width: auto;
 }
 
 footer ul li a {
@@ -445,6 +446,7 @@ footer ul li a {
     font-weight: 600;
     text-decoration: none;
     font-size: 1em;
+    width: auto;
 }
 
 #redes {
@@ -569,9 +571,15 @@ article {
 }
 
 .destinos .seccion2 {
-    background-color: whitesmoke;
+    background-color: whitesmoke;  
+    background-image:url(imagenes/exploraBG.jpg);
 }
-
+#vallehermoso:target {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+    z-index: 100;
+}
 #castillohotel:target {
     visibility: visible;
     opacity: 1;
@@ -586,14 +594,14 @@ article {
     z-index: 100;
 }
 
-#fatima:target {
+#cascada:target {
     visibility: visible;
     opacity: 1;
     transition: all 0.7s ease-in-out;
     z-index: 100;
 }
 
-#ceballos:target {
+#zevallos:target {
     visibility: visible;
     opacity: 1;
     transition: all 0.7s ease-in-out;
@@ -703,7 +711,25 @@ article {
     margin-right: 50px;
     display: inline-block;
 }
+.destinos-videocontainer {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    width: 800px;
+    height: 800px;
+    /* border: red solid 1px; */
+    z-index: 1;
+    text-align: right;
+    /* margin-top: -500px; */
+    /* margin-left: 500px; */
+}
 
+.destinos-videocontainer iframe {
+    margin: 0px;
+    height: 800px;
+    width: 800px;
+    border: 0px;
+}
 .black-overlay {
     position: absolute;
     margin: 0px;
@@ -794,6 +820,12 @@ article {
 #appstore {
     background-image: url(imagenes/appstore.png);
 }
+/* destinos footer */
+
+#redes li {
+    width: auto;
+}
+
 
 /* CSS novedades */
 
@@ -802,11 +834,6 @@ article {
     background-color: whitesmoke;
     color: #434343;
 }
-
-/* .novedades .seccion3,
-.novedades .seccion4{
-    padding-top: 100px;
-} */
 
 div .slide {
     height: 500px;
