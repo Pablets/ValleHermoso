@@ -144,6 +144,7 @@ html {
 body {
     background-color: grey;
     width: 100%;
+    max-width: 1920px;
 }
 
 main {
@@ -249,24 +250,34 @@ nav li a:active {
     background-repeat: no-repeat;
 }
 
+header {
+    left: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagenes/hero.jpg);
+    background-size: cover;
+}
+
 .index .seccion {
     padding-top: 100px;
     box-sizing: border-box;
 }
 
-.index .seccion2 {
+main.index .seccion2 {
     background-image: url(imagenes/explorabg.jpg);
 }
 
-.index .seccion3 {
+main.index .seccion3 {
     background-image: url(imagenes/saboreabg.jpg);
 }
 
-.index .seccion4 {
+main.index .seccion4 {
     background-image: url(imagenes/disfrutabg.jpg);
 }
 
-.index .seccion5 {
+main.index .seccion5 {
     background-image: url(imagenes/descubribg.jpg);
 }
 
@@ -280,7 +291,15 @@ h1 {
     top: 35vh;
 }
 
-h2 {
+main.index h2 {
+    font-size: 9em;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    color: whitesmoke;
+    top: 35vh;
+}
+.seccion3 h2 {
     font-size: 9em;
     text-align: left;
     margin-left: 100px;
@@ -289,7 +308,11 @@ h2 {
     top: 35vh;
 }
 
-h3 {
+.seccion3 h2 > p{
+    color:  whitesmoke;
+}
+
+main.index h3 {
     font-weight: 300;
     font-size: 2em;
     width: 30%;
@@ -298,8 +321,7 @@ h3 {
     margin-top: 50px;
     color: whitesmoke;
 }
-
-h4 {
+main.index h4 {
     font-weight: 800;
     font-size: 1em;
     width: 30%;
@@ -308,7 +330,7 @@ h4 {
     color: whitesmoke;
 }
 
-h6 {
+main.index h6 {
     font-weight: 600;
     font-size: 0.5em;
     text-align: left;
@@ -316,7 +338,7 @@ h6 {
     text-align: center;
 }
 
-abbr {
+main.novedades abbr {
     display: inline;
     font-style: italic;
     font-family: 'montserrat';
@@ -324,22 +346,13 @@ abbr {
     text-decoration: none;
     color: cadetblue;
 }
-strong{
+main  strong{
     color: rgb(44, 44, 44);
     /* background-color: rgba(255, 166, 0, 0.664); */
     line-height: 10px;
 }
 
-.index header {
-    left: 0px;
-    margin-left: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100vh;
-    background-image: url(imagenes/hero.jpg);
-    background-size: cover;
-    /* background-position: 0px -390px; */
-}
+
 
 
 
@@ -507,8 +520,20 @@ footer .logo {
 /* CSS DESTINOS.HTML */
 
 /* ------------------------------------------------------ */
+.destinos .seccion2 h2 {
+    padding: 0px;
+    margin-top: 50px;
+    font-size: 50px;
+}
 
-article {
+li > a > h5{
+    font-size: 30px;
+}
+
+.text-container > p {
+    font-size: 18px;
+}
+.seccion2 > article {
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -519,14 +544,14 @@ article {
     position: absolute;
     box-sizing: border-box;
     background-color: tomato;
-    width: 460px;
+    width: 350px;
     height: 100%;
-    padding: 175px 40px 0px;
-    left: 500px;
+    padding: 50px 20px 0px;
+    left: 420px;
     z-index: 200;
 }
 
-.mapcontainer {
+.seccion2 > article {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -541,7 +566,7 @@ article {
     transition: all 0.7s ease-in-out;
 }
 
-.mapcontainer iframe {
+article > iframe {
     position: absolute;
     right: 0px;
     width: 50%;
@@ -556,11 +581,11 @@ article {
     line-height: 62px;
 }
 
-.text-container p {
+/* .text-container p {
     font-size: 25px;
     line-height: 27px;
     width: 100%;
-}
+} */
 
 .destinos .seccion2 {
     background-color: whitesmoke;
@@ -602,34 +627,37 @@ article {
     z-index: 100;
 }
 
-.destinos h2 {
-    padding: 0px;
-    color: rgb(53, 53, 53);
-    text-indent: -6px;
-    margin-top: 0px;
-}
 
-.seccion2 .text-container-small {
+
+.seccion2 > .text-container-small {
     position: absolute;
-    width: 500px;
+    width: 420px;
     background-color: black;
-    padding-top: 150px;
+    /* padding-top: 150px; */
     z-index: 2000;
+    height: 100%;
+}
+div.text-container-small > ul {
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    margin-left: 50px;
 }
 
-.text-container-small p {
+.text-container-small > p {
     margin-left: 50px;
     color: whitesmoke;
-    width: 400px;
+    width: 350px;
     text-align: right;
     margin-right: 20px;
     font-size: 25px;
 }
 
-.text-container-small h2 {
+.text-container-small > h2 {
     margin: 0px;
     color: whitesmoke;
-    width: 400px;
+    width: 350px;
     margin-left: 50px;
     margin-bottom: 20px;
     text-align: right;
@@ -637,12 +665,11 @@ article {
     font-size: 70px;
 }
 
-.text-container-small ul {
+.text-container-small > ul {
     margin-left: 250px;
     list-style: none;
     margin-top: 20px;
-    width: 200px;
-    height: 300px;
+    width: 200px;    
     text-align: right;
 }
 
@@ -660,7 +687,7 @@ article {
     color: whitesmoke;
 }
 
-.destinos .text-container-small h5:hover{
+div.text-container-small h5:hover{
     border-bottom: 6px solid rgb(255, 174, 0);
 }
 
@@ -1101,10 +1128,14 @@ div .text-container img {
 }
 
 .form-title {
-    color: rgb(83, 83, 83);
+    display: flex;
+    right: 600px;
+    top: 1150px;
+    font-size: 150px;   
+    color: rgb(42, 49, 56);
     transform: rotate(90deg);
-    color: rgb(55, 63, 71);
-    margin-right: -250px;
+    z-index: 100;
+    padding: 0px;
 
 }
 
@@ -1120,7 +1151,7 @@ div .text-container img {
     padding: 50px;
 }
 
-.form h3 {
+form > div   h2 {
     display: inline-block;
     color: whitesmoke;
     width: 250px;
