@@ -521,10 +521,6 @@ footer ul li a {
 footer .logo {
     width: 100%;
     height: 100px;
-    background-image: url(imagenes/LOGO.svg);
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-bottom: 5px;
 }
 
