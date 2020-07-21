@@ -403,6 +403,9 @@ main  strong{
     margin-left: auto;
     margin-right: auto;
 }
+/* ------------------------------------------------------------------------------------------------- */
+/* Footer */
+/* ------------------------------------------------------------------------------------------------- */
 
 footer {
     position: relative;
@@ -421,6 +424,12 @@ footer .col {
     width: 15%;
     margin: 0px 10px 0px;
     /* background-color: rgb(0, 235, 252); */
+}
+
+.copyright{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
 }
 
 footer .collogo {
@@ -475,6 +484,10 @@ footer ul li a {
     width: 85.5px;
     height: 85.5px;
     margin: 0px 20px 20px 0px;
+}
+
+#redes li a span{
+    display: none;
 }
 
 #redes a:hover {
@@ -1110,12 +1123,9 @@ div .text-container img {
     opacity: 0.5;
     transition: ease-in-out 0.5s all;
 }
-
-/* CSS de CONTACTO */
-
-.contacto header {
-    background-image: url(imagenes/background1.jpg);
-}
+/* --------------------------------------------------------------------------------------------------------------- */
+/* CONTACTO.html*/
+/* -------------------------------------------------------------------------------------------------------------- */
 
 .contacto .seccion2 {
     display: flex;
@@ -1128,18 +1138,33 @@ div .text-container img {
 }
 
 .form-title {
-    display: flex;
-    right: 600px;
-    top: 1150px;
+    display: inline-block;
+    width: auto;
+    margin-top: -35px;
     font-size: 150px;   
     color: rgb(42, 49, 56);
     transform: rotate(90deg);
-    z-index: 100;
-    padding: 0px;
+    z-index: 100;   
+    /* border: 1px solid red; */
 
 }
 
 /* --------------------------- CSS Form -----------------------------------------*/
+
+main.contacto{
+    position: relative;
+}
+
+main.contacto header{
+    position: fixed;    
+    display: flex;    
+    align-items: center;
+    z-index: 100;
+    background: none;
+    width: 500px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
 
 .form {
     background-color: rgb(42, 49, 56);
@@ -1149,6 +1174,8 @@ div .text-container img {
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
+    /* border: turquoise 1px solid; */
+
 }
 
 form > div   h2 {
@@ -1162,6 +1189,7 @@ form > div   h2 {
 }
 
 .form-container{
+    top: 0px;
     display: inline-block;
     height: 70%;
     width: 350px;
