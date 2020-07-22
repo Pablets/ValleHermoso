@@ -583,9 +583,8 @@ li > a > h5{
 article > iframe {
     position: absolute;
     right: 0px;
-    width: 50%;
+    width: 60%;
     height: 100%;
-    border: solid 1px rgb(255, 0, 200);
 }
 
 .text-container h3 {
@@ -651,7 +650,7 @@ article > iframe {
     z-index: 2000;
     height: 100%;
 }
-div.text-container-small > ul {
+div.text-container-small > ol {
     width: 350px;
     padding: 0px;
     margin: 0px;
@@ -679,7 +678,7 @@ div.text-container-small > ul {
     font-size: 70px;
 }
 
-.text-container-small > ul {
+.text-container-small > ol {
     margin-left: 250px;
     list-style: none;
     margin-top: 20px;
@@ -687,7 +686,7 @@ div.text-container-small > ul {
     text-align: right;
 }
 
-.text-container-small ul li {
+.text-container-small ol li {
     box-sizing: border-box;
     text-decoration: none;
     font-size: 2em;
@@ -696,7 +695,7 @@ div.text-container-small > ul {
     text-align: right;
 }
 
-.text-container-small ul li a {
+.text-container-small ol li a {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -744,11 +743,15 @@ div.text-container-small h5:hover{
 }
 
 .destinos .seccion3 h3 {
+    padding-top: 20px;
     width: 50%;
     right: 0px;
     margin-left: 45%;
     margin-right: 50px;
     display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    color: whitesmoke;
 }
 
 .destinos-videocontainer {
@@ -921,6 +924,7 @@ div .slide {
     padding: 20px;
     font-weight: 600;
     font-size: 40px;
+    color: whitesmoke;
 }
 
 .info-box:hover h3 {
@@ -930,7 +934,7 @@ div .slide {
 
 .info-box p {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0px;
     width: auto;
     height: 500px;
