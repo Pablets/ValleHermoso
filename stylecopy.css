@@ -240,8 +240,9 @@ nav li a:hover, footer li a:hover {
     border-bottom: 6px solid rgb(255, 174, 0);
 }
 
-nav li a:active {
-    border-bottom: 6px solid tomato;
+#active {
+    margin-bottom: -6px;
+    border-bottom: 6px solid rgb(255, 174, 0);
 }
 
 .seccion {
