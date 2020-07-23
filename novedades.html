@@ -4,33 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valle hermoso - Novedades</title>
+    <title>Valle hermoso - Página principal</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-    <link rel="stylesheet" href="stylecopy.css">
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
+    <!-- hasta un máximo de 400 aplica -->
+    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
+    <!-- hasta un máximo de 800 aplica-->
+    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <!-- desde un mínimo de 801 aplica-->
+    <script>
+        (function (H) {
+            H.className = H.className += "js"
+        })(document.documentElement)
+    </script>
 </head>
 
 <body>
-    <nav id="menu">
-        <div class="menu">
-            <ul class="animate">
-                <li><a href="destinos.html">Destinos</a></li>
-                <li id="active"><a href="novedades.html">Novedades</a></li>
-                <li><a href="index.html" title="Principal"><img id="menucentro"
-                    src="imagenes/logo.png" alt="logo"></a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#">Institucional</a></li>
-            </ul>
+    <nav class="nav">
+        <a id="btn-closed" class="skip" href="#menu"></a>
+        <div class="menu-container menu-hidden">
         </div>
+        <ul id="menu">
+            <li><a href="index copy.html">Principal</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a class="active" href="novedades.html">Novedades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Menu item 5</a></li>
+        </ul>
     </nav>
     <main class="novedades" id="fullpage">
         <header class="section">
-           
-                <h1>Novedades</h1>
-           
+
+            <h1>Novedades</h1>
+
             <a class="link" href="#Explora">
                 <div class="btn">
                 </div>
@@ -40,31 +48,57 @@
             <div class="slide">
                 <article class="info-box">
                     <h3>Ya podés pagar el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> online</h3>
-                    <p><strong> el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> se podrá abonar sin ningún tipo de costo adicional por las plataformas de pago más populares</strong> en un esfuerzo por el municipio en conjunto con el Gobierno de la Provincia de Córdoba para evitar la aglomeración de personas en bancos y cajeros destinados a dicho fin. Desde esta mañana ya están habilidados los pagos por Mercadopago, Todopagos, Pago fácil y Rapipago. </p>
+                    <p><strong> el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> se podrá abonar sin ningún tipo
+                            de costo adicional por las plataformas de pago más populares</strong> en un esfuerzo por el
+                        municipio en conjunto con el Gobierno de la Provincia de Córdoba para evitar la aglomeración de
+                        personas en bancos y cajeros destinados a dicho fin. Desde esta mañana ya están habilidados los
+                        pagos por Mercadopago, Todopagos, Pago fácil y Rapipago. </p>
                 </article>
-                <article class="info-box">  
+                <article class="info-box">
                     <h3>Centros de Salud -Dispensario Municipal: (03548) 471047</h3>
                     <p>
-                        Desde el área de Salud  se planifican y gestionan actividades tendientes a la  promoción de la Salud y  bienestar social de la comunidad en colaboración con el <abbr title="Sistema de atención médica de emergencia.">SAME</abbr>. Estableciendo programas que tienden a mejorar la calidad de vida de los habitantes de Valle Hermoso a través de la prevención y el cuidado integral de la persona.</p>
+                        Desde el área de Salud se planifican y gestionan actividades tendientes a la promoción de la
+                        Salud y bienestar social de la comunidad en colaboración con el <abbr
+                            title="Sistema de atención médica de emergencia.">SAME</abbr>. Estableciendo programas que
+                        tienden a mejorar la calidad de vida de los habitantes de Valle Hermoso a través de la
+                        prevención y el cuidado integral de la persona.</p>
                 </article>
                 <article class="info-box">
                     <h3>Autorizaron la apertura de shoppings en Córdoba</h3>
-                    <p>Lo que era un secreto a voces en las últimas horas fue confirmado en una conferencia de prensa encabezada por el gobernador Juan Schiaretti: <strong>El Gobierno de Córdoba habilitó la apertura de shoppings</strong>, luego de más de 80 días de cierre total.</p>
+                    <p>Lo que era un secreto a voces en las últimas horas fue confirmado en una conferencia de prensa
+                        encabezada por el gobernador Juan Schiaretti: <strong>El Gobierno de Córdoba habilitó la
+                            apertura de shoppings</strong>, luego de más de 80 días de cierre total.</p>
                 </article>
             </div>
             <div class="slide">
                 <article class="info-box">
-                    <h3>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza un festival de cine Nacional <span lang="en">online</span>.</h3>
-                    <p>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza una nueva propuesta multimedial en la cual el cine Nacional es el protagonista. No solo se trata de un espacio para recordar viejos clásicos sino también para el desarrollo de artistas locales emergentes de todo tipo de género y edad. En entrevista con <cite>Carlos Pratt</cite>, director de la institución dijo: "La creatividad no está en cuarentena".</p>
+                    <h3>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza un
+                        festival de cine Nacional <span lang="en">online</span>.</h3>
+                    <p>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza una nueva
+                        propuesta multimedial en la cual el cine Nacional es el protagonista. No solo se trata de un
+                        espacio para recordar viejos clásicos sino también para el desarrollo de artistas locales
+                        emergentes de todo tipo de género y edad. En entrevista con <cite>Carlos Pratt</cite>, director
+                        de la institución dijo: "La creatividad no está en cuarentena".</p>
                 </article>
                 <article class="info-box">
-                    <h3>El <abbr title="Banco Central de la República Argentina.">BCRA</abbr> autoriza préstamos para emprendedores de Valle Hermoso</h3>
-                    <p>Marcos Allende, presidente de el <abbr title="Banco Central de la República Argentina.">BCRA</abbr> anunció el día de hoy una nueva línea de préstamos personales para emprendedores y <abbr title="Pequeñas y medianas empresas">Pymes</abbr> con el objetivo principal de atenuar los efectos adversos de la cuarentena por el <abbr title="Corona virus 2019">COVID-19</abbr>. La medida ya está aprobada y se esperan novedades sobre cómo será implementada en el transcurso del mes de Junio.</p>
+                    <h3>El <abbr title="Banco Central de la República Argentina.">BCRA</abbr> autoriza préstamos para
+                        emprendedores de Valle Hermoso</h3>
+                    <p>Marcos Allende, presidente de el <abbr
+                            title="Banco Central de la República Argentina.">BCRA</abbr> anunció el día de hoy una nueva
+                        línea de préstamos personales para emprendedores y <abbr
+                            title="Pequeñas y medianas empresas">Pymes</abbr> con el objetivo principal de atenuar los
+                        efectos adversos de la cuarentena por el <abbr title="Corona virus 2019">COVID-19</abbr>. La
+                        medida ya está aprobada y se esperan novedades sobre cómo será implementada en el transcurso del
+                        mes de Junio.</p>
                 </article>
                 <article class="info-box">
                     <h3>Buscan en La Falda al dueño de un burro olvidado en una estación de servicio</h3>
-                    <p>Las autoridades de La Falda y alrrededores están buscando a un individuo que dejó un burro adulto de unos 5 años de edad en una estación de servicio ubicada sobre la ruta 38.
-                        El burro, el cual ya está siendo atendido por personal de la Reserva Natural Vaquerías, fué encontrado en uno de los lugares de estacionamientos del local. Ahora, el dueño tiene cinco años para reclamar el tesoro. Para esto, tiene que visitar la Fiscalía de Lucerna. En caso contrario, el lingote formará parte de la enorme reserva de oro del país europeo.</p>
+                    <p>Las autoridades de La Falda y alrrededores están buscando a un individuo que dejó un burro adulto
+                        de unos 5 años de edad en una estación de servicio ubicada sobre la ruta 38.
+                        El burro, el cual ya está siendo atendido por personal de la Reserva Natural Vaquerías, fué
+                        encontrado en uno de los lugares de estacionamientos del local. Ahora, el dueño tiene cinco años
+                        para reclamar el tesoro. Para esto, tiene que visitar la Fiscalía de Lucerna. En caso contrario,
+                        el lingote formará parte de la enorme reserva de oro del país europeo.</p>
                 </article>
 
             </div>
@@ -73,7 +107,8 @@
             <div class="videocontainer">
                 <div class="info-box">
                     <h3>Rapel en "Los Gigantes"</h3>
-                    <p>Hoy tenemos a los chicos de "Hoy no duermo en casa" con una aventura increíble <strong> el corazón de las sierras</strong> a puro pulmón.</p>
+                    <p>Hoy tenemos a los chicos de "Hoy no duermo en casa" con una aventura increíble <strong> el
+                            corazón de las sierras</strong> a puro pulmón.</p>
                 </div>
                 <iframe id="visible" src="https://www.youtube.com/embed/Qe0ZZb--RXw?start=101"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -84,7 +119,8 @@
             <div class="seccion4container">
                 <div class="info-box">
                     <h3>De ruinas a Castillo Hotel 5 estrellas</h3>
-                    <p>Los Fábrega compraron lo que eran las ruinas de un antiguo castillo en las sierras de Córdoba, lo restauraron y lo convirtieron en un hotel autosustentable.</p>
+                    <p>Los Fábrega compraron lo que eran las ruinas de un antiguo castillo en las sierras de Córdoba, lo
+                        restauraron y lo convirtieron en un hotel autosustentable.</p>
                 </div>
                 <img src="imagenes/castillofachada.jpg" alt="fachada de Castillo Hotel">
             </div>
@@ -95,7 +131,9 @@
                     <img src="imagenes/noticia1.jpg" alt="Imagen que va a la izquierda">
                     <article class="centered">
                         <h3>Sufren las clases de origami</h3>
-                        <p>Las clases que se dictaban en la sociedad de fomento "El Porvenir" se suman también a los miles de negocios afectados por la cuarentena. La tristeza de los dos alumnos (uno de ellos becado) al no poder ir a clases no se puede expresar con palabras.  </p>
+                        <p>Las clases que se dictaban en la sociedad de fomento "El Porvenir" se suman también a los
+                            miles de negocios afectados por la cuarentena. La tristeza de los dos alumnos (uno de ellos
+                            becado) al no poder ir a clases no se puede expresar con palabras. </p>
                     </article>
                 </div>
             </div>
@@ -104,7 +142,10 @@
                     <img src="imagenes/noticia2.jpg" alt="Imagen que va a la izquierda">
                     <article class="centered">
                         <h3>80% de infectados leves</h3>
-                        <p>La secretaria de Acceso a la Salud, Carla Vizzotti, planteó que los 515 recuperados que representan el 20,53 % del total de 2208 casos y las 113 personas internadas en terapia intensiva, que implican el 5,11 %, “reflejan que el 80 % de las personas que tengan coronavirus van a transitarlo de manera leve o moderada.    </p>
+                        <p>La secretaria de Acceso a la Salud, Carla Vizzotti, planteó que los 515 recuperados que
+                            representan el 20,53 % del total de 2208 casos y las 113 personas internadas en terapia
+                            intensiva, que implican el 5,11 %, “reflejan que el 80 % de las personas que tengan
+                            coronavirus van a transitarlo de manera leve o moderada. </p>
                     </article>
                 </div>
             </div>
@@ -113,8 +154,11 @@
                     <img src="imagenes/noticia3.jpg" alt="Imagen que va a la izquierda">
                     <article class="centered">
                         <h3>Nuevos contagios Covid-19</h3>
-                        <p>El número de contagios en Córdoba y provincia se ha incrementado este domingo en 82 nuevos casos hasta un total de 972.
-                            La cifra alcanzada supone un incremento del 9,19% sobre el total de personas aquejadas de Covid-19 existentes hasta ayer sábado, algo más de cuatro puntos porcentuales por encima de la media nacional, que ha sido del 4,83%.
+                        <p>El número de contagios en Córdoba y provincia se ha incrementado este domingo en 82 nuevos
+                            casos hasta un total de 972.
+                            La cifra alcanzada supone un incremento del 9,19% sobre el total de personas aquejadas de
+                            Covid-19 existentes hasta ayer sábado, algo más de cuatro puntos porcentuales por encima de
+                            la media nacional, que ha sido del 4,83%.
                         </p>
                     </article>
                 </div>
@@ -124,9 +168,11 @@
                     <img src="imagenes/noticia4.jpg" alt="Imagen que va a la izquierda">
                     <div class="centered">
                         <h3>Choripan mortal</h3>
-                        <p>Medicos confirmaron hoy a la madrugada la muerte de el ex senador Mariano Tinelli, al parecer la muerte fue 
-                            causada por un choripan que comía mientras viajaba a dar una conferencia. El dueño del local "El Cholo" quedó impactado 
-                        al ver a su cliente morirse literalmente con el chori en la boca. </p>
+                        <p>Medicos confirmaron hoy a la madrugada la muerte de el ex senador Mariano Tinelli, al parecer
+                            la muerte fue
+                            causada por un choripan que comía mientras viajaba a dar una conferencia. El dueño del local
+                            "El Cholo" quedó impactado
+                            al ver a su cliente morirse literalmente con el chori en la boca. </p>
                     </div>
                 </div>
             </div>
@@ -162,29 +208,35 @@
             </div>
         </footer>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"></script>
     <script>
-        var myFullpage = new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            fitToSection: false,
-            scrollHorizontally: true,
-            easing: 'easeInOutCubic',
-            menu: '#menu',
-            navigation: true,
-            anchors: ['Inicio', 'Explora', 'Saborea', 'Disfruta', 'Descubri', 'Footer'],
-            navigationTooltips: ['Inicio', 'Eventos', 'Video rapel', 'Hotelería y hospedaje', 'Noticias locales', 'Pie de página'],
-            showActiveTooltip: false,
-            verticalCentered: false,
-            navigationPosition: 'right',
-            loopBottom: false,
-            dragAndMove: true,
-            // fixedElements: '.foo',
-            offsetSections: true,
-        });
+        var nav = document.querySelector("nav ul"),
+            btn = document.querySelector("nav a"),
+            bg = document.querySelector("nav div"),
+            navToggle = document.querySelector("nav .skip");
+        if (navToggle) {
+            navToggle.addEventListener("click",
+                function (e) {
+                    if (nav.className == "open") {
+                        nav.className = "";
+                        btn.id = "btn-closed"
+                    } else {
+                        nav.className = "open";
+                        btn.id = "btn-open"
+                    }
+                    e.preventDefault();
+                }, false);
+        }
 
-        //methods
-        fullpage_api.setAllowScrolling(true);
+
+
+        /* Any click outside of the nav element will close the menu if it's open */
+        var specifiedElement = document.querySelector('nav');
+        document.addEventListener('click', function (event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            if (!isClickInside && nav.className == "open") {
+                nav.className = "";
+            }
+        });
     </script>
 </body>
 

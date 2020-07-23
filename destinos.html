@@ -4,27 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valle hermoso - Destinos</title>
+    <title>Valle hermoso - Página principal</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-    <link rel="stylesheet" href="stylecopy.css">
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
+    <!-- hasta un máximo de 400 aplica -->
+    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
+    <!-- hasta un máximo de 800 aplica-->
+    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <!-- desde un mínimo de 801 aplica-->
+    <script>
+        (function (H) {
+            H.className = H.className += "js"
+        })(document.documentElement)
+    </script>
 </head>
 
 <body>
-    <nav id="menu">
-        <div class="menu">
-            <ul class="animate">
-                <li id="active"><a href="destinos.html">Destinos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="index.html" title="Principal"><img id="menucentro"
-                    src="imagenes/logo.png" alt="logo"></a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#">Institucional</a></li>
-            </ul>
+    <nav class="nav">
+        <a id="btn-closed" class="skip" href="#menu"></a>
+        <div class="menu-container menu-hidden">
         </div>
+        <ul id="menu">
+            <li><a href="index copy.html">Principal</a></li>
+            <li><a class="active" href="destinos.html">Destinos</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Menu item 5</a></li>
+        </ul>
     </nav>
     <main id="fullpage" class="destinos">
         <header class="section hero destinos" data-anchor="Inicio">
@@ -126,7 +134,7 @@
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
         </div>
-         <div class="seccion section seccion3" data-anchor="Explora">
+        <div class="seccion section seccion3" data-anchor="Explora">
             <div>
                 <h2>Explorá</h2>
                 <h3>Explorá una ciudad llena de historia y naturaleza.
@@ -181,31 +189,35 @@
             </div>
         </footer>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"></script>
     <script>
-        var myFullpage = new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            fitToSection: false,
-            scrollHorizontally: true,
-            easing: 'easeInOutCubic',
-            menu: '#menu',
-            navigation: true,
-            anchors: ['Inicio', 'Lugares', 'Explora', 'Descarga', 'Descubri', 'Footer'],
-            navigationTooltips: ['Inicio', 'Lugares', 'Explorá', 'Nuestra App', 'Pié de página'],
-            showActiveTooltip: false,
-            verticalCentered: false,
-            navigationPosition: 'right',
-            loopBottom: false,
-            dragAndMove: true,
-            // fixedElements: '.foo',
-            offsetSections: true,
+        var nav = document.querySelector("nav ul"),
+            btn = document.querySelector("nav a"),
+            bg = document.querySelector("nav div"),
+            navToggle = document.querySelector("nav .skip");
+        if (navToggle) {
+            navToggle.addEventListener("click",
+                function (e) {
+                    if (nav.className == "open") {
+                        nav.className = "";
+                        btn.id = "btn-closed"
+                    } else {
+                        nav.className = "open";
+                        btn.id = "btn-open"
+                    }
+                    e.preventDefault();
+                }, false);
+        }
 
 
+
+        /* Any click outside of the nav element will close the menu if it's open */
+        var specifiedElement = document.querySelector('nav');
+        document.addEventListener('click', function (event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            if (!isClickInside && nav.className == "open") {
+                nav.className = "";
+            }
         });
-
-        //methods
-        fullpage_api.setAllowScrolling(true);
     </script>
     <script src="https://player.vimeo.com/api/player.js"></script>
 </body>

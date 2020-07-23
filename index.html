@@ -10,7 +10,9 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-    <link rel="stylesheet" href="stylecopy.css">
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" /> <!-- hasta un máximo de 400 aplica -->
+    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" /> <!-- hasta un máximo de 800 aplica-->
+    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" /> <!-- desde un mínimo de 801 aplica-->
 </head>
 
 <body>
@@ -19,7 +21,7 @@
             <ul class="animate">
                 <li><a href="destinos.html">Destinos</a></li>
                 <li><a href="novedades.html">Novedades</a></li>
-                <li id="active"><a href="index.html" title="Principal"><img id="menucentro"
+                <li id="active"><a href="index.html" title="Principal"><span>Principal</span><img id="menucentro"
                     src="imagenes/logo.png" alt="logo"></a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="#">Institucional</a></li>

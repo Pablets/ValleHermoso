@@ -27,8 +27,7 @@
     background-image: url(imagenes/forward-arrow.svg);
 }
 
-.fp-controlArrow.fp-prev,
-.fp-controlArrow.fp-next {
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
     width: 50px;
     height: 50px;
     border-width: 0px;
@@ -39,8 +38,7 @@
     box-shadow: -5px 5px 10px #626262, 5px -5px 10px #ffffff;
 }
 
-.fp-controlArrow.fp-prev:hover,
-.fp-controlArrow.fp-next:hover {
+.fp-controlArrow.fp-prev:hover, .fp-controlArrow.fp-next:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.2s all;
     background: linear-gradient(225deg, #dddddd, #ffffff);
@@ -100,8 +98,7 @@
 
 /* style the items (options), including the selected item: */
 
-.select-items div,
-.select-selected {
+.select-items div, .select-selected {
     color: #ffffff;
     padding: 8px 16px;
     border: 1px solid transparent;
@@ -126,8 +123,7 @@
     display: none;
 }
 
-.select-items div:hover,
-.same-as-selected {
+.select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -158,65 +154,96 @@ main {
     width: 100%;
 }
 
-
-/* ---------------------------------------- */
-/* navegacion */
-/* ---------------------------------------- */
-
 nav {
-    border: none;
+    height: 62px;
     width: 100%;
-    height: 50px;
+    margin: auto;
     position: fixed;
-    background-color: rgb(39, 39, 39);
-    z-index: 1200;
+    top: 0px;
+    text-align: center;
+    z-index: 25;
 }
 
-.js nav li a {
-    font-size: 16px;
-    color: whitesmoke;
-    text-decoration: none;
-    padding: 1em;
-    display: block;
-}
-
-.js nav li a.active{
-    background-color: tomato;
-}
-
-.js nav li a:hover {
-    background-color: rgb(255, 187, 0);
-}
-
-/* On screens larger than 35em, remove the menu link and display all menu items */
-
-.js .nav ul {
-    overflow: auto;
-    position: static;
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
-    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    opacity: 0;
 }
 
-.js .nav li {
-    text-align: left;
-    display: inline-block;
-    border-top: 0;
+#menucentro {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(imagenes/logo.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 0px;
 }
 
-.js .nav li:last-child {
-    border: 0;
+#menucentro:hover {
+    margin-bottom: -6px;
+    border-bottom: 6px solid rgb(255, 174, 0);
 }
 
-.js .nav .skip {
-    display: none;
+#logonav {
+    position: fixed;
+    width: 62px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    background-image: url(imagenes/logo.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 0px;
+}
+
+.animate {
+    display: flex;
     visibility: hidden;
+    opacity: 0;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
+.menu:hover .animate {
+    visibility: visible;
+    opacity: 1;
+}
 
-/* --------------------------------------- */
-/* secciones */
-/* --------------------------------------- */
+nav li {
+    display: inline-block;
+    height: 62px;
+}
+
+nav li a {
+    position: relative;
+    color: whitesmoke;
+    top: 0px;
+    display: inline-block;
+    width: 150px;
+    height: 62px;
+    line-height: 62px;
+    text-decoration: none;
+}
+
+nav li a:hover, footer li a:hover {
+    border-bottom: 6px solid rgb(255, 174, 0);
+}
+
+#active {
+    margin-bottom: -6px;
+    border-bottom: 6px solid rgb(255, 174, 0);
+}
 
 .seccion {
     background-color: whitesmoke;
@@ -261,7 +288,8 @@ h1 {
     width: 100%;
     text-align: center;
     color: whitesmoke;
-    padding-top: 20vh;
+    position: fixed;
+    top: 35vh;
 }
 
 main.index h2 {
@@ -272,7 +300,6 @@ main.index h2 {
     color: whitesmoke;
     top: 35vh;
 }
-
 .seccion3 h2 {
     font-size: 9em;
     text-align: left;
@@ -282,8 +309,8 @@ main.index h2 {
     top: 35vh;
 }
 
-.seccion3 h2>p {
-    color: whitesmoke;
+.seccion3 h2 > p{
+    color:  whitesmoke;
 }
 
 main.index h3 {
@@ -295,7 +322,6 @@ main.index h3 {
     margin-top: 50px;
     color: whitesmoke;
 }
-
 main.index h4 {
     font-weight: 800;
     font-size: 1em;
@@ -321,8 +347,7 @@ main.novedades abbr {
     text-decoration: none;
     color: cadetblue;
 }
-
-main strong {
+main  strong{
     color: rgb(44, 44, 44);
     /* background-color: rgba(255, 166, 0, 0.664); */
     line-height: 10px;
@@ -336,7 +361,6 @@ main strong {
     from {
         transform: translateY(0px);
     }
-
     to {
         transform: translateY(15px);
         transform-origin: center;
@@ -380,7 +404,6 @@ main strong {
     margin-left: auto;
     margin-right: auto;
 }
-
 /* ------------------------------------------------------------------------------------------------- */
 /* Footer */
 /* ------------------------------------------------------------------------------------------------- */
@@ -404,7 +427,7 @@ footer .col {
     /* background-color: rgb(0, 235, 252); */
 }
 
-.copyright {
+.copyright{
     font-size: 12px;
     font-weight: bold;
     color: white;
@@ -464,7 +487,7 @@ footer ul li a {
     margin: 0px 20px 20px 0px;
 }
 
-#redes li a span {
+#redes li a span{
     display: none;
 }
 
@@ -517,15 +540,14 @@ footer .logo {
     font-size: 50px;
 }
 
-li>a>h5 {
+li > a > h5{
     font-size: 30px;
 }
 
-.text-container>p {
+.text-container > p {
     font-size: 18px;
 }
-
-.seccion2>article {
+.seccion2 > article {
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -543,7 +565,7 @@ li>a>h5 {
     z-index: 200;
 }
 
-.seccion2>article {
+.seccion2 > article {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -558,7 +580,7 @@ li>a>h5 {
     transition: all 0.7s ease-in-out;
 }
 
-article>iframe {
+article > iframe {
     position: absolute;
     right: 0px;
     width: 60%;
@@ -620,7 +642,7 @@ article>iframe {
 
 
 
-.seccion2>.text-container-small {
+.seccion2 > .text-container-small {
     position: absolute;
     width: 420px;
     background-color: black;
@@ -628,8 +650,7 @@ article>iframe {
     z-index: 2000;
     height: 100%;
 }
-
-div.text-container-small>ol {
+div.text-container-small > ol {
     width: 350px;
     padding: 0px;
     margin: 0px;
@@ -637,7 +658,7 @@ div.text-container-small>ol {
     margin-left: 50px;
 }
 
-.text-container-small>p {
+.text-container-small > p {
     margin-left: 50px;
     color: whitesmoke;
     width: 350px;
@@ -646,7 +667,7 @@ div.text-container-small>ol {
     font-size: 25px;
 }
 
-.text-container-small>h2 {
+.text-container-small > h2 {
     margin: 0px;
     color: whitesmoke;
     width: 350px;
@@ -657,11 +678,11 @@ div.text-container-small>ol {
     font-size: 70px;
 }
 
-.text-container-small>ol {
+.text-container-small > ol {
     margin-left: 250px;
     list-style: none;
     margin-top: 20px;
-    width: 200px;
+    width: 200px;    
     text-align: right;
 }
 
@@ -679,7 +700,7 @@ div.text-container-small>ol {
     color: whitesmoke;
 }
 
-div.text-container-small h5:hover {
+div.text-container-small h5:hover{
     border-bottom: 6px solid rgb(255, 174, 0);
 }
 
@@ -716,8 +737,7 @@ div.text-container-small h5:hover {
     width: 50%;
 }
 
-.destinos .seccion3 h2,
-.destinos .seccion3 h3 {
+.destinos .seccion3 h2, .destinos .seccion3 h3 {
     text-align: right;
     margin-right: 50px;
 }
@@ -804,8 +824,7 @@ div.text-container-small h5:hover {
     box-shadow: -20px 20px 60px #3c9fc7, 20px -20px 60px #52d7ff;
 }
 
-.rectangulo .text-container h3,
-.rectangulo .text-container p {
+.rectangulo .text-container h3, .rectangulo .text-container p {
     color: whitesmoke;
     margin-left: 50px;
     margin-top: 25px;
@@ -853,7 +872,7 @@ div.text-container-small h5:hover {
 }
 
 /* CSS novedades */
-.novedades header {
+.novedades header{
     background-image: url(imagenes/novedades.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -937,7 +956,7 @@ div .slide {
     z-index: 10;
 }
 
-.seccion3 .info-box p {
+.seccion3  .info-box p{
     display: inline-block;
     width: auto;
     margin: 0px;
@@ -981,8 +1000,7 @@ div .slide {
     z-index: 10;
     margin: 100px 20px 100px 20px;
 }
-
-.seccion4 .seccion4container .info-box p {
+.seccion4 .seccion4container .info-box p{
     display: inline-block;
     width: auto;
     margin: 0px;
@@ -1004,7 +1022,6 @@ img[alt="fachada de Castillo Hotel"] {
     box-shadow: -10px 10px 20px #626262;
     border-radius: 9px;
 }
-
 .novedades .seccion3 {
     display: flex;
     align-items: center;
@@ -1014,7 +1031,6 @@ img[alt="fachada de Castillo Hotel"] {
     display: flex;
     align-items: center;
 }
-
 .novedades .seccion5 {
     background-image: none;
     box-sizing: border-box;
@@ -1028,10 +1044,7 @@ img[alt="fachada de Castillo Hotel"] {
 
 
 
-div .container1,
-.container2,
-.container3,
-.container4 {
+div .container1, .container2, .container3, .container4 {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -1043,14 +1056,12 @@ div .container1,
     margin-right: 30px;
 }
 
-.container1,
-.container2 {
+.container1, .container2 {
     margin-top: 100px;
     margin-bottom: 65px;
 }
 
-.container3,
-.container4 {
+.container3, .container4 {
     margin-bottom: 100px;
 }
 
@@ -1117,7 +1128,6 @@ div .text-container img {
     opacity: 0.5;
     transition: ease-in-out 0.5s all;
 }
-
 /* --------------------------------------------------------------------------------------------------------------- */
 /* CONTACTO.html*/
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -1136,23 +1146,23 @@ div .text-container img {
     display: inline-block;
     width: auto;
     margin-top: -35px;
-    font-size: 150px;
+    font-size: 150px;   
     color: rgb(42, 49, 56);
     transform: rotate(90deg);
-    z-index: 100;
+    z-index: 100;   
     /* border: 1px solid red; */
 
 }
 
 /* --------------------------- CSS Form -----------------------------------------*/
 
-main.contacto {
+main.contacto{
     position: relative;
 }
 
-main.contacto header {
-    position: fixed;
-    display: flex;
+main.contacto header{
+    position: fixed;    
+    display: flex;    
     align-items: center;
     z-index: 100;
     background: none;
@@ -1173,7 +1183,7 @@ main.contacto header {
 
 }
 
-form>div h2 {
+form > div   h2 {
     display: inline-block;
     color: whitesmoke;
     width: 250px;
@@ -1183,7 +1193,7 @@ form>div h2 {
     /* border: aqua 1px solid; */
 }
 
-.form-container {
+.form-container{
     top: 0px;
     display: inline-block;
     height: 70%;
@@ -1260,10 +1270,9 @@ form label {
     margin: 5px 0px 5px 0px;
 }
 
-form .btn-container {
+form .btn-container{
     text-align: right;
 }
-
 .form-btn {
     display: inline-block;
     font-size: 16px;
