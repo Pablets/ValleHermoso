@@ -401,6 +401,9 @@ footer ul li a {
 
 #redes li {
     display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    transform: scale(0.5);
 }
 
 #redes li a {
@@ -410,9 +413,10 @@ footer ul li a {
     background-repeat: no-repeat;
     background-position: 0px 0px;
     opacity: 1;
+    margin: -10px;
+    padding: 0px;
     width: 85.5px;
     height: 85.5px;
-    transform: scale(0.5);
 }
 
 #redes li a span {

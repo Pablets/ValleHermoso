@@ -8,149 +8,159 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" /> <!-- hasta un máximo de 400 aplica -->
-    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" /> <!-- hasta un máximo de 800 aplica-->
-    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" /> <!-- desde un mínimo de 801 aplica-->
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
+    <!-- hasta un máximo de 480 aplica -->
+    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
+    <!-- hasta un máximo de 800 aplica-->
+    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <!-- desde un mínimo de 801 aplica-->
+    <script>
+        (function (H) {
+            H.className = H.className += "js"
+        })(document.documentElement)
+    </script>
 </head>
-
 <body>
-    <nav id="menu">
-        <div class="menu">
-            <ul class="animate">
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li id="active"><a href="index.html" title="Principal"><span>Principal</span><img id="menucentro"
-                    src="imagenes/logo.png" alt="logo"></a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#">Institucional</a></li>
-            </ul>
+    <nav class="nav">
+        <a id="btn-closed" class="skip" href="#menu"></a>
+        <div class="menu-container menu-hidden">
         </div>
+        <ul id="menu">
+            <li><a class="active" href="index copy.html">Principal</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Menu item 5</a></li>
+        </ul>
     </nav>
-<main class="index" id="fullpage"> 
-    <header class="section">
-            <h1>Valle Hermoso</h1> 
-        <a class="link" href="#Explora">
-            <div class="btn">
-            <!-- <span class="btn-text"></span> -->
+    <main class="index">
+        <header class="seccion">
+            <h1>Valle Hermoso</h1>
+            <a class="link" href="#Explora">
+                <div class="btn">
+                    <!-- <span class="btn-text"></span> -->
+                </div>
+            </a>
+        </header>
+        <div class="seccion seccion2 section">
+            <div>
+                <h2>Explorá</h2>
+                <h3>Explorá una ciudad llena de historia y naturaleza.
+                    Desde balnearios en el río hasta un castillo del siglo XIX,
+                    tenes miles de opciones para disfrutar en familia. </h3>
             </div>
-        </a>          
-    </header>   
-    <div  class="seccion seccion2 section">
-        <div>
-            <h2>Explorá</h2>         
-            <h3>Explorá una ciudad llena de historia y naturaleza. 
-                Desde balnearios en el río hasta un castillo del siglo XIX, 
-                tenes miles de opciones para disfrutar en familia. </h3>
+            <a class="link" href="#Saborea">
+                <div class="btn">
+                    <!-- <span class="btn-text">VER MÁS</span> -->
+                </div>
+            </a>
         </div>
-        <a class="link" href="#Saborea">
-            <div class="btn">
-            <!-- <span class="btn-text">VER MÁS</span> -->
+        <div class="seccion seccion3 section">
+            <div>
+                <h2>Saboreá</h2>
+                <h3>Experimentá el sabor de los chacinados artesanales
+                    de calidad internacional hecha por los lugareños
+                    desde hace más de 70 años en una tradición que
+                    sigue de generación en generación .</h3>
             </div>
-        </a> 
-    </div>
-    <div class="seccion seccion3 section">
-        <div>
-            <h2>Saboreá</h2>          
-            <h3>Experimentá el sabor de los chacinados artesanales
-                 de calidad internacional hecha por los lugareños 
-                 desde hace más de 70 años en una tradición que 
-                 sigue de generación en generación .</h3>
+            <a class="link" href="#Disfruta">
+                <div class="btn">
+                    <!-- <span class="btn-text">VER MÁS</span> -->
+                </div>
+            </a>
         </div>
-        <a class="link" href="#Disfruta">
-            <div class="btn">
-            <!-- <span class="btn-text">VER MÁS</span> -->
+        <div class="seccion seccion4 section">
+            <div>
+                <h2>Disfrutá</h2>
+                <h3>Disfrutá el placer de un spa en un hotel cinco estrellas...
+                    Dentro de un castillo histórico!
+                    Si estás buscando una experiencia “all inclusive”
+                    en el medio de la paz de las sierras
+                    este es tu lugar.</h3>
             </div>
-        </a> 
-    </div>
-    <div class="seccion seccion4 section">
-        <div>
-            <h2>Disfrutá</h2>          
-            <h3>Disfrutá el placer de un spa en un hotel cinco estrellas... 
-                Dentro de un castillo histórico! 
-                Si estás buscando una experiencia “all inclusive”
-                en el medio de la paz de las sierras 
-                este es tu lugar.</h3>
+            <a class="link" href="#Descubri">
+                <div class="btn">
+                    <!-- <span class="btn-text">VER MÁS</span> -->
+                </div>
+            </a>
         </div>
-        <a class="link" href="#Descubri">
-            <div class="btn">
-            <!-- <span class="btn-text">VER MÁS</span> -->
+        <div class="seccion seccion5 section">
+            <div>
+                <h2>Descubrí</h2>
+                <h3>Un museo tecnológico, una reserva natural,
+                    un castillo histórico,
+                    cientos de actividades
+                    para la familia.
+                    La propuesta de Valle Hermoso es inmensa,
+                    vení y descubrí el porqué
+                    de nuestro nombre.</h3>
             </div>
-        </a> 
-    </div>
-    <div class="seccion seccion5 section">
-        <div>
-            <h2>Descubrí</h2>          
-            <h3>Un museo tecnológico, una reserva natural, 
-                un castillo histórico,
-                cientos de actividades 
-                para la familia.
-                La propuesta de Valle Hermoso es inmensa, 
-                vení y descubrí el porqué 
-                de nuestro nombre.</h3>
+            <a class="link" href="#Footer">
+                <div class="btn">
+                    <!-- <span class="btn-text">SITEMAP</span> -->
+                </div>
+            </a>
         </div>
-        <a class="link" href="#Footer">
-            <div class="btn">
-            <!-- <span class="btn-text">SITEMAP</span> -->
+        <footer class="section fp-auto-height">
+            <div class="collogo">
+                <div class="logo"><img src="imagenes/foologo.png" width="101" height="101" alt="logo de footer"></div>
+                <span class="copyright">© Valle Hermoso 2020</span>
             </div>
-        </a> 
-    </div>
-    <footer class="section fp-auto-height">
-        <div class="collogo">
-            <div class="logo"><img src="imagenes/foologo.png" width="101" height="101" alt="logo de footer"></div>
-            <span class="copyright">© Valle Hermoso 2020</span>
-        </div>
-        <div class="col">
-            <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="colbig">
-            <ul id="redes">
-                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
-                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
-                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
-            </ul>
-        </div>
-        <div class="colbig">
-            <ul>
-                <li>Alumno: Pablo Godoy</li>
-                <li>Materia: Maquetado web</li>
-                <li>Profesora: Mabel Lopez</li>
-                <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
-            </ul>
-        </div>
-    </footer>
-</main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"></script>
-<script>
-    var myFullpage = new fullpage('#fullpage', {
-    //options here
-	autoScrolling:true,
-    fitToSection: false,
-    scrollHorizontally: true,
-    easing: 'easeInOutCubic',
-    menu: '#menu',
-    navigation: true,
-    anchors: ['Inicio', 'Explora', 'Saborea', 'Disfruta', 'Descubri','Footer'],
-    navigationTooltips: ['Inicio', 'Explorá', 'Saboreá', 'Disfrutá', 'Descubrí','Pie de página'],
-    showActiveTooltip: false,
-    verticalCentered: false,
-    navigationPosition: 'right',
-    loopBottom: false,
-    dragAndMove: true,
-    // fixedElements: '.foo',
-    offsetSections: true,
+            <div class="col">
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="colbig">
+                <ul id="redes">
+                    <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                    <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                    <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+                </ul>
+            </div>
+            <div class="colbig">
+                <ul>
+                    <li>Alumno: Pablo Godoy</li>
+                    <li>Materia: Maquetado web</li>
+                    <li>Profesora: Mabel Lopez</li>
+                    <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <script>
+        var nav = document.querySelector("nav ul"),
+            btn = document.querySelector("nav a"),
+            bg = document.querySelector("nav div"),
+            navToggle = document.querySelector("nav .skip");
+        if (navToggle) {
+            navToggle.addEventListener("click",
+                function (e) {
+                    if (nav.className == "open") {
+                        nav.className = "";
+                        btn.id = "btn-closed"
+                    } else {
+                        nav.className = "open";
+                        btn.id = "btn-open"
+                    }
+                    e.preventDefault();
+                }, false);
+        }
 
 
-});
 
-//methods
-fullpage_api.setAllowScrolling(true);
-</script>
+        /* Any click outside of the nav element will close the menu if it's open */
+        var specifiedElement = document.querySelector('nav');
+        document.addEventListener('click', function (event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            if (!isClickInside && nav.className == "open") {
+                nav.className = "";
+            }
+        });
+    </script>
 </body>
+
 </html>
