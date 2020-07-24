@@ -465,8 +465,18 @@ main strong {
 
 .destinos .seccion3 {
     background-color: tomato;
+    text-align: left;
 }
 
+.seccion3 iframe{
+    border: none;
+    padding: 0px;
+    margin: -10px;
+    display: inline-block;
+}
+.seccion3 h2, h3{    
+    margin: 10px;
+}
 .destinos .seccion4 {
     background: #47bbea;
 }
