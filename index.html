@@ -8,11 +8,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
+        
+    <link href="mobile.css" rel="stylesheet" media="(max-width:480px)" />
     <!-- hasta un máximo de 480 aplica -->
-    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
-    <!-- hasta un máximo de 800 aplica-->
-    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width: 801px)" />    <!-- hasta un máximo de 800 aplica-->
+    <link href="style.css" rel="stylesheet" media="(min-width:801px)" />
     <!-- desde un mínimo de 801 aplica-->
     <script>
         (function (H) {
@@ -20,29 +20,30 @@
         })(document.documentElement)
     </script>
 </head>
+
 <body>
     <nav class="nav">
         <a id="btn-closed" class="skip" href="#menu"></a>
         <div class="menu-container menu-hidden">
         </div>
         <ul id="menu">
-            <li><a class="active" href="index copy.html">Principal</a></li>
+            <li><a class="active" href="index.html">Principal</a></li>
             <li><a href="destinos.html">Destinos</a></li>
             <li><a href="novedades.html">Novedades</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="#">Menu item 5</a></li>
+            <li><a href="pruebas.html">Página de pruebas</a></li>
         </ul>
     </nav>
     <main class="index">
         <header class="seccion">
-            <h1>Valle Hermoso</h1>
-            <a class="link" href="#Explora">
-                <div class="btn">
-                    <!-- <span class="btn-text"></span> -->
-                </div>
-            </a>
+            <div class="black-overlay">
+                <h1>Valle Hermoso</h1>
+                <a class="link" href="#Explora">
+                    <div class="btn"></div>
+                </a>
+            </div>
         </header>
-        <div class="seccion seccion2 section">
+        <div class="seccion seccion2 ">
             <div>
                 <h2>Explorá</h2>
                 <h3>Explorá una ciudad llena de historia y naturaleza.
@@ -55,7 +56,7 @@
                 </div>
             </a>
         </div>
-        <div class="seccion seccion3 section">
+        <div class="seccion seccion3">
             <div>
                 <h2>Saboreá</h2>
                 <h3>Experimentá el sabor de los chacinados artesanales
@@ -95,11 +96,6 @@
                     vení y descubrí el porqué
                     de nuestro nombre.</h3>
             </div>
-            <a class="link" href="#Footer">
-                <div class="btn">
-                    <!-- <span class="btn-text">SITEMAP</span> -->
-                </div>
-            </a>
         </div>
         <footer class="section fp-auto-height">
             <div class="collogo">
@@ -122,7 +118,7 @@
                 </ul>
             </div>
             <div class="colbig">
-                <ul>
+                <ul class="datos-davinci">
                     <li>Alumno: Pablo Godoy</li>
                     <li>Materia: Maquetado web</li>
                     <li>Profesora: Mabel Lopez</li>

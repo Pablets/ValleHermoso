@@ -9,16 +9,17 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
-    <!-- hasta un máximo de 400 aplica -->
-    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
+    <!-- hasta un máximo de 480 aplica -->
+    <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width: 801px)" />
     <!-- hasta un máximo de 800 aplica-->
-    <link href="stylecopy.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <link href="style.css" rel="stylesheet" media="screen and (min-width:801px)" />
     <!-- desde un mínimo de 801 aplica-->
     <script>
         (function (H) {
             H.className = H.className += "js"
         })(document.documentElement)
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 </head>
 
 <body>
@@ -27,21 +28,21 @@
         <div class="menu-container menu-hidden">
         </div>
         <ul id="menu">
-            <li><a href="index copy.html">Principal</a></li>
+            <li><a href="index.html">Principal</a></li>
             <li><a class="active" href="destinos.html">Destinos</a></li>
             <li><a href="novedades.html">Novedades</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="#">Menu item 5</a></li>
         </ul>
     </nav>
-    <main id="fullpage" class="destinos">
-        <header class="section hero destinos" data-anchor="Inicio">
+    <main class="destinos">
+        <header class="seccion destinos">
             <div class="black-overlay">
                 <h1>Destinos</h1>
             </div>
         </header>
-        <div class="seccion seccion2 section" data-anchor="Lugares">
-            <div class="text-container-small">
+        <div>
+            <div>
                 <h2>Lugares que no te podés perder</h2>
                 <h3>De lugares al aire libre hasta museos, te damos una lista de lugares que no podés dejar sin visitar.
                 </h3>
@@ -53,8 +54,8 @@
                     <li><a href="#zevallos"> Museo Zeballos </a></li>
                 </ol>
             </div>
-            <article id="vallehermoso" class=" mapcontainer">
-                <div class="text-container">
+            <article>
+                <div>
                     <h3>Valle Hermoso</h3>
                     <p>Valle Hermoso es una localidad situada en el departamento Punilla, provincia de Córdoba,
                         Argentina. Se encuentra situada a 75 km de la Ciudad de Córdoba por la RN 38. La principal
@@ -66,8 +67,8 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.8768751401312!2d-64.4775356848593!3d-31.11315398150613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8260ec49c459%3A0xa2be9f063d028ada!2sEl%20Castillo%20Hotel!5e0!3m2!1ses!2sar!4v1592362083812!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
-            <article id="castillohotel" class=" mapcontainer">
-                <div class="text-container">
+            <article>
+                <div>
                     <h3>Castillo Hotel</h3>
                     <p>Este hotel lujoso todo incluido, ubicado en un castillo de estilo medieval en el pintoresco valle
                         de Punilla, está abierto por temporadas y se encuentra a 3 km del Museo Arqueológico Argentino
@@ -84,9 +85,8 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.8768751401312!2d-64.4775356848593!3d-31.11315398150613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8260ec49c459%3A0xa2be9f063d028ada!2sEl%20Castillo%20Hotel!5e0!3m2!1ses!2sar!4v1592362083812!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
-
-            <article id="diquecito" class=" mapcontainer">
-                <div class="text-container">
+            <article>
+                <div >
                     <h3>Diquecito</h3>
                     <p>Partiendo desde la Reserva Vaquerías y siguiendo el curso del arroyo homónimo, se llega al
                         fenomenal Dique, antigua obra concretada sobre una cascada natural de 20 metros de altura. El
@@ -102,10 +102,9 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.739886256711!2d-64.47465238946972!3d-31.116960845351255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8261fd7a0a4b%3A0x5e03c62c58334c0f!2sNono%20Chichin%20(Chacinados%20Artesanales)!5e0!3m2!1ses!2sar!4v1592361729295!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
-
-            <article id="cascada" class=" mapcontainer">
-                <div class="text-container">
-                    <h3 class="textodestinos">Cascada de los Helechos</h3>
+            <article>
+                <div >
+                    <h3>Cascada de los Helechos</h3>
                     <p>Uno de los lugares fascinantes de los alrededores de Valle Hermoso es la mágica Cascada de los
                         Helechos. Siguiendo el recorrido de un arroyo que se va mimetizando con el paisaje serrano se
                         arriba a este lugar atrapante dónde el verde de los helechos se mezcla con la cristalinidad de
@@ -118,11 +117,9 @@
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19322.65988673214!2d-64.44512836294543!3d-31.11540265463419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb44f590e9f837a8e!2sCascada%20De%20Los%20Helechos!5e0!3m2!1ses!2sar!4v1592515293922!5m2!1ses!2sar"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
-
-
-            <article id="zevallos" class=" mapcontainer">
-                <div class="text-container">
-                    <h3 class="textodestinos">Museo Juan de Zevallos</h3>
+            <article>
+                <div >
+                    <h3>Museo Juan de Zevallos</h3>
                     <p>Homenajeando con su nombre al Capitán Juan de Zevallos, el Museo Municipal funciona en lo que
                         fuera la estación de trenes del lugar Cuenta con seis salas, cada una de las cuales se orienta a
                         la exposición de material propio de una disciplina específica: paleontología, petrología,
@@ -134,7 +131,7 @@
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </article>
         </div>
-        <div class="seccion section seccion3" data-anchor="Explora">
+        <div class="seccion seccion3">
             <div>
                 <h2>Explorá</h2>
                 <h3>Explorá una ciudad llena de historia y naturaleza.
@@ -146,20 +143,20 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div class="seccion seccion4 section" data-anchor="Descarga">
-            <div class="rectangulo">
-                <div class="text-container">
+        <div class="seccion seccion4">
+            <div>
+                <div>
                     <h3>
                         DESCARGÁ NUESTRA APP
                     </h3>
                     <P>Llevá a Valle Hermoso siempre con vos. No te pierdas ningún evento. Descuentos exclusivos en
                         resto y hoteleria.</P>
                 </div>
-                <a id="playstore" href="#"></a>
-                <a id="appstore" href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
             </div>
         </div>
-        <footer class="section fp-auto-height">
+        <footer>
             <div class="collogo">
                 <div class="logo"><img src="imagenes/foologo.png" width="101" height="101" alt="logo de footer"></div>
                 <span class="copyright">© Valle Hermoso 2020</span>
@@ -218,6 +215,29 @@
                 nav.className = "";
             }
         });
+    </script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
     </script>
     <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
