@@ -47,6 +47,12 @@ iframe {
     margin: 0px;
 }
 
+/* paginación general mobile */
+
+.width-80{
+    display: inline-block;
+    width: 80%;
+}
 /* ------------------------- */
 /* Swiper CSS */
 /* ------------------------- */
