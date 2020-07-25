@@ -428,7 +428,7 @@ main.index h2 {
 main.index h3 {
     text-align: left;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 20px 60px;
     color: whitesmoke;
 }
