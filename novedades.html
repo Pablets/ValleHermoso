@@ -177,37 +177,41 @@
                 </div>
             </div>
         </div>
-
-        <footer class="section fp-auto-height">
-            <div class="collogo">
-                <div class="logo"><img src="imagenes/foologo.png" width="101" height="101" alt="logo de footer"></div>
-                <span class="copyright">© Valle Hermoso 2020</span>
-            </div>
-            <div class="col">
-                <ul>
-                    <li><a href="index.html">Principal</a></li>
-                    <li><a href="destinos.html">Destinos</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="colbig">
-                <ul id="redes">
-                    <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
-                    <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
-                    <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
-                </ul>
-            </div>
-            <div class="colbig">
-                <ul>
-                    <li>Alumno: Pablo Godoy</li>
-                    <li>Materia: Maquetado web</li>
-                    <li>Profesora: Mabel Lopez</li>
-                    <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
-                </ul>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="collogo">
+            <div class="logo">
+                <picture>
+                <!-- mobile, hasta 480px -->
+                <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                <img src="imagenes/foologo.png" alt="Logo grande" />
+            </picture>
+            <span class="copyright">© Valle Hermoso 2020</span>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul id="redes">
+                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul class="datos-davinci">
+                <li>Alumno: Pablo Godoy</li>
+                <li>Materia: Maquetado web</li>
+                <li>Profesora: Mabel Lopez</li>
+                <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
+            </ul>
+        </div>
+    </footer>
     <script>
         var nav = document.querySelector("nav ul"),
             btn = document.querySelector("nav a"),
