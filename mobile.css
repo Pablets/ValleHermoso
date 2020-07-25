@@ -49,10 +49,11 @@ iframe {
 
 /* paginación general mobile */
 
-.width-80{
+.width-80 {
     display: inline-block;
     width: 80%;
 }
+
 /* ------------------------- */
 /* Swiper CSS */
 /* ------------------------- */
@@ -688,11 +689,49 @@ main strong {
     background-position: bottom;
 }
 
-.swiper-wrapper article{
+/* seccion 2 ----------------------- */
+
+.swiper-wrapper article {
     width: 80%;
     padding-bottom: 20px;
 }
 
-.novedades .seccion2 h3{
+.novedades .seccion2 h3 {
     padding-bottom: 1em;
+}
+
+/* seccion 3 ----------------------- */
+.novedades .seccion3 {
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.novedades .seccion3 .info-box>* {
+    margin-bottom: 30px;
+}
+
+.seccion3 .videocontainer {
+    padding: 40px 0px;
+}
+
+/* seccion 4 ------------------ */
+
+.novedades .seccion4 {
+    background-color: whitesmoke;
+    padding: 40px 0px;
+}
+
+.novedades .seccion4 .seccion4container div * {
+    margin-bottom: 30px;
+}
+
+/* seccion 5 ------------------ */
+
+.novedades .seccion5 {
+    background-color: wheat;
+    padding: 40px 0px;
+}
+
+.novedades .seccion5 div>div * {
+    margin-bottom: 30px;
 }
