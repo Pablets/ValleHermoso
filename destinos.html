@@ -180,7 +180,12 @@
             </div>
             <footer>
                 <div class="collogo">
-                    <div class="logo"><img src="imagenes/foologo.png" width="101" height="101" alt="logo de footer">
+                    <div class="logo">
+                        <picture>
+                            <!-- mobile, hasta 480px -->
+                            <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                            <img src="img/gato_grande.jpg" alt="Super gato blanco" />
+                        </picture>
                     </div>
                     <span class="copyright">© Valle Hermoso 2020</span>
                 </div>
