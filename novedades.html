@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valle hermoso - Página principal</title>
+    <title>Valle hermoso - Novedades</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
-    <!-- hasta un máximo de 400 aplica -->
-    <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
+    <link href="mobile.css" rel="stylesheet" media="(max-width:480px)" />
+    <!-- hasta un máximo de 480 aplica -->
+    <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width: 801px)" />
     <!-- hasta un máximo de 800 aplica-->
-    <link href="style.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <link href="style.css" rel="stylesheet" media="(min-width:801px)" />
     <!-- desde un mínimo de 801 aplica-->
     <script>
         (function (H) {
@@ -23,7 +24,9 @@
 
 <body>
     <nav class="nav">
-        <a id="btn-closed" class="skip" href="#menu"></a>
+        <div class="btn-bg">
+            <a id="btn-closed" class="skip" href="#menu"></a>
+        </div>
         <div class="menu-container menu-hidden">
         </div>
         <ul id="menu">
@@ -31,79 +34,96 @@
             <li><a href="destinos.html">Destinos</a></li>
             <li><a class="active" href="novedades.html">Novedades</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="pruebas.html">Menu item 5</a></li>
+            <li><a href="pruebas.html">Página de pruebas</a></li>
         </ul>
     </nav>
-    <main class="novedades" id="fullpage">
-        <header class="section">
-
+    <main class="novedades">
+        <header class="seccion">
             <h1>Novedades</h1>
-
-            <a class="link" href="#Explora">
-                <div class="btn">
-                </div>
-            </a>
         </header>
-        <div class="seccion seccion2 section">
-            <div class="slide">
-                <article class="info-box">
-                    <h3>Ya podés pagar el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> online</h3>
-                    <p><strong> el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> se podrá abonar sin ningún tipo
-                            de costo adicional por las plataformas de pago más populares</strong> en un esfuerzo por el
-                        municipio en conjunto con el Gobierno de la Provincia de Córdoba para evitar la aglomeración de
-                        personas en bancos y cajeros destinados a dicho fin. Desde esta mañana ya están habilidados los
-                        pagos por Mercadopago, Todopagos, Pago fácil y Rapipago. </p>
+        <div class="seccion2 padding-top50p swiper-container">
+            <div class="swiper-wrapper">
+                <article class="info-box swiper-slide">
+                    <div class="slide-content">
+                        <h3>Ya podés pagar el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> online</h3>
+                        <p><strong> el <abbr title="Alumbrado barrido y limpieza">ABL</abbr> se podrá abonar sin ningún
+                                tipo
+                                de costo adicional por las plataformas de pago más populares</strong> en un esfuerzo por
+                            el
+                            municipio en conjunto con el Gobierno de la Provincia de Córdoba para evitar la aglomeración
+                            de
+                            personas en bancos y cajeros destinados a dicho fin. Desde esta mañana ya están habilidados
+                            los
+                            pagos por Mercadopago, Todopagos, Pago fácil y Rapipago. </p>
+                    </div>
                 </article>
-                <article class="info-box">
-                    <h3>Centros de Salud -Dispensario Municipal: (03548) 471047</h3>
-                    <p>
-                        Desde el área de Salud se planifican y gestionan actividades tendientes a la promoción de la
-                        Salud y bienestar social de la comunidad en colaboración con el <abbr
-                            title="Sistema de atención médica de emergencia.">SAME</abbr>. Estableciendo programas que
-                        tienden a mejorar la calidad de vida de los habitantes de Valle Hermoso a través de la
-                        prevención y el cuidado integral de la persona.</p>
+                <article class="info-box swiper-slide">
+                    <div class="slide-content">
+                        <h3>Centros de Salud -Dispensario Municipal: (03548) 471047</h3>
+                        <p>
+                            Desde el área de Salud se planifican y gestionan actividades tendientes a la promoción de la
+                            Salud y bienestar social de la comunidad en colaboración con el <abbr
+                                title="Sistema de atención médica de emergencia.">SAME</abbr>. Estableciendo programas
+                            que
+                            tienden a mejorar la calidad de vida de los habitantes de Valle Hermoso a través de la
+                            prevención y el cuidado integral de la persona.</p>
+                    </div>
                 </article>
-                <article class="info-box">
-                    <h3>Autorizaron la apertura de shoppings en Córdoba</h3>
-                    <p>Lo que era un secreto a voces en las últimas horas fue confirmado en una conferencia de prensa
-                        encabezada por el gobernador Juan Schiaretti: <strong>El Gobierno de Córdoba habilitó la
-                            apertura de shoppings</strong>, luego de más de 80 días de cierre total.</p>
+                <article class="info-box swiper-slide">
+                    <div class="slide-content">
+                        <h3>Autorizaron la apertura de shoppings en Córdoba</h3>
+                        <p>Lo que era un secreto a voces en las últimas horas fue confirmado en una conferencia de
+                            prensa
+                            encabezada por el gobernador Juan Schiaretti: <strong>El Gobierno de Córdoba habilitó la
+                                apertura de shoppings</strong>, luego de más de 80 días de cierre total.</p>
+                    </div>
+                </article>
+                <article class="info-box swiper-slide">
+                    <div class="slide-content">
+                        <h3>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza un
+                            festival de cine Nacional <span lang="en">online</span>.</h3>
+                        <p>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza una
+                            nueva
+                            propuesta multimedial en la cual el cine Nacional es el protagonista. No solo se trata de un
+                            espacio para recordar viejos clásicos sino también para el desarrollo de artistas locales
+                            emergentes de todo tipo de género y edad. En entrevista con <cite>Carlos Pratt</cite>,
+                            director
+                            de la institución dijo: "La creatividad no está en cuarentena".</p>
+                    </div>
+                </article>
+                <article class="info-box swiper-slide">
+                    <div class="slide-content">
+                        <h3>El <abbr title="Banco Central de la República Argentina.">BCRA</abbr> autoriza préstamos
+                            para
+                            emprendedores de Valle Hermoso</h3>
+                        <p>Marcos Allende, presidente de el <abbr
+                                title="Banco Central de la República Argentina.">BCRA</abbr> anunció el día de hoy una
+                            nueva
+                            línea de préstamos personales para emprendedores y <abbr
+                                title="Pequeñas y medianas empresas">Pymes</abbr> con el objetivo principal de atenuar
+                            los
+                            efectos adversos de la cuarentena por el <abbr title="Corona virus 2019">COVID-19</abbr>. La
+                            medida ya está aprobada y se esperan novedades sobre cómo será implementada en el transcurso
+                            del
+                            mes de Junio.</p>
+                    </div>
+                </article>
+                <article class="info-box swiper-slide">
+                    <div class="slide-content">
+                        <h3>Buscan en La Falda al dueño de un burro olvidado en una estación de servicio</h3>
+                        <p>Las autoridades de La Falda y alrrededores están buscando a un individuo que dejó un burro
+                            adulto
+                            de unos 5 años de edad en una estación de servicio ubicada sobre la ruta 38.
+                            El burro, el cual ya está siendo atendido por personal de la Reserva Natural Vaquerías, fué
+                            encontrado en uno de los lugares de estacionamientos del establecimiento.</p>
+                    </div>
                 </article>
             </div>
-            <div class="slide">
-                <article class="info-box">
-                    <h3>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza un
-                        festival de cine Nacional <span lang="en">online</span>.</h3>
-                    <p>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza una nueva
-                        propuesta multimedial en la cual el cine Nacional es el protagonista. No solo se trata de un
-                        espacio para recordar viejos clásicos sino también para el desarrollo de artistas locales
-                        emergentes de todo tipo de género y edad. En entrevista con <cite>Carlos Pratt</cite>, director
-                        de la institución dijo: "La creatividad no está en cuarentena".</p>
-                </article>
-                <article class="info-box">
-                    <h3>El <abbr title="Banco Central de la República Argentina.">BCRA</abbr> autoriza préstamos para
-                        emprendedores de Valle Hermoso</h3>
-                    <p>Marcos Allende, presidente de el <abbr
-                            title="Banco Central de la República Argentina.">BCRA</abbr> anunció el día de hoy una nueva
-                        línea de préstamos personales para emprendedores y <abbr
-                            title="Pequeñas y medianas empresas">Pymes</abbr> con el objetivo principal de atenuar los
-                        efectos adversos de la cuarentena por el <abbr title="Corona virus 2019">COVID-19</abbr>. La
-                        medida ya está aprobada y se esperan novedades sobre cómo será implementada en el transcurso del
-                        mes de Junio.</p>
-                </article>
-                <article class="info-box">
-                    <h3>Buscan en La Falda al dueño de un burro olvidado en una estación de servicio</h3>
-                    <p>Las autoridades de La Falda y alrrededores están buscando a un individuo que dejó un burro adulto
-                        de unos 5 años de edad en una estación de servicio ubicada sobre la ruta 38.
-                        El burro, el cual ya está siendo atendido por personal de la Reserva Natural Vaquerías, fué
-                        encontrado en uno de los lugares de estacionamientos del local. Ahora, el dueño tiene cinco años
-                        para reclamar el tesoro. Para esto, tiene que visitar la Fiscalía de Lucerna. En caso contrario,
-                        el lingote formará parte de la enorme reserva de oro del país europeo.</p>
-                </article>
-
-            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-black"></div>
+            <div class="swiper-button-prev swiper-button-black"></div>
         </div>
-        <div class="seccion seccion3 section">
+        <div class="seccion3">
             <div class="videocontainer">
                 <div class="info-box">
                     <h3>Rapel en "Los Gigantes"</h3>
@@ -115,7 +135,7 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div class="seccion seccion4 section">
+        <div class="seccion4">
             <div class="seccion4container">
                 <div class="info-box">
                     <h3>De ruinas a Castillo Hotel 5 estrellas</h3>
@@ -125,7 +145,7 @@
                 <img src="imagenes/castillofachada.jpg" alt="fachada de Castillo Hotel">
             </div>
         </div>
-        <div class="seccion seccion5 section">
+        <div class="seccion5">
             <div class="container1">
                 <div class="text-container">
                     <img src="imagenes/noticia1.jpg" alt="Imagen que va a la izquierda">
@@ -182,35 +202,35 @@
         <div class="collogo">
             <div class="logo">
                 <picture>
-                <!-- mobile, hasta 480px -->
-                <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
-                <img src="imagenes/foologo.png" alt="Logo grande" />
-            </picture>
-            <span class="copyright">© Valle Hermoso 2020</span>
-        </div>
-        <div class="col">
-            <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="colbig">
-            <ul id="redes">
-                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
-                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
-                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
-            </ul>
-        </div>
-        <div class="colbig">
-            <ul class="datos-davinci">
-                <li>Alumno: Pablo Godoy</li>
-                <li>Materia: Maquetado web</li>
-                <li>Profesora: Mabel Lopez</li>
-                <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
-            </ul>
-        </div>
+                    <!-- mobile, hasta 480px -->
+                    <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                    <img src="imagenes/foologo.png" alt="Logo grande" />
+                </picture>
+                <span class="copyright">© Valle Hermoso 2020</span>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="colbig">
+                <ul id="redes">
+                    <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                    <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                    <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+                </ul>
+            </div>
+            <div class="colbig">
+                <ul class="datos-davinci">
+                    <li>Alumno: Pablo Godoy</li>
+                    <li>Materia: Maquetado web</li>
+                    <li>Profesora: Mabel Lopez</li>
+                    <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
+                </ul>
+            </div>
     </footer>
     <script>
         var nav = document.querySelector("nav ul"),
@@ -240,6 +260,18 @@
             if (!isClickInside && nav.className == "open") {
                 nav.className = "";
             }
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 </body>
