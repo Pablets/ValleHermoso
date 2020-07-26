@@ -758,7 +758,7 @@ main strong {
 }
 
 
-/* CSS Formulario ----------------------------------------------------  */
+/* CSS Formulario general ----------------------------------------------------  */
 
 form h2{
     color: whitesmoke;
@@ -818,8 +818,8 @@ form .btn-container {
     margin: 0px 0px 30px 0px;
     border: 1px solid #aaa;
     box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
-    border-radius: .5em;
-    -moz-appearance: none;
+    border-radius: 6px;
+    /* -moz-appearance: none; */
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
@@ -833,22 +833,16 @@ form .btn-container {
     outline: none;
 }
 
-/* ---------------------radio CSS ----------------------------------------*/
+/* checkbox CSS  ----------------------------------------------------------------------- */
 
 .check-container {
-    height: 0px;
-    display: flex;
-    align-items: center;
     margin-left: 10px;
-    margin-bottom: 30px;
 }
 
 .check-container label {
     margin-bottom: -15px;
     display: flex;
 }
-
-/* checkbox CSS  ----------------------------------------------------------------------- */
 
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -936,8 +930,6 @@ label:hover:before {
     margin: 0px 0px 0px 5px;
 }
 
-/* ------------------------------------------------------------------- */
-
 /* -----------------------select CSS -------------------------------------*/
 
 .select-css {
@@ -995,3 +987,41 @@ label:hover:before {
 .select-css:focus {
     color: rgb(87, 87, 87);
 }
+
+/* Input file CSS (subida de archivos */
+
+div.height-100p{
+    height: 50px;
+}
+
+input[type="file"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+ .file-upload div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #ccc; */
+    border: 3px dotted #bebebe;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 300px;
+  }
+  
+  div.dragover {
+    background-color: #aaa;
+  }

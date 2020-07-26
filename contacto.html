@@ -41,7 +41,7 @@
             <h1 class="form-title">Contacto</h1>
         </header>
         <div class="seccion2 align-center ">
-            <form class="form width-80" action="http://recursos.grodriguez.com.ar/form/" method="post"
+            <form class="form width-80" action="http://recursos.grodriguez.com.ar/FORM/" method="post"
                 enctype="application/x-www-form-urlencoded">
                 <div class="form-container">
                     <h2>Dejanos tus datos para comunicarte con nosotros</h2>
@@ -82,6 +82,14 @@
 
                         </select>
                     </div>
+                    <!-- Subida de archivos -->
+                    <div class="input-css">
+                        <label for="test" class="file-upload">
+                            <div>Subí tu archivo: Hacé click o arrastrá y soltalo acá</div>
+                            <input type="file" id="test">
+                        </label>
+                        <p id="filename"></p>
+                    </div>
                     <!--checkbox  -->
                     <div class="check-container">
                         <input class="check" type="checkbox" id="si" name="sino" value="si">
@@ -92,7 +100,7 @@
                     <!--fin de formulario  -->
                 </div>
                 <div class="btn-container">
-                    <button type="submit" class="form-btn">Enviar</button>
+                    <button type="submit" value="Enviar" class="form-btn">Enviar</button>
                 </div>
         </div>
         </div>
@@ -151,9 +159,6 @@
                     e.preventDefault();
                 }, false);
         }
-
-
-
         /* Any click outside of the nav element will close the menu if it's open */
         var specifiedElement = document.querySelector('nav');
         document.addEventListener('click', function (event) {
@@ -163,7 +168,25 @@
             }
         });
     </script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <!-- Script de styling para input file (crossbrowser retrocompatible)  -->
+    <script>
+        var fileInput = document.querySelector('input[type=file]');
+        var filenameContainer = document.querySelector('#filename');
+        var dropzone = document.querySelector('div');
+
+        fileInput.addEventListener('change', function () {
+            filenameContainer.innerText = `${fileInput.value.split('\\').pop() + ' subido ✓'}`;
+        });
+
+        fileInput.addEventListener('dragenter', function () {
+            dropzone.classList.add('dragover');
+        });
+
+        fileInput.addEventListener('dragleave', function () {
+            dropzone.classList.remove('dragover');
+        });
+    </script>
+
 </body>
 
 </html>
