@@ -854,7 +854,7 @@ main strong {
 /* accessibility */
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted blue;
+  border: 2px solid gray;
 }
 
 /* hover style just for information */
