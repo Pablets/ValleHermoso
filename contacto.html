@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Valle hermoso - Página principal</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
-        <!-- hasta un máximo de 400 aplica -->
-        <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" />
-        <!-- hasta un máximo de 800 aplica-->
-        <link href="style.css" rel="stylesheet" media="screen and (min-width:801px)" />
-        <!-- desde un mínimo de 801 aplica-->
-        <script>
-            (function (H) {
-                H.className = H.className += "js"
-            })(document.documentElement)
-        </script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valle hermoso - Página principal</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
+    <!-- hasta un máximo de 400 aplica -->
+    <!-- <link href="tablet.css" rel="stylesheet" media="screen and (max-width:800px)" /> -->
+    <!-- hasta un máximo de 800 aplica-->
+    <link href="style.css" rel="stylesheet" media="screen and (min-width:801px)" />
+    <!-- desde un mínimo de 801 aplica-->
+    <script>
+        (function (H) {
+            H.className = H.className += "js"
+        })(document.documentElement)
+    </script>
+</head>
 
 <body>
     <nav class="nav">
@@ -34,13 +36,12 @@
             <li><a href="pruebas.html">Página de pruebas</a></li>
         </ul>
     </nav>
-    <main id="fullpage" class="contacto">
-    <header>
-        <h1 class="form-title">Contacto</h1>
-    </header>   
-        <div class="seccion section seccion2" data-anchor="Saborea">
-            
-            <form class="form" action="http://recursos.grodriguez.com.ar/form/" method="post"
+    <main class="contacto">
+        <header>
+            <h1 class="form-title">Contacto</h1>
+        </header>
+        <div class="seccion2 align-center ">
+            <form class="form width-80" action="http://recursos.grodriguez.com.ar/form/" method="post"
                 enctype="application/x-www-form-urlencoded">
                 <div class="form-container">
                     <h2>Dejanos tus datos para comunicarte con nosotros</h2>
@@ -80,58 +81,57 @@
                             <option value="Otros">Otros</option>
 
                         </select>
-                        <div>
-                            <!--checkbox  -->
-                            <div class="check-container">
-                                <label for="si">
-                                    <input class="check" type="checkbox" id="si" name="sino" value="si">Acepto la
-                                        <span class="check-text"><a id="privacidad" href="#">Política de
-                                                privacidad</a></span>
-                                </label>
-                            </div>
-                            <!--fin de formulario  -->
-                        </div>
-                        <div class="btn-container">
-                            <button type="submit" class="form-btn">Enviar</button>
-                        </div>
                     </div>
+                    <!--checkbox  -->
+                    <div class="check-container">
+                        <input class="check" type="checkbox" id="si" name="sino" value="si">
+                        <label for="si"> Acepto la <span class="check-text"><a id="privacidad" href="#">Política de
+                                    privacidad</a></span>
+                        </label>
+                    </div>
+                    <!--fin de formulario  -->
                 </div>
-            </form>
+                <div class="btn-container">
+                    <button type="submit" class="form-btn">Enviar</button>
+                </div>
+        </div>
+        </div>
+        </form>
         </div>
     </main>
     <footer>
         <div class="collogo">
             <div class="logo">
                 <picture>
-                <!-- mobile, hasta 480px -->
-                <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
-                <img src="imagenes/foologo.png" alt="Logo grande" />
-            </picture>
-            <span class="copyright">© Valle Hermoso 2020</span>
-        </div>
-        <div class="col">
-            <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="colbig">
-            <ul id="redes">
-                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
-                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
-                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
-            </ul>
-        </div>
-        <div class="colbig">
-            <ul class="datos-davinci">
-                <li>Alumno: Pablo Godoy</li>
-                <li>Materia: Maquetado web</li>
-                <li>Profesora: Mabel Lopez</li>
-                <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
-            </ul>
-        </div>
+                    <!-- mobile, hasta 480px -->
+                    <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                    <img src="imagenes/foologo.png" alt="Logo grande" />
+                </picture>
+                <span class="copyright">© Valle Hermoso 2020</span>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="colbig">
+                <ul id="redes">
+                    <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                    <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                    <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+                </ul>
+            </div>
+            <div class="colbig">
+                <ul class="datos-davinci">
+                    <li>Alumno: Pablo Godoy</li>
+                    <li>Materia: Maquetado web</li>
+                    <li>Profesora: Mabel Lopez</li>
+                    <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
+                </ul>
+            </div>
     </footer>
     <script>
         var nav = document.querySelector("nav ul"),
