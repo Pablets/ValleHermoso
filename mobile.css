@@ -1000,7 +1000,7 @@ input[type="file"] {
     opacity: 0;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: inherit;
   }
   
  .file-upload div {
@@ -1019,7 +1019,7 @@ input[type="file"] {
     display: inline-block;
     position: relative;
     height: 50px;
-    width: 300px;
+    width: inherit;
   }
   
   div.dragover {
