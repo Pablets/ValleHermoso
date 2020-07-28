@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-        <link href="responsive.css" rel="stylesheet"/>
+    <link href="responsive.css" rel="stylesheet" />
     <script>
         (function (H) {
             H.className = H.className += "js"
@@ -76,7 +76,7 @@
                 <article class="info-box swiper-slide">
                     <div class="slide-content">
                         <h3>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza un
-                            festival de cine Nacional <span lang="en">online</span>.</h3>
+                            festival de cine Nacional <span lang="en">online</span></h3>
                         <p>El <abbr title="Instituto Nacional de Cine y Artes Audiovisuales.">INCAA</abbr> lanza una
                             nueva
                             propuesta multimedial en la cual el cine Nacional es el protagonista. No solo se trata de un
@@ -122,7 +122,7 @@
             <div class="videocontainer width-80">
                 <div class="info-box">
                     <h3>Rapel en "Los Gigantes"</h3>
-                    <p>Hoy tenemos a los chicos de "Hoy no duermo en casa" con una aventura increíble <strong> el
+                    <p>Hoy tenemos a los chicos de "Hoy no duermo en casa" con una aventura increíble <strong> en el
                             corazón de las sierras</strong> a puro pulmón.</p>
                 </div>
                 <iframe id="visible" src="https://www.youtube.com/embed/Qe0ZZb--RXw?start=101"
@@ -130,84 +130,104 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <div class="seccion4 align-center">
-            <div class="seccion4container width-80">
+        <div class="seccion4 centrado">
+            <div>
+                <picture class="margin-bottom-30p">
+                    <!-- mobile, hasta 480px -->
+                    <source srcset="imagenes/mobile-castillofachada.jpg" media="(max-width: 480px)" />
+                    <img src="imagenes/castillofachada-media.jpg" alt="fachada de Castillo Hotel">
+                </picture>
                 <div class="info-box">
                     <h3>De ruinas a Castillo Hotel 5 estrellas</h3>
                     <p>Los Fábrega compraron lo que eran las ruinas de un antiguo castillo en las sierras de Córdoba, lo
                         restauraron y lo convirtieron en un hotel autosustentable.</p>
                 </div>
-                <picture>
-                    <!-- mobile, hasta 480px -->
-                    <source srcset="imagenes/mobile-castillofachada.jpg" media="(max-width: 480px)" />
-                    <img src="imagenes/castillofachada.jpg" alt="fachada de Castillo Hotel">
-                </picture>
             </div>
         </div>
-        <div class="seccion5 align-center">           
-            <div class="container3 width-80">
-                <div class="text-container">
-                    <picture>
-                        <!-- mobile, hasta 480px -->
-                        <source srcset="imagenes/mobile-noticia1.jpg" media="(max-width: 480px)" />
-                        <img src="imagenes/noticia1.jpg" alt="Clases de origami">
-                    </picture>
-                    <article class="centered">
-                        <h3>Sufren las clases de origami</h3>
-                        <p>Las clases que se dictaban en la sociedad de fomento "El Porvenir" se suman también a los
-                            miles de negocios afectados por la cuarentena. La tristeza de los dos alumnos (uno de ellos
-                            becado) al no poder ir a clases no se puede expresar con palabras. </p>
-                    </article>
+        <div class="seccion5 align-center">
+            <div>
+                <h3>Noticias locales</h3>
+                <div class="row">
+                    <div class="container3 ">
+                        <div class="text-container">
+                            <picture>
+                                <!-- mobile, hasta 480px -->
+                                <source srcset="imagenes/mobile-noticia1.jpg" media="(max-width: 480px)" />
+                                <img src="imagenes/noticia1.jpg" alt="Clases de origami">
+                            </picture>
+                            <article class="centered width-80">
+                                <h3>Sufren las clases de origami</h3>
+                                <p>Las clases que se dictaban en la sociedad de fomento "El Porvenir" se suman también a
+                                    los
+                                    miles de negocios afectados por la cuarentena. La tristeza de los dos alumnos (uno
+                                    de
+                                    ellos
+                                    becado) al no poder ir a clases no se puede expresar con palabras. </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="container3 ">
+                        <div class="text-container">
+                            <picture>
+                                <!-- mobile, hasta 480px -->
+                                <source srcset="imagenes/mobile-noticia2.jpg" media="(max-width: 480px)" />
+                                <img src="imagenes/noticia2.jpg" alt="Imagen que va a la izquierda">
+                            </picture>
+                            <article class="centered width-80">
+                                <h3>80% de infectados leves</h3>
+                                <p>La secretaria de Acceso a la Salud, Carla Vizzotti, planteó que los 515 recuperados
+                                    que
+                                    representan el 20,53 % del total de 2208 casos y las 113 personas internadas en
+                                    terapia
+                                    intensiva, que implican el 5,11 %, “reflejan que el 80 % de las personas que tengan
+                                    coronavirus van a transitarlo de manera leve o moderada. </p>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="container3 width-80">
-                <div class="text-container">
-                    <picture>
-                        <!-- mobile, hasta 480px -->
-                        <source srcset="imagenes/mobile-noticia2.jpg" media="(max-width: 480px)" />
-                        <img src="imagenes/noticia2.jpg" alt="Imagen que va a la izquierda">
-                    </picture>
-                    <article class="centered">
-                        <h3>80% de infectados leves</h3>
-                        <p>La secretaria de Acceso a la Salud, Carla Vizzotti, planteó que los 515 recuperados que
-                            representan el 20,53 % del total de 2208 casos y las 113 personas internadas en terapia
-                            intensiva, que implican el 5,11 %, “reflejan que el 80 % de las personas que tengan
-                            coronavirus van a transitarlo de manera leve o moderada. </p>
-                    </article>
-                </div>
-            </div>
-            <div class="container3 width-80">
-                <div class="text-container">
-                    <picture>
-                        <!-- mobile, hasta 480px -->
-                        <source srcset="imagenes/mobile-noticia3.jpg" media="(max-width: 480px)" />
-                        <img src="imagenes/noticia3.jpg" alt="Imagen que va a la izquierda">
-                    </picture>
-                    <article class="centered">
-                        <h3>Nuevos contagios Covid-19</h3>
-                        <p>El número de contagios en Córdoba y provincia se ha incrementado este domingo en 82 nuevos
-                            casos hasta un total de 972.
-                            La cifra alcanzada supone un incremento del 9,19% sobre el total de personas aquejadas de
-                            Covid-19 existentes hasta ayer sábado, algo más de cuatro puntos porcentuales por encima de
-                            la media nacional, que ha sido del 4,83%.
-                        </p>
-                    </article>
-                </div>
-            </div>
-            <div class="container4 width-80">
-                <div class="text-container">
-                    <picture>
-                        <!-- mobile, hasta 480px -->
-                        <source srcset="imagenes/mobile-noticia4.jpg" media="(max-width: 480px)" />
-                        <img src="imagenes/noticia4.jpg" alt="Imagen que va a la izquierda">
-                    </picture>
-                    <div class="centered">
-                        <h3>Choripan mortal</h3>
-                        <p>Medicos confirmaron hoy a la madrugada la muerte de el ex senador Mariano Tinelli, al parecer
-                            la muerte fue
-                            causada por un choripan que comía mientras viajaba a dar una conferencia. El dueño del local
-                            "El Cholo" quedó impactado
-                            al ver a su cliente morirse literalmente con el chori en la boca. </p>
+                <div class="row">
+                    <div class="container3 ">
+                        <div class="text-container">
+                            <picture>
+                                <!-- mobile, hasta 480px -->
+                                <source srcset="imagenes/mobile-noticia3.jpg" media="(max-width: 480px)" />
+                                <img src="imagenes/noticia3.jpg" alt="Imagen que va a la izquierda">
+                            </picture>
+                            <article class="centered width-80">
+                                <h3>Nuevos contagios Covid-19</h3>
+                                <p>El número de contagios en Córdoba y provincia se ha incrementado este domingo en 82
+                                    nuevos
+                                    casos hasta un total de 972.
+                                    La cifra alcanzada supone un incremento del 9,19% sobre el total de personas
+                                    aquejadas
+                                    de
+                                    Covid-19 existentes hasta ayer sábado, algo más de cuatro puntos porcentuales por
+                                    encima
+                                    de
+                                    la media nacional, que ha sido del 4,83%.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="container4">
+                        <div class="text-container">
+                            <picture>
+                                <!-- mobile, hasta 480px -->
+                                <source srcset="imagenes/mobile-noticia4.jpg" media="(max-width: 480px)" />
+                                <img src="imagenes/noticia4.jpg" alt="Imagen que va a la izquierda">
+                            </picture>
+                            <div class="centered width-80">
+                                <h3>Choripan mortal</h3>
+                                <p>Medicos confirmaron hoy a la madrugada la muerte de el ex senador Mariano Tinelli, al
+                                    parecer
+                                    la muerte fue
+                                    causada por un choripan que comía mientras viajaba a dar una conferencia. El dueño
+                                    del
+                                    local
+                                    "El Cholo" quedó impactado
+                                    al ver a su cliente morirse literalmente con el chori en la boca. </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -221,31 +241,33 @@
                     <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
                     <img src="imagenes/foologo.png" alt="Logo grande" />
                 </picture>
-                <span class="copyright">© Valle Hermoso 2020</span>
             </div>
-            <div class="col">
-                <ul>
-                    <li><a href="index.html">Principal</a></li>
-                    <li><a href="destinos.html">Destinos</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="colbig">
-                <ul id="redes">
-                    <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
-                    <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
-                    <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
-                </ul>
-            </div>
-            <div class="colbig">
-                <ul class="datos-davinci">
-                    <li>Alumno: Pablo Godoy</li>
-                    <li>Materia: Maquetado web</li>
-                    <li>Profesora: Mabel Lopez</li>
-                    <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
-                </ul>
-            </div>
+            <span class="copyright">© Valle Hermoso 2020</span>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul id="redes">
+                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul class="datos-davinci">
+                <li>Alumno: Pablo Godoy</li>
+                <li>Materia: Maquetado web</li>
+                <li>Profesora: Mabel Lopez</li>
+                <li>TP 1° cuatrimestre</li>
+                <li>Escuela Da Vinci año 2020</li>
+            </ul>
+        </div>
     </footer>
     <script>
         var nav = document.querySelector("nav ul"),
@@ -278,7 +300,7 @@
         });
     </script>
     <!-- Swiper JS -->
-  <script src="/scripts/swiper-bundle.js"></script>
+    <script src="/scripts/swiper-bundle.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

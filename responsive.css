@@ -7,6 +7,11 @@
 
     /* paginación general ------------------------------------------------*/
 
+    .width-80 {
+        display: inline-block;
+        width: 80%;
+    }
+
     .centrado {
         display: flex;
         justify-content: center;
@@ -323,12 +328,12 @@
         width: 100%;
         text-align: center;
     }
-    
+
     main.index p {
         font-weight: 300;
         width: 80%;
         font-size: 2em;
-        color: whitesmoke;        
+        color: whitesmoke;
         text-align: center;
         display: inline-block;
     }
@@ -418,14 +423,20 @@
 
     footer ul li {
         list-style: none;
-        width: auto;
     }
 
-    footer ul li a {
+    footer div.col ul li a {
+        display: inline-block;
+        margin: 3px;
         font-weight: 600;
         text-decoration: none;
         font-size: 1em;
         color: rgb(94, 94, 94);
+    }
+
+    footer div.col ul li a:hover {
+        margin-bottom: 0px;
+        border-bottom: 3px solid orange;
     }
 
     #redes {
@@ -652,7 +663,9 @@
         width: auto;
     }
 
-    /* CSS novedades */
+    /* CSS novedades ----------------------------------------------------------*/
+
+
     .novedades header {
         background-image: url(imagenes/novedades.jpg);
         background-repeat: no-repeat;
@@ -660,185 +673,133 @@
         background-position: bottom;
     }
 
-    .novedades .seccion {
-        background-image: none;
-        background-color: whitesmoke;
-        color: #434343;
-    }
+    /* seccion 2 ----------------------- */
 
-    div .slide {
-        width: 1200px;
+    .swiper-wrapper article {
+        padding-bottom: 20px;
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
-    .info-box {
-        display: block;
-        height: auto;
-        width: 500px;
-        margin: 100px 20px 100px 20px;
-        /* margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px; */
-        background: #f5f5f5;
-        box-shadow: -6px 6px 12px #626262, 6px -6px 12px #ffffff;
-        transition: ease-in-out 0.2s all;
-        text-align: right;
-        z-index: 1;
+    .novedades h3 {
+        font-size: 3em;
+        padding-bottom: 1em;
     }
 
-    .info-box:hover {
-        transform: scale(1.1);
-        transition: ease-in-out 0.2s all;
-        box-shadow: -20px 20px 60px #acacac;
-        z-index: 2;
+    .novedades p {
+        font-size: 2em;
+        padding-bottom: 1em;
     }
 
-    .info-box h3 {
-        margin: 0px;
-        box-sizing: border-box;
-        text-align: left;
-        height: 250px;
-        background-color: #3d5071;
-        width: 500px;
-        padding: 20px;
-        font-weight: 600;
-        font-size: 40px;
+    .novedades .slide-content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 100px 0px;
+    }
+
+    /* seccion 3 ----------------------- */
+    .novedades .seccion3 {
+        background-color: tomato;
         color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        padding: 70px 0px;
     }
 
-    .info-box:hover h3 {
-        background-color: #5dc5c4;
-        transition: ease-in-out 0.2s all;
+    .novedades .seccion3 .info-box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
     }
 
-    .info-box p {
-        font-weight: 400;
-        font-size: 25px;
-        margin: 0px;
-        width: auto;
-        height: 500px;
-        text-align: left;
-        padding: 20px 20px;
-        color: #434343;
-    }
-
-    .seccion3 {
-        background-image: none;
-        background-color: whitesmoke;
-        text-align: right;
-    }
-
-    .seccion3 .info-box {
-        position: absolute;
-        display: inline-block;
-        left: -400px;
-        z-index: 10;
-    }
-
-    .seccion3 .info-box p {
-        display: inline-block;
-        width: auto;
-        margin: 0px;
-        padding: 0px;
-        padding-top: 30px;
-        padding-left: 50px;
-        padding-right: 40px;
+    .seccion3 h3 .novedades .seccion3 .info-box>* {
+        margin-bottom: 30px;
+        display: flex;
+        width: 80%;
     }
 
     .seccion3 .videocontainer {
-        position: relative;
-        display: inline-block;
-        width: 1900px;
-        height: 800px;
-        z-index: 1;
-        margin-left: 500px;
+        padding: 40px 0px;
     }
 
     .videocontainer iframe {
-        margin: 0px;
-        height: 800px;
-        width: 1300px;
+        width: 100%;
+        height: 500px;
     }
 
-    .seccion4 {
-        background-image: none;
-        background-color: whitesmoke;
-        text-align: right;
-    }
-
-    .seccion4 .seccion4container {
-        position: relative;
-        display: inline-block;
-        z-index: 1;
-        margin-left: 100px;
-    }
-
-    .seccion4 .seccion4container .info-box {
-        position: absolute;
-        right: -300px;
-        z-index: 10;
-        margin: 100px 20px 100px 20px;
-    }
-
-    .seccion4 .seccion4container .info-box p {
-        display: inline-block;
-        width: auto;
-        margin: 0px;
-        padding: 0px;
-        padding-top: 30px;
-        padding-left: 50px;
-        padding-right: 40px;
-    }
+    /* seccion 4 ------------------ */
 
 
-    .seccion4 .seccion4container img {
-        display: block;
-        margin: 0px;
-        height: 800px;
-        width: 1300px;
+
+    .novedades .seccion4 {
+        background-color: rgb(0, 195, 255);
+        padding: 150px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .novedades .seccion4 h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 4em;
+    }
+
+    .novedades .seccion4>div {
+        width: 80%;
+        display: flex;
+    }
+
+    .novedades .seccion4>div>* {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    /* seccion 5 galeria novedades --------------------------------*/
 
     img[alt="fachada de Castillo Hotel"] {
         box-shadow: -10px 10px 20px #626262;
         border-radius: 9px;
     }
 
-    .novedades .seccion3 {
-        display: flex;
-        align-items: center;
-    }
-
-    .novedades .seccion4 {
-        display: flex;
-        align-items: center;
-    }
-
     .novedades .seccion5 {
-        background-image: none;
-        box-sizing: border-box;
-        margin: 0px;
+        display: flex;
         padding: 0px;
-        background-color: whitesmoke;
-        text-align: center;
+        justify-content: center;
     }
 
-    /* seccion de galeria novedades */
+    .novedades .seccion5>div>h3 {
+        text-align: center;
+        color: #272727;
+        display: flex;
+        justify-content: center;
+        font-size: 4em;
+    }
 
-    div .container1,
-    .container2,
-    .container3,
-    .container4 {
+    .novedades .seccion5>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 100px 0px;
+    }
+
+    .novedades .seccion5 .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .seccion5>div>.row>* {
         position: relative;
-        display: inline-block;
+        display: flex;
         box-sizing: border-box;
         text-align: center;
         color: white;
-        width: 600px;
         height: 350px;
-        margin-left: 30px;
-        margin-right: 30px;
     }
 
     .container1,
@@ -1305,7 +1266,8 @@
         align-items: center;
     }
 
-    main.index .swiper-slide, main.index .swiper-container{
+    main.index .swiper-slide,
+    main.index .swiper-container {
         background-color: transparent;
         height: auto;
     }
@@ -1542,8 +1504,7 @@
         /* background-color: rgb(0, 235, 252); */
     }
 
-    footer .logo picture,
-    footer .logo .copyright {
+    .copyright {
         margin-bottom: 0.5em;
         font-size: 0.5em;
         color: white;
@@ -1701,7 +1662,7 @@
     main.index .seccion5 {
         background-image: url(imagenes/descubribg.jpg);
         text-align: center;
-    } 
+    }
 
     h1 {
         display: flex;
@@ -1819,7 +1780,7 @@
     }
 
     .content-col>iframe {
-        border: none;
+        width: 100%;
     }
 
     .content-col {
@@ -1946,21 +1907,64 @@
         padding: 40px 0px;
     }
 
+    .videocontainer iframe {
+        width: 100%;
+    }
+
     /* seccion 4 ------------------ */
 
     .novedades .seccion4 {
         background-color: whitesmoke;
         padding: 40px 0px;
+        display: flex;
+        justify-content: center;
     }
 
-    .novedades .seccion4 .seccion4container div * {
+    .novedades .seccion4>div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 30px;
     }
 
-    /* seccion 5 ------------------ */
+    .novedades .seccion4>div>* {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion4>div>div {
+        flex-direction: column;
+    }
+
+    .novedades .seccion4 h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion4 img {
+        margin-bottom: 30px;
+    }
+
+    /* seccion 5 -------------------------------------------------- */
 
     .novedades .seccion5 {
-        background-color: wheat;
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .novedades .seccion5 div>h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion5 {
         padding: 40px 0px;
     }
 
