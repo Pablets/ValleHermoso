@@ -1704,6 +1704,7 @@
         display: flex;
         font-size: 3em;
         color: whitesmoke;
+        text-align: center;
     }
 
     main.index h2 {
