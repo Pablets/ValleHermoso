@@ -8,13 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
-    <link href="mobile.css" rel="stylesheet" media="(max-width:480px)" />
-    <!-- hasta un máximo de 480 aplica -->
-    <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width: 801px)" />
-    <!-- hasta un máximo de 800 aplica-->
-    <link href="style.css" rel="stylesheet" media="(min-width:801px)" />
-    <!-- desde un mínimo de 801 aplica-->
+    <link href="responsive.css" rel="stylesheet" />
     <script>
         (function (H) {
             H.className = H.className += "js"
@@ -91,31 +85,33 @@
                     <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
                     <img src="imagenes/foologo.png" alt="Logo grande" />
                 </picture>
-                <span class="copyright">© Valle Hermoso 2020</span>
             </div>
-            <div class="col">
-                <ul>
-                    <li><a href="index.html">Principal</a></li>
-                    <li><a href="destinos.html">Destinos</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="colbig">
-                <ul id="redes">
-                    <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
-                    <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
-                    <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
-                </ul>
-            </div>
-            <div class="colbig">
-                <ul class="datos-davinci">
-                    <li>Alumno: Pablo Godoy</li>
-                    <li>Materia: Maquetado web</li>
-                    <li>Profesora: Mabel Lopez</li>
-                    <li>TP 1° cuatrimestre - Escuela Da Vinci año 2020</li>
-                </ul>
-            </div>
+            <span class="copyright">© Valle Hermoso 2020</span>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul id="redes">
+                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul class="datos-davinci">
+                <li>Alumno: Pablo Godoy</li>
+                <li>Materia: Maquetado web</li>
+                <li>Profesora: Mabel Lopez</li>
+                <li>TP 1° cuatrimestre</li>
+                <li>Escuela Da Vinci año 2020</li>
+            </ul>
+        </div>
     </footer>
     <script>
         var nav = document.querySelector("nav ul"),
