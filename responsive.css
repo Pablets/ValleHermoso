@@ -328,7 +328,9 @@
         font-weight: 300;
         width: 80%;
         font-size: 2em;
-        color: whitesmoke;
+        color: whitesmoke;        
+        text-align: center;
+        display: inline-block;
     }
 
     main.index strong {
@@ -378,56 +380,6 @@
     }
 
 
-
-
-
-    @keyframes move {
-        from {
-            transform: translateY(0px);
-        }
-
-        to {
-            transform: translateY(15px);
-            transform-origin: center;
-        }
-    }
-
-    .btn {
-        z-index: 200;
-        position: absolute;
-        width: 100%;
-        height: 45px;
-        bottom: 20px;
-        color: whitesmoke;
-        text-align: center;
-        background-image: url(imagenes/dwnarrowsmall.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        animation-name: move;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out;
-    }
-
-    .link {
-        text-decoration: none;
-    }
-
-    .text-button {
-        left: 50%;
-        bottom: -100px;
-        background-color: tomato;
-        bottom: 0px;
-        width: 50px;
-        height: 200px;
-        transform: rotateX(90);
-        z-index: 14;
-        margin-top: -100px;
-        margin-bottom: -100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     /* ------------------------------------------------------------------------------------------------- */
     /* Footer */
@@ -1749,6 +1701,7 @@
     } 
 
     h1 {
+        display: flex;
         font-size: 3em;
         color: whitesmoke;
     }
