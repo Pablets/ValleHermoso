@@ -1690,14 +1690,17 @@
 
     main.index .seccion3 {
         background-image: url(imagenes/saboreabg.jpg);
+        text-align: center;
     }
 
     main.index .seccion4 {
         background-image: url(imagenes/disfrutabg.jpg);
+        text-align: center;
     }
 
     main.index .seccion5 {
         background-image: url(imagenes/descubribg.jpg);
+        text-align: center;
     } 
 
     h1 {
@@ -1730,10 +1733,11 @@
 
 
     main.index h3 {
+        display: inline-block;
+        width: 80%;
         text-align: left;
         font-weight: 300;
         font-size: 1em;
-        padding: 20px 60px;
         color: whitesmoke;
     }
 
