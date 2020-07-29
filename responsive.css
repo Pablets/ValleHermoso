@@ -1144,7 +1144,7 @@
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px)  {
         /* paginación general ------------------------------------------------*/
     
         .centrado {
@@ -1220,7 +1220,6 @@
         html,
         body {
             position: relative;
-            height: 100%;
         }
     
         body {
@@ -1354,13 +1353,7 @@
         html {
             font-family: 'Montserrat', 'sans-serif';
         }
-    
-        body {
-            background-color: grey;
-            width: 100%;
-            max-width: 480px;
-        }
-    
+        
         main {
             background-color: white;
             margin: 0px;
