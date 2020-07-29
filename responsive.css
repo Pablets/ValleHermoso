@@ -1134,8 +1134,1107 @@
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* paginación general ------------------------------------------------*/
 
-    /* //CSS */
+    .centrado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-content {
+        width: 80%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .v-margin {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .margin-bottom {
+        margin-bottom: 1em;
+    }
+
+    .margin-bottom-30p {
+        margin-bottom: 30px;
+    }
+
+    .padding-top50p {
+        padding-top: 50px;
+    }
+
+    .padding-bottom50p {
+        padding-bottom: 50px;
+    }
+
+    .margin-top50p {
+        margin-top: 50px;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    ol {
+        list-style: none;
+    }
+
+    iframe {
+        border: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* paginación general mobile */
+
+    .width-80 {
+        display: inline-block;
+        width: 80%;
+    }
+
+    /* ------------------------- */
+    /* Swiper CSS */
+    /* ------------------------- */
+    /* <!-- Demo styles --> */
+    html,
+    body {
+        position: relative;
+    }
+
+    body {
+        background: #eee;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    main.index .swiper-slide,
+    main.index .swiper-container {
+        background-color: transparent;
+        height: auto;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px
+    }
+
+    .swiper-button-prev {
+        left: 0px;
+        right: auto;
+    }
+
+    .swiper-button-next {
+        right: 0px;
+        left: auto;
+    }
+
+    /* ------------------formateo de select------------------ */
+
+    /* The container must be positioned relative: */
+
+    .custom-select {
+        position: relative;
+    }
+
+    .custom-select select {
+        display: none;
+        /*hide original SELECT element: */
+    }
+
+    .select-selected {
+        background-color: red;
+    }
+
+    /* Style the arrow inside the select element: */
+
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+    }
+
+    /* Point the arrow upwards when the select box is open (active): */
+
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+    }
+
+    /* style the items (options), including the selected item: */
+
+    .select-items div,
+    .select-selected {
+        color: #ffffff;
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+    }
+
+    /* Style items (options): */
+
+    .select-items {
+        position: absolute;
+        background-color: DodgerBlue;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+    /* Hide the items when the select box is closed: */
+
+    .select-hide {
+        display: none;
+    }
+
+    .select-items div:hover,
+    .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+
+    html {
+        font-family: 'Montserrat', 'sans-serif';
+    }
+    
+    main {
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    /* ---------------------------------------- */
+    /* navegacion */
+    /* ---------------------------------------- */
+
+    .active {
+        background-color: tomato;
+        border-right: 5px solid rgb(255, 174, 0);
+    }
+
+    nav {
+        height: 72px;
+        position: fixed;
+        z-index: 1000;
+        text-align: right;
+    }
+
+    /* Style the menu link */
+    .js .nav .skip {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        overflow: hidden;
+        width: 2.5em;
+        height: 2.5em;
+        text-align: right;
+        line-height: 2.5em;
+    }
+
+    .btn-bg {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 4.5em;
+        height: 4.5em;
+        z-index: 1000;
+        border-radius: 50%;
+    }
+
+    #btn-closed {
+        background-image: url(imagenes/menuicon.png);
+        background-repeat: none;
+        background-position: 0px 0px;
+        background-size: cover;
+    }
+
+    #btn-open {
+        z-index: 100;
+        background-image: url(imagenes/menuicon.png);
+        background-repeat: none;
+        background-position: 40px 0px;
+        background-size: cover;
+    }
+
+    .menu-container {
+        right: 0px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        width: 100vw;
+        visibility: visible;
+    }
+
+    .menu-hidden {
+        height: 100vh;
+        width: 100vw;
+        right: 0px;
+        top: 0px;
+        visibility: hidden;
+    }
+
+    /* Give the .nav ul a height when it's been opened, i.e. make it show */
+    .js .nav ul.open {
+        max-height: 100vh;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        margin-top: -3.5em;
+        margin-right: -1em;
+        padding-top: 5em;
+        padding-right: 3.5em;
+
+    }
+
+    /* Hide and position the closed .nav ul */
+    .js .nav ul {
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 1em;
+        top: 3.5em;
+    }
+
+    /* Style the list items to appear under the menu link */
+    .js nav li {
+        text-align: right;
+    }
+
+    /* Style the list item links for ease of touch on small screens */
+    .js nav li a {
+        font-size: 15px;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 1em;
+        display: block;
+    }
+
+    /* ------------------------------------------------------------------------------------------------- */
+    /* Footer */
+    /* ------------------------------------------------------------------------------------------------- */
+
+    footer {
+        width: 100%;
+        background-color: rgb(42, 49, 56);
+        padding: 40px 40px;
+        box-sizing: border-box;
+    }
+
+    footer .col {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        /* background-color: rgb(0, 235, 252); */
+    }
+
+    .copyright {
+        margin-bottom: 0.5em;
+        font-size: 0.5em;
+        color: white;
+        display: block;
+
+    }
+
+    footer .collogo {
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    footer ul {
+        display: block;
+        width: 100%;
+        /* background-color: tomato; */
+    }
+
+    footer ul li {
+        list-style: none;
+        margin-bottom: 10px;
+        color: whitesmoke;
+        font-size: 14px;
+        width: auto;
+    }
+
+    footer ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 15px;
+        width: auto;
+    }
+
+    #redes {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #redes li {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        transform: scale(0.5);
+    }
+
+    #redes li a {
+        display: inline-block;
+        text-decoration: none;
+        background-image: url(imagenes/socialsprite.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        opacity: 1;
+        margin: -10px;
+        padding: 0px;
+        width: 85.5px;
+        height: 85.5px;
+    }
+
+    #redes li a span {
+        display: none;
+    }
+
+    #redes a:hover {
+        border: none;
+    }
+
+    #redes #fb a {
+        background-position: 0px 0px;
+    }
+
+    #redes #fb a:hover {
+        background-position: 0 -85.5px;
+    }
+
+    #redes #ig a {
+        background-position: -85.5px 0px;
+    }
+
+    #redes #ig a:hover {
+        background-position: -85px -85px;
+    }
+
+    #redes #pt a {
+        background-position: -170px 0px;
+    }
+
+    #redes #pt a:hover {
+        background-position: -170px -85.5px;
+    }
+
+    footer .logo {
+        width: 100%;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+    }
+
+    ul.datos-davinci li {
+        font-size: 5px;
+        font-weight: lighter;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    /* --------------------------------------- */
+    /* secciones */
+    /* --------------------------------------- */
+
+    .black-overlay {
+        margin: 0px;
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .seccion {
+        background-color: whitesmoke;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 70vh;
+
+    }
+
+    /* --------------------------------------- */
+    /* Inicio */
+    /* --------------------------------------- */
+
+    .index header {
+        background-image: url(imagenes/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    main.index .seccion2 {
+        background-image: url(imagenes/explorabg.jpg);
+    }
+
+    main.index .seccion3 {
+        background-image: url(imagenes/saboreabg.jpg);
+        text-align: center;
+    }
+
+    main.index .seccion4 {
+        background-image: url(imagenes/disfrutabg.jpg);
+        text-align: center;
+    }
+
+    main.index .seccion5 {
+        background-image: url(imagenes/descubribg.jpg);
+        text-align: center;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 3em;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    main.index h2 {
+        padding-top: 30px;
+        font-size: 2em;
+        text-align: center;
+        color: whitesmoke;
+        padding-bottom: 30px;
+    }
+
+    main.index p {
+        width: 80%;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1em;
+        color: whitesmoke;
+        margin-bottom: 30px;
+    }
+
+    main.index strong {
+        color: orange;
+    }
+
+
+    main.index h3 {
+        display: inline-block;
+        width: 80%;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+
+    main.index h4 {
+        font-weight: 800;
+        font-size: 1em;
+        width: 30%;
+        text-align: left;
+        margin-left: 10px;
+        color: whitesmoke;
+    }
+
+    main.novedades abbr {
+        display: inline;
+        font-style: italic;
+        font-family: 'montserrat';
+        font-weight: bolder;
+        text-decoration: none;
+        color: cadetblue;
+    }
+
+    main strong {
+        color: rgb(44, 44, 44);
+        /* background-color: rgba(255, 166, 0, 0.664); */
+        line-height: 10px;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+    /* CSS DESTINOS.HTML */
+    /* ------------------------------------------------------ */
+
+    .destinos header {
+        background-image: url(imagenes/herodestinos.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* destinos seccion 2 */
+
+    .destinos .seccion2 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .destinos .seccion2 h2 {
+        display: inline-block;
+        width: 80%;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .destinos .seccion2>h3 {
+        width: 80%;
+        display: inline-block;
+        text-align: left;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .slide-content {
+        width: 80%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .slide-content>h3 {
+        font-size: 30px;
+    }
+
+    .content-col>p {
+        text-align: left;
+        font-size: 0.8em;
+        font-weight: 300;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .content-col>iframe {
+        width: 100%;
+    }
+
+    .content-col {
+        height: 500px;
+    }
+
+
+    /* destinos seccion 3 */
+
+    .destinos .seccion3 {
+        background-image: none;
+        background-color: tomato;
+        text-align: center;
+    }
+
+    .destinos .seccion3 h2 {
+        font-size: 2em;
+        color: whitesmoke;
+    }
+
+    .destinos .seccion3 h3 {
+        display: inline-block;
+        width: 300px;
+        font-size: 1em;
+        font-weight: 500;
+        color: whitesmoke;
+    }
+
+    .destinos .seccion3>.container-left {
+        padding-bottom: 40px;
+    }
+
+    .destinos .seccion4 {
+        background: #47bbea;
+    }
+
+    /* destinos seccion 4 */
+
+    .destinos .seccion4 {
+        background-image: url(/imagenes/mockupproximamente.jpg);
+        background-color: whitesmoke;
+        text-align: center;
+    }
+
+    .seccion4 .black-overlay-4 {
+        margin: inherit;
+        height: inherit;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+
+    .destinos .seccion4 h2 {
+        font-size: 2em;
+        color: whitesmoke;
+        width: 80%;
+        display: inline-block;
+
+    }
+
+    .destinos .seccion4 p {
+        display: inline-block;
+        width: 80%;
+        font-size: 1em;
+        font-weight: 500;
+        color: whitesmoke;
+    }
+
+
+    .destinos .seccion4 a {
+        display: inline-block;
+        margin: 0px 20px;
+        text-decoration: none;
+        height: 90px;
+        width: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #playstore {
+        background-image: url(imagenes/google.png);
+    }
+
+    #appstore {
+        background-image: url(imagenes/appstore.png);
+    }
+
+
+    /* ------------------------------------------------------ */
+    /* CSS novedades.HTML */
+    /* ------------------------------------------------------ */
+
+    .novedades header {
+        background-image: url(imagenes/novedades.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    /* seccion 2 ----------------------- */
+
+    .swiper-wrapper article {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .novedades .seccion2 h3 {
+        padding-bottom: 1em;
+    }
+
+    /* seccion 3 ----------------------- */
+    .novedades .seccion3 {
+        background-color: tomato;
+        color: whitesmoke;
+    }
+
+    .novedades .seccion3 .info-box>* {
+        margin-bottom: 30px;
+    }
+
+    .seccion3 .videocontainer {
+        padding: 40px 0px;
+    }
+
+    .videocontainer iframe {
+        width: 100%;
+    }
+
+    /* seccion 4 ------------------ */
+
+    .novedades .seccion4 {
+        background-color: whitesmoke;
+        padding: 40px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .novedades .seccion4>div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion4>div>* {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion4>div>div {
+        flex-direction: column;
+    }
+
+    .novedades .seccion4 h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion4 img {
+        margin-bottom: 30px;
+    }
+
+    /* seccion 5 -------------------------------------------------- */
+
+    .novedades .seccion5 {
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .novedades .seccion5 div>h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .novedades .seccion5 {
+        padding: 40px 0px;
+    }
+
+    .novedades .seccion5 div>div * {
+        margin-bottom: 30px;
+    }
+
+    /* ------------------------------------------------------ */
+    /* CSS contacto.HTML */
+    /* ------------------------------------------------------ */
+
+    .contacto {
+        background-color: whitesmoke;
+    }
+
+    .contacto h1.form-title {
+        color: rgb(42, 49, 56);
+        font-size: 3em;
+        margin: 0px;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .contacto .seccion2 form {
+        background-color: rgb(42, 49, 56);
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+
+    /* CSS Formulario general ----------------------------------------------------  */
+
+    form h2 {
+        color: whitesmoke;
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+
+    form span a {
+        text-decoration: none;
+        font-style: italic;
+        font-weight: 600;
+        color: tomato;
+    }
+
+    form label {
+        font-size: 15px;
+        color: rgb(190, 190, 190);
+        margin: 5px 0px 5px 0px;
+    }
+
+    form .btn-container {
+        text-align: right;
+    }
+
+    .form-btn {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        color: whitesmoke;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        width: 100%;
+        max-width: 100%;
+        width: 50%;
+        box-sizing: border-box;
+        margin: 30px 0px 30px 0px;
+        border: none;
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+        border-radius: .5em;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: rgba(59, 153, 252, .7);
+    }
+
+    .input-css {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        color: #444;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0px 0px 30px 0px;
+        border: 1px solid #aaa;
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+        border-radius: 6px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        font-family: 'Montserrat', 'sans-serif';
+    }
+
+    .input-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+
+    /* checkbox CSS  ----------------------------------------------------------------------- */
+
+    .check-container {
+        margin-left: 10px;
+    }
+
+    .check-container label {
+        margin-bottom: -15px;
+        display: flex;
+    }
+
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+
+    [type="checkbox"]:not(:checked)+label,
+    [type="checkbox"]:checked+label {
+        position: relative;
+        padding-left: 1.95em;
+        cursor: pointer;
+    }
+
+    /* checkbox aspect */
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.25em;
+        height: 1.25em;
+        border: 2px solid #ccc;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+    }
+
+
+    /* checked mark aspect */
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+        content: '\2713\0020';
+        position: absolute;
+        top: .15em;
+        left: .22em;
+        font-size: 1.3em;
+        line-height: 0.8;
+        color: #09ad7e;
+        transition: all .2s;
+        font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+    }
+
+    /* checked mark aspect changes */
+    [type="checkbox"]:not(:checked)+label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    [type="checkbox"]:checked+label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* disabled checkbox */
+    [type="checkbox"]:disabled:not(:checked)+label:before,
+    [type="checkbox"]:disabled:checked+label:before {
+        box-shadow: none;
+        border-color: #bbb;
+        background-color: #ddd;
+    }
+
+    [type="checkbox"]:disabled:checked+label:after {
+        color: #999;
+    }
+
+    [type="checkbox"]:disabled+label {
+        color: #aaa;
+    }
+
+    /* accessibility */
+    [type="checkbox"]:checked:focus+label:before,
+    [type="checkbox"]:not(:checked):focus+label:before {
+        border: 2px solid gray;
+    }
+
+    /* hover style just for information */
+    label:hover:before {
+        border: 2px solid #4778d9 !important;
+    }
+
+    .check-text {
+        display: inline-block;
+        margin: 0px 0px 0px 5px;
+    }
+
+    /* -----------------------select CSS -------------------------------------*/
+
+    .select-css {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        color: #444;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0px 0px 30px 0px;
+        border: 1px solid #aaa;
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+        border-radius: .5em;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+        font-family: 'Montserrat', 'sans-serif';
+    }
+
+    .select-css[selected] {
+        color: rgb(133, 28, 28);
+    }
+
+    .select-css::-ms-expand {
+        display: none;
+    }
+
+    .select-css:hover {
+        border-color: #888;
+    }
+
+    .select-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+
+    .select-css option {
+        font-weight: normal;
+    }
+
+    .select-css:not(selected) {
+        color: rgb(87, 87, 87);
+    }
+
+    .select-css:focus {
+        color: rgb(87, 87, 87);
+    }
+
+    /* Input file CSS (subida de archivos */
+
+    div.height-100p {
+        height: 50px;
+    }
+
+    input[type="file"] {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        width: inherit;
+    }
+
+    .file-upload div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: #ccc; */
+        border: 3px dotted #bebebe;
+        border-radius: 10px;
+    }
+
+    label {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        width: inherit;
+    }
+
+    div.dragover {
+        background-color: #aaa;
+}
+
 
 }
 
@@ -1353,7 +2452,7 @@
         html {
             font-family: 'Montserrat', 'sans-serif';
         }
-        
+
         main {
             background-color: white;
             margin: 0px;
