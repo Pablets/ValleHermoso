@@ -183,20 +183,6 @@
             dropzone.classList.remove('dragover');
         });
     </script>
-    <!-- Jquery -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- Script de validación de required (funciona en android)-->
-    <script>
-        $(document).ready(function () {
-            $('form').submit(function () {
-                if ($('input[type="text"]').val() == '' || $('input[type="email"]').val() == '' || $(
-                        'input[type="file"]').val() == '' || $('textarea').val() == '') {
-                    alert('Rellena todos los campos');
-                    return false;
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
