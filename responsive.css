@@ -931,6 +931,11 @@
         background: #eceffc;
     }
 
+    .contacto .seccion2 form >* {
+        display: flex;
+        flex-direction: column;  
+    }
+
     .form-title {
         display: flex;
         font-size: 150px;
@@ -940,30 +945,28 @@
         margin: 0px;
     }
 
+    form>div h2 {
+        color: whitesmoke;
+        width: 250px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+    }
     /* --------------------------- CSS Form -----------------------------------------*/
 
 
     .form {
         background-color: rgb(42, 49, 56);
         width: 800px;
-        height: 600px;
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        padding: 50px;
+        align-items: flex-start;
+        padding: 100px 50px;
         /* border: turquoise 1px solid; */
 
     }
 
-    form>div h2 {
-        display: inline-block;
-        color: whitesmoke;
-        width: 250px;
-        height: 100%;
-        margin: 0px;
-        font-size: 40px;
-        /* border: aqua 1px solid; */
-    }
+   
 
     .form-container {
         top: 0px;
@@ -1082,7 +1085,7 @@
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-        margin: 10px 0px 10px 0px;
+        margin: 10px 0px 30px 0px;
         border: 1px solid #aaa;
         box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
         border-radius: .5em;
