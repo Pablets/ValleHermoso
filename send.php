@@ -26,6 +26,5 @@ mail ($para, $asunto, $mensaje, $headers);
 header ( "location: gracias.html" );
 ?>
 
-<h1>Mensaje enviado</h1>
 
 
