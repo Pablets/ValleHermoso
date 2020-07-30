@@ -1,3 +1,30 @@
+#green {
+    background-color: rgb(17, 148, 98);
+}
+
+.gracias header.centrado {
+    flex-direction: column;
+}
+
+.gracias>* {
+    color: white;
+}
+
+.gracias h1 {
+    font-size: 10em;
+}
+
+.gracias h2 {
+    font-size: 4em;
+}
+
+.gracias h3 {
+    font-size: 3em;
+}
+
+
+
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -1200,9 +1227,9 @@ label:hover:before {
     margin: 0px 0px 0px 5px;
 }
 
- /* Input file CSS (subida de archivos ------------------------------------------------*/
+/* Input file CSS (subida de archivos ------------------------------------------------*/
 
- div.height-100p {
+div.height-100p {
     height: 50px;
 }
 
@@ -4593,6 +4620,48 @@ div.dragover {
         background-color: #aaa;
     }
 }
+
+/* gracias.html--------------------------------------------------- */
+/* gracias.html--------------------------------------------------- */
+/* gracias.html--------------------------------------------------- */
+#green {
+    background-color: rgb(17, 148, 98);
+}
+
+
+main.gracias {
+    background-image: url(/imagenes/hero.jpg);
+}
+
+.gracias header.centrado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.13);
+    height: 70vh;
+}
+
+.gracias>* {
+    color: white;
+}
+
+.gracias h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.gracias h2 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.gracias h3 {
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
 
 /* -------------------------------------------- */
 /* fin de área responsive */

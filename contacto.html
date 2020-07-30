@@ -36,69 +36,68 @@
             <h1 class="form-title">Contacto</h1>
         </header>
         <div class="seccion2 align-center ">
-            <form class="form width-80" action="http://recursos.grodriguez.com.ar/FORM/" enctype="multipart/form-data"
+            <form class="form width-80" action="send.php" enctype="multipart/form-data"
                 method="post" enctype="application/x-www-form-urlencoded">
                 <div class="form-container">
                     <h2>Dejanos tus datos para comunicarte con nosotros</h2>
                 </div>
                 <div>
-                <div class="form-container">
-                <!-- nombre y apellido -->
-                <div>
-                <!-- <label>Nombre y Apellido</label> -->
-                <input class="input-css" type="text" name="fullname" id="fullname"
-                placeholder="Nombre y Apellido" autocomplete="off" required
-                oninvalid="this.setCustomValidity('No olvide ingresar su nombre y apellido')"
-                oninput="this.setCustomValidity('')" />
-                </div>
-                <!-- email -->
-                <div>
-                <!-- <label>Email</label> -->
-                <input class="input-css" type="email" name="email" id="email" placeholder="Correo electrónico"
-                oninvalid="this.setCustomValidity('Ingrese su mail correctamente')"
-                oninput="this.setCustomValidity('')" autocomplete="off" required />
-                </div>
-                <!-- telefono -->
-                <div>
-                <!-- <label>Teléfono</label> -->
-                <input class="input-css" type="tel" name="tel" id="tel" placeholder=" Teléfono "
-                oninvalid="this.setCustomValidity('Ingrese su número de teléfono')"
-                oninput="this.setCustomValidity('')" autocomplete="off" required />
-                </div>
-                <!-- select -->
-                <div>
-                <!-- <label>Select area</label> -->
-                <select class="select-css">
-                <option value="" selected disabled hidden>Elija el motivo de su contacto </option>
-                
-                <option value="Turismo">Turismo</option>
-                <option value="Negocios">Negocios</option>
-                <option value="Municipal">Municipal</option>
-                <option value="Otros">Otros</option>
-                
-                </select>
-                </div>
-                <!-- Subida de archivos -->
-                <div class="input-css">
-                <label for="test" class="file-upload">
-                <div>Subí tu archivo: Hacé click o arrastrá y soltalo acá</div>
-                <input type="file" id="test">
-                </label>
-                <p id="filename"></p>
-                </div>
-                <!--checkbox  -->
-                <div class="check-container">
-                <input class="check" type="checkbox" id="si" name="privacidad" value="acepta">
-                <label for="si"> <span>Acepto la </span><span class="check-text"><a id="privacidad"
-                href="#">Política de
-                privacidad</a></span>
-                </label>
-                </div>
-                <!--fin de formulario  -->
-                </div>
-                <div class="btn-container">
-                <button type="submit" value="Enviar" class="form-btn">Enviar</button>
-                </div>
+                    <div class="form-container">
+                        <!-- nombre y apellido -->
+                        <div>
+                            <!-- <label>Nombre y Apellido</label> -->
+                            <input class="input-css" type="text" name="name" id="fullname"
+                                placeholder="Nombre y Apellido" autocomplete="off" required
+                                oninvalid="this.setCustomValidity('No olvide ingresar su nombre y apellido')"
+                                oninput="this.setCustomValidity('')" />
+                        </div>
+                        <!-- email -->
+                        <div>
+                            <!-- <label>Email</label> -->
+                            <input class="input-css" type="email" name="email" id="email"
+                                placeholder="Correo electrónico"
+                                oninvalid="this.setCustomValidity('Ingrese su mail correctamente')"
+                                oninput="this.setCustomValidity('')" autocomplete="off" required />
+                        </div>
+                        <!-- telefono -->
+                        <div>
+                            <!-- <label>Teléfono</label> -->
+                            <input class="input-css" type="tel" name="tel" id="tel" placeholder=" Teléfono "
+                                oninvalid="this.setCustomValidity('Ingrese su número de teléfono')"
+                                oninput="this.setCustomValidity('')" autocomplete="off" required />
+                        </div>
+                        <!-- select -->
+                        <div>
+                            <!-- <label>Select area</label> -->
+                            <select name="motivo" class="select-css">
+                                <option value="" selected disabled hidden>Elija el motivo de su contacto </option>
+                                <option value="Turismo">Turismo</option>
+                                <option value="Negocios">Negocios</option>
+                                <option value="Municipal">Municipal</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                        <!-- Subida de archivos -->
+                        <div class="input-css">
+                            <label for="test" class="file-upload">
+                                <div>Subí tu archivo: Hacé click o arrastrá y soltalo acá</div>
+                                <input type="file" id="test" name="fileupload">
+                            </label>
+                            <p id="filename"></p>
+                        </div>
+                        <!--checkbox  -->
+                        <div class="check-container">
+                            <input class="check" type="checkbox" id="si" name="privacidad" value="acepta">
+                            <label for="si"> <span>Acepto la </span><span class="check-text"><a id="privacidad"
+                                        href="#">Política de
+                                        privacidad</a></span>
+                            </label>
+                        </div>
+                        <!--fin de formulario  -->
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" value="Enviar" class="form-btn">Enviar</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -184,7 +183,20 @@
             dropzone.classList.remove('dragover');
         });
     </script>
-
+    <!-- Jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Script de validación de required (funciona en android)-->
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function () {
+                if ($('input[type="text"]').val() == '' || $('input[type="email"]').val() == '' || $(
+                        'input[type="file"]').val() == '' || $('textarea').val() == '') {
+                    alert('Rellena todos los campos');
+                    return false;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

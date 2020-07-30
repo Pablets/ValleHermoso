@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valle hermoso - Contacto</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet" />
+    <script>
+        (function (H) {
+            H.className = H.className += "js"
+        })(document.documentElement)
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="btn-bg">
+            <a id="btn-closed" class="skip" href="#menu"></a>
+        </div>
+        <div class="menu-container menu-hidden">
+        </div>
+        <ul id="menu">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a class="active" id="green" href="#.html">Gracias</a></li>
+            <li><a href="pruebas.html">Página de pruebas</a></li>
+        </ul>
+    </nav>
+    <main class="gracias">
+        <header class="centrado">
+            <h1>Gracias</h1>
+            <h2> Tus datos ya fueron enviados</h2>
+            <h3>Se comunicarán a la brevedad</h3>
+        </header>
+       
+    </main>
+    <footer>
+        <div class="collogo">
+            <div class="logo">
+                <picture>
+                    <!-- mobile, hasta 480px -->
+                    <source srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                    <img src="imagenes/foologo.png" alt="Logo grande" />
+                </picture>
+            </div>
+            <span class="copyright">© Valle Hermoso 2020</span>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul id="redes">
+                <li id="fb"><a href="#Facebook"><span>Facebook</span></a></li>
+                <li id="ig"><a href="#Instagram"><span>Instagram</span></a></li>
+                <li id="pt"><a href="#Pinterest"><span>Pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="colbig">
+            <ul class="datos-davinci">
+                <li>Alumno: Pablo Godoy</li>
+                <li>Materia: Maquetado web</li>
+                <li>Profesora: Mabel Lopez</li>
+                <li>TP 1° cuatrimestre</li>
+                <li>Escuela Da Vinci año 2020</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Estilos responsive para menú -->
+    <script>
+        var nav = document.querySelector("nav ul"),
+            btn = document.querySelector("nav a"),
+            bg = document.querySelector("nav div"),
+            navToggle = document.querySelector("nav .skip");
+        if (navToggle) {
+            navToggle.addEventListener("click",
+                function (e) {
+                    if (nav.className == "open") {
+                        nav.className = "";
+                        btn.id = "btn-closed"
+                    } else {
+                        nav.className = "open";
+                        btn.id = "btn-open"
+                    }
+                    e.preventDefault();
+                }, false);
+        }
+        /* Any click outside of the nav element will close the menu if it's open */
+        var specifiedElement = document.querySelector('nav');
+        document.addEventListener('click', function (event) {
+            var isClickInside = specifiedElement.contains(event.target);
+            if (!isClickInside && nav.className == "open") {
+                nav.className = "";
+            }
+        });
+    </script>
+</body>
+
+</html>
