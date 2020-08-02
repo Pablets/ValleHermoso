@@ -1567,7 +1567,7 @@ div.dragover {
 
     #btn-closed {
         background-image: url(imagenes/menuicon.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: 0px 0px;
         background-size: cover;
     }
@@ -3857,7 +3857,6 @@ div.dragover {
         margin-top: -3.5em;
         margin-right: -1em;
         padding-top: 15em;
-        padding-right: em;
         position: fixed;
         bottom: 0px;
     }
