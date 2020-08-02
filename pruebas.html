@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de pruebas</title>
-  <link rel="stylesheet" href="swiper-bundle.css">
+  <link rel="icon" href="imagenes/faviconbco.ico" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
@@ -15,57 +15,64 @@
       H.className = H.className += "js"
     })(document.documentElement)
   </script>
-  <!-- css de swipper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
 </head>
+<style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
 
-<body style="height: 100%;">
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
   <nav class="nav">
-    <a id="btn-closed" class="skip" href="#menu"></a>
+    <div class="btn-bg">
+      <a id="btn-closed" class="skip" href="#menu"></a>
+    </div>
     <div class="menu-container menu-hidden">
     </div>
     <ul id="menu">
+      <li>
+        <picture>
+          <!-- mobile, hasta 480px -->
+          <source class="m-logo-inside" srcset="imagenes/logo.png" media="(max-width: 480px)" />
+          <img src="imagenes/logo.png" alt="Logo responsive" />
+        </picture>
+      </li>
       <li><a href="index.html">Principal</a></li>
       <li><a href="destinos.html">Destinos</a></li>
       <li><a href="novedades.html">Novedades</a></li>
