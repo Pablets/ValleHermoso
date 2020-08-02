@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-     <link href="responsive.css" rel="stylesheet"/>
+    <link href="responsive.css" rel="stylesheet" />
     <script>
         (function (H) {
             H.className = H.className += "js"
@@ -23,8 +23,13 @@
             <a id="btn-closed" class="skip" href="#menu"></a>
         </div>
         <div class="menu-container menu-hidden">
-        </div>
+        </div>        
         <ul id="menu">
+            <li><picture>
+                <!-- mobile, hasta 480px -->
+                <source class="m-logo-inside" srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                <img src="imagenes/logo.png" alt="Logo responsive" />
+            </picture></li>
             <li><a href="index.html">Principal</a></li>
             <li><a class="active" href="destinos.html">Destinos</a></li>
             <li><a href="novedades.html">Novedades</a></li>
@@ -94,6 +99,7 @@
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6831.576251107319!2d-64.4597961978787!3d-31.115620343239872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8376dec97b5b%3A0x105ca0ada9c4de6c!2sDiquecito!5e0!3m2!1ses!2sar!4v1595615440035!5m2!1ses!2sar"
                                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
                         </article>
                     </li>
                     <li id="cascada" class="swiper-slide">
@@ -114,6 +120,7 @@
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19322.65988673214!2d-64.44512836294543!3d-31.11540265463419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb44f590e9f837a8e!2sCascada%20De%20Los%20Helechos!5e0!3m2!1ses!2sar!4v1592515293922!5m2!1ses!2sar"
                                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
                         </article>
                     </li>
                     <li id="zevallos" class="swiper-slide">
@@ -137,6 +144,7 @@
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13663.332290120568!2d-64.4862503581139!3d-31.11437128331475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9cdcfca054efc48!2sMuseo%20Municipal%20Capit%C3%A1n%20Juan%20de%20Zevallos!5e0!3m2!1ses!2sar!4v1592515444655!5m2!1ses!2sar"
                                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
                         </article>
                     </li>
                 </ol>
@@ -168,7 +176,7 @@
                     Llevá a Valle Hermoso siempre con vos. No
                     te pierdas ningún
                     evento. Descuentos exclusivos en
-                    resto y hoteleria.
+                    resto y hotelería.
                 </P>
                 <div class="full-width text-align-center margin-bottom-100p">
                     <a id="playstore" href="#"></a>
@@ -240,11 +248,10 @@
             }
         });
     </script>
+    <!-- iniciando swiper -->
+    <script src="scripts/swiper-bundle.js"></script>
 
     <!-- Swiper JS -->
-  <script src="/scripts/swiper-bundle.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,
@@ -255,7 +262,6 @@
             },
         });
     </script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 
 </html>

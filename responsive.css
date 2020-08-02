@@ -220,14 +220,14 @@
     nav {
         border: none;
         width: 100%;
-        height: 50px;
         position: fixed;
-        background-color: rgb(39, 39, 39);
+        background-color: rgb(59, 59, 59);
         z-index: 1200;
     }
 
     .js nav li a {
-        font-size: 16px;
+        box-sizing: border-box;
+        font-size: 19px;
         color: whitesmoke;
         text-decoration: none;
         padding: 1em;
@@ -257,6 +257,13 @@
         display: inline-block;
         border-top: 0;
     }
+
+    .js nav li picture img {
+        display: inline-block;
+        width: 51px;
+        padding: 0.3em 1em 0em 1em;
+    }
+
 
     .js .nav li:last-child {
         border: 0;
@@ -342,7 +349,7 @@
 
     main.index p {
         font-weight: 300;
-        width: 80%;
+        width: 40%;
         font-size: 2em;
         color: whitesmoke;
         text-align: center;
@@ -403,7 +410,6 @@
 
     footer {
         width: 100%;
-        /* background-color: rgb(42, 49, 56); */
         background-color: rgb(27, 27, 27);
         display: flex;
         align-items: flex-start;
@@ -465,8 +471,8 @@
         display: inline-block;
         text-decoration: none;
         background-image: url(imagenes/socialsprite.png);
-        background-repeat: no-repeat;
-        background-position: 0px 0px;
+        /* background-repeat: no-repeat; */
+        /* background-position: 0px 0px; */
         opacity: 1;
         width: 85.3px;
         height: 85.3px;
@@ -547,7 +553,7 @@
     .destinos .seccion3 h2 {
         width: 100%;
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .destinos .seccion2>h3 {
@@ -634,7 +640,7 @@
     /* destinos seccion 4 --------------------------------------*/
 
     .destinos .seccion4 {
-        background-image: url(/imagenes/mockupproximamente.jpg);
+        background-image: url(imagenes/mockupproximamente.jpg);
         display: flex;
         align-items: center;
         background-color: whitesmoke;
@@ -706,10 +712,11 @@
         justify-content: center;
     }
 
-    .novedades h3 {
+    .novedades h3, .novedades p {
         display: inline-block;
         text-align: left;
         font-size: 3em;
+        padding-bottom: 1em;
     }
 
     .novedades p {
@@ -767,7 +774,7 @@
     }
 
     .novedades .seccion4 h3 {
-        text-align: center;
+        text-align: left;
         display: flex;
         justify-content: center;
         font-size: 4em;
@@ -803,6 +810,7 @@
         display: flex;
         justify-content: center;
         font-size: 4em;
+        padding: 30px;
     }
 
     .novedades .seccion5>div {
@@ -810,7 +818,6 @@
         flex-direction: column;
         justify-content: center;
         width: 80%;
-        margin: 100px 0px;
     }
 
     .novedades .seccion5 .row {
@@ -827,7 +834,12 @@
         color: white;
         height: 350px;
     }
-
+    .novedades .seccion5 h4 {
+        padding: 20px;
+        font-size: 2em;
+        color: black;
+        text-align: left;
+    }
     .container1,
     .container2 {
         margin-top: 100px;
@@ -931,9 +943,9 @@
         background: #eceffc;
     }
 
-    .contacto .seccion2 form >* {
+    .contacto .seccion2 form>* {
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
     .form-title {
@@ -952,6 +964,7 @@
         padding: 0px;
         font-size: 40px;
     }
+
     /* --------------------------- CSS Form -----------------------------------------*/
 
 
@@ -966,7 +979,7 @@
 
     }
 
-   
+
 
     .form-container {
         top: 0px;
@@ -1562,7 +1575,7 @@ div.dragover {
     #btn-open {
         z-index: 100;
         background-image: url(imagenes/menuicon.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: 40px 0px;
         background-size: cover;
     }
@@ -1636,7 +1649,6 @@ div.dragover {
         width: 100%;
         padding: 20px;
         text-align: center;
-        /* background-color: rgb(0, 235, 252); */
     }
 
     .copyright {
@@ -2663,7 +2675,7 @@ div.dragover {
 
     #btn-closed {
         background-image: url(imagenes/menuicon.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: 0px 0px;
         background-size: cover;
     }
@@ -2671,7 +2683,7 @@ div.dragover {
     #btn-open {
         z-index: 100;
         background-image: url(imagenes/menuicon.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: 40px 0px;
         background-size: cover;
     }
@@ -3743,16 +3755,23 @@ div.dragover {
     /* navegacion */
     /* ---------------------------------------- */
 
+
+
     .active {
         background-color: tomato;
         border-right: 5px solid rgb(255, 174, 0);
     }
+
+
+
+/* AGREGO BOTTOM 0PX PARA ALINEAR NAV BAR EN LA PARTE INFERIOR Y USAR EL MENÚ EN LA ESQUINA INFERIOR DERECHA */
 
     nav {
         height: 72px;
         position: fixed;
         z-index: 1000;
         text-align: right;
+        bottom: 0px;
     }
 
     /* Style the menu link */
@@ -3778,7 +3797,7 @@ div.dragover {
 
     #btn-closed {
         background-image: url(imagenes/menuicon.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: 0px 0px;
         background-size: cover;
     }
@@ -3786,7 +3805,7 @@ div.dragover {
     #btn-open {
         z-index: 100;
         background-image: url(imagenes/menuicon.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: 40px 0px;
         background-size: cover;
     }
@@ -3798,6 +3817,8 @@ div.dragover {
         height: 100vh;
         width: 100vw;
         visibility: visible;
+        opacity: 1;
+        transition: opacity 3s ease-in-out;
     }
 
     .menu-hidden {
@@ -3806,9 +3827,16 @@ div.dragover {
         right: 0px;
         top: 0px;
         visibility: hidden;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
     }
 
     /* Give the .nav ul a height when it's been opened, i.e. make it show */
+
+
+    /* CSS ORIGINAL DE MENÚ ABIERTO MOBILE. 
+    LO CAMBIO POR EL DE ABAJO PARA VER SI PUEDO MANTENER EL BOTÓN DE MENÚ ABAJO A LA DERECHA.
+    
     .js .nav ul.open {
         max-height: 100vh;
         width: 100%;
@@ -3819,7 +3847,21 @@ div.dragover {
         padding-top: 5em;
         padding-right: 3.5em;
 
+    } */
+
+    .js .nav ul.open {
+        max-height: 100vh;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        margin-top: -3.5em;
+        margin-right: -1em;
+        padding-top: 15em;
+        padding-right: em;
+        position: fixed;
+        bottom: 0px;
     }
+
 
     /* Hide and position the closed .nav ul */
     .js .nav ul {
@@ -3843,6 +3885,13 @@ div.dragover {
         padding: 1em;
         display: block;
     }
+
+    .js nav li picture img {
+        display: inline-block;
+        width: 51px;
+        padding: 1em;
+    }
+
 
     /* ------------------------------------------------------------------------------------------------- */
     /* Footer */
@@ -4028,6 +4077,7 @@ div.dragover {
         font-size: 3em;
         color: whitesmoke;
         text-align: center;
+        width: 80%;
     }
 
     main.index h2 {
@@ -4260,6 +4310,7 @@ div.dragover {
 
     .novedades .seccion3 .info-box>* {
         margin-bottom: 30px;
+        text-align: left;
     }
 
     .seccion3 .videocontainer {
@@ -4279,6 +4330,7 @@ div.dragover {
         justify-content: center;
     }
 
+   
     .novedades .seccion4>div {
         width: 80%;
         display: flex;
@@ -4289,6 +4341,7 @@ div.dragover {
     .novedades .seccion4>div>* {
         display: flex;
         margin-bottom: 30px;
+        
     }
 
     .novedades .seccion4>div>div {
@@ -4316,12 +4369,20 @@ div.dragover {
     }
 
     .novedades .seccion5 div>h3 {
-        text-align: center;
+        text-align: left;
         display: flex;
         justify-content: center;
         font-size: 2em;
         margin-bottom: 30px;
     }
+
+    .novedades .seccion5 article h4 {
+        text-align: left;
+    }
+    .novedades .seccion5 article p {
+    text-align: left;
+    }
+
 
     .novedades .seccion5 {
         padding: 40px 0px;

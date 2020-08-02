@@ -22,8 +22,13 @@
             <a id="btn-closed" class="skip" href="#menu"></a>
         </div>
         <div class="menu-container menu-hidden">
-        </div>
+        </div>        
         <ul id="menu">
+            <li><picture>
+                <!-- mobile, hasta 480px -->
+                <source class="m-logo-inside" srcset="imagenes/logo.png" media="(max-width: 480px)" />
+                <img src="imagenes/logo.png" alt="Logo responsive" />
+            </picture></li>
             <li><a href="index.html">Principal</a></li>
             <li><a href="destinos.html">Destinos</a></li>
             <li><a href="novedades.html">Novedades</a></li>
@@ -37,7 +42,7 @@
         </header>
         <div class="seccion2 align-center ">
             <form class="form width-80" action="send.php" enctype="multipart/form-data"
-                method="post" enctype="application/x-www-form-urlencoded">
+                method="post">
                 <div class="form-container">
                     <h2>Dejanos tus datos para comunicarte con nosotros</h2>
                 </div>
@@ -80,8 +85,8 @@
                         <!-- Subida de archivos -->
                         <div class="input-css">
                             <label for="test" class="file-upload">
-                                <div>Subí tu archivo: Hacé click o arrastrá y soltalo acá</div>
                                 <input type="file" id="test" name="fileupload">
+                                Subí tu archivo: Hacé click o arrastrá y soltalo acá
                             </label>
                             <p id="filename"></p>
                         </div>
