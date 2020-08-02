@@ -3806,7 +3806,7 @@ div.dragover {
         z-index: 100;
         background-image: url(imagenes/menuicon.png);
         background-repeat: no-repeat;
-        background-position: 40px 0px;
+        background-position: -50px 0px;
         background-size: cover;
     }
 
