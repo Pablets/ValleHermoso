@@ -1,3 +1,7 @@
+/* CSS general ------------------- */
+
+@media (min-width: 1px){
+
 * {
     margin: 0px;
     padding: 0px;
@@ -421,12 +425,11 @@ label {
 
 
 
+/* PC de escritorio de 1281px en adelante */
 
 */
 
-
-
-
+}
 
 /* PC de escritorio de 1281px en adelante */
 
