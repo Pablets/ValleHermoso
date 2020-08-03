@@ -1935,20 +1935,21 @@ label {
         width: 100%;
     }
 
-    /* ---------------------------------------- */
-    /* navegacion */
-    /* ---------------------------------------- */
-
     .active {
         background-color: tomato;
         border-right: 5px solid rgb(255, 174, 0);
     }
 
+    /* AGREGO BOTTOM 0PX PARA ALINEAR NAV BAR EN LA PARTE INFERIOR Y USAR EL MENÚ EN LA ESQUINA INFERIOR DERECHA */
+
     nav {
+        width: 100%;
         height: 72px;
         position: fixed;
         z-index: 1000;
         text-align: right;
+        top: unset;
+        bottom: 0px;
     }
 
     /* Style the menu link */
@@ -1984,7 +1985,7 @@ label {
         z-index: 100;
         background-image: url(imagenes/menuicon.png);
         background-repeat: no-repeat;
-        background-position: 40px 0px;
+        background-position: -50px 0px;
         background-size: cover;
     }
 
@@ -1995,6 +1996,11 @@ label {
         height: 100vh;
         width: 100vw;
         visibility: visible;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transition: opacity 3s ease-in-out;
+        -o-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
     }
 
     .menu-hidden {
@@ -2003,43 +2009,65 @@ label {
         right: 0px;
         top: 0px;
         visibility: hidden;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: opacity 3s ease-in-out;
+        -o-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
     }
 
-    /* Give the .nav ul a height when it's been opened, i.e. make it show */
     .js .nav ul.open {
-        max-height: 100vh;
         width: 100%;
-        height: 100vh;
+        height: 72px;
+        margin: 0px;
+        padding: 0px;
         background-color: rgba(0, 0, 0, 0.9);
-        margin-top: -3.5em;
-        margin-right: -1em;
-        padding-top: 5em;
-        padding-right: 3.5em;
-
+        position: fixed;
+        top: unset;
+        display: flex;
+        align-items: center;
+        bottom: 0px;
     }
 
-    /* Hide and position the closed .nav ul */
+    /* escondo y posiciono .nav ul cerrado*/
     .js .nav ul {
-        max-height: 0;
-        overflow: hidden;
-        position: absolute;
-        right: 1em;
-        top: 3.5em;
+        top: 0px;
+        bottom: 0px;
     }
 
-    /* Style the list items to appear under the menu link */
+    /* estilo para que aparezco debajo del link d emenu */
+
     .js nav li {
         text-align: right;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
     }
 
-    /* Style the list item links for ease of touch on small screens */
+    .js nav li>* {
+        display: flex;
+        align-items: baseline;
+    }
+
+    /* estilo para afacilidad de uso en mobiles */
     .js nav li a {
         font-size: 15px;
         color: whitesmoke;
         text-decoration: none;
         padding: 1em;
         display: block;
+        border: none;
     }
+
+    .js nav li picture img {
+        display: block;
+        width: 51px;
+        height: 48px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
 
     /* ------------------------------------------------------------------------------------------------- */
     /* Footer */

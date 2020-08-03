@@ -1,3 +1,4 @@
+/* Tablets de baja resolución, celulares (Apaisado) de 481px a 767px  */
 @media (min-width: 481px) and (max-width: 767px) {
     /* paginación general ------------------------------------------------*/
 
@@ -1292,3 +1293,115 @@
         background-color: #aaa;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+ /* ---------------------------------------- */
+    /* navegacion */
+    /* ---------------------------------------- */
+
+    .active {
+        background-color: tomato;
+        border-right: 5px solid rgb(255, 174, 0);
+    }
+
+    nav {
+        height: 72px;
+        position: fixed;
+        z-index: 1000;
+        text-align: right;
+    }
+
+    /* Style the menu link */
+    .js .nav .skip {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        overflow: hidden;
+        width: 2.5em;
+        height: 2.5em;
+        text-align: right;
+        line-height: 2.5em;
+    }
+
+    .btn-bg {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 4.5em;
+        height: 4.5em;
+        z-index: 1000;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    #btn-closed {
+        background-image: url(imagenes/menuicon.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: cover;
+    }
+
+    #btn-open {
+        z-index: 100;
+        background-image: url(imagenes/menuicon.png);
+        background-repeat: no-repeat;
+        background-position: 40px 0px;
+        background-size: cover;
+    }
+
+    .menu-container {
+        right: 0px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        width: 100vw;
+        visibility: visible;
+    }
+
+    .menu-hidden {
+        height: 100vh;
+        width: 100vw;
+        right: 0px;
+        top: 0px;
+        visibility: hidden;
+    }
+
+    /* Give the .nav ul a height when it's been opened, i.e. make it show */
+    .js .nav ul.open {
+        max-height: 100vh;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        margin-top: -3.5em;
+        margin-right: -1em;
+        padding-top: 5em;
+        padding-right: 3.5em;
+
+    }
+
+    /* Hide and position the closed .nav ul */
+    .js .nav ul {
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 1em;
+        top: 3.5em;
+    }
+
+    /* Style the list items to appear under the menu link */
+    .js nav li {
+        text-align: right;
+    }
+
+    /* Style the list item links for ease of touch on small screens */
+    .js nav li a {
+        font-size: 15px;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 1em;
+        display: block;
+    }
+
+}
+
+
