@@ -4647,6 +4647,7 @@ label {
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: center;
         font-size: 3em;
         color: whitesmoke;
         text-align: center;
@@ -4780,6 +4781,7 @@ label {
     .destinos .seccion4 {
         background-image: url(/imagenes/mockupproximamente.jpg);
         background-color: whitesmoke;
+        background-size: cover;
         text-align: center;
     }
 
@@ -4841,6 +4843,8 @@ label {
     .novedades .seccion3 {
         background-color: tomato;
         color: whitesmoke;
+        display: flex;
+        justify-content: center;
     }
 
     .novedades .seccion3 .info-box>* {
@@ -4932,7 +4936,7 @@ label {
 
     /* seccion 5 -------------------------------------------------- */
 
-    .novedades .seccion5 {
+    .novedades .seccion5, .novedades .seccion {
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -4975,8 +4979,14 @@ label {
         padding: 40px 0px;
     }
 
+    .novedades .seccion5 *{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .novedades .seccion5 div>div * {
-        margin-bottom: 30px;
+        margin-bottom: 1.2em;
     }
 
     /* --------------------------------------------------------------------------------------------------------------- */
@@ -4988,12 +4998,18 @@ label {
     }
 
     .contacto h1.form-title {
+        display: inline-flex;
+        justify-content: center;
         color: rgb(42, 49, 56);
         font-size: 3em;
         margin: 0px;
         padding: 50px 0px 50px 0px;
     }
 
+    .contacto .seccion2{
+        display: flex;
+        justify-content: center;
+    }
     .contacto .seccion2 form {
         background-color: rgb(42, 49, 56);
         padding: 10px;
