@@ -31,6 +31,8 @@
         -moz-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        background-image: url(imagenes/hero.jpg);
+        background-size: cover;
     }
 
     .gracias>* {
