@@ -4325,6 +4325,10 @@
 @media (min-width: 481px) and (max-width: 767px) {
 
     /* paginación general mobile ------------------------------------------------*/
+   main strong{
+       display: contents;
+       line-height: unset;
+   }
 
     .slide-content {
         width: 80%;
@@ -5500,6 +5504,10 @@
 @media (min-width: 320px) and (max-width: 480px) {
     /* paginación general mobile ------------------------------------------------*/
 
+    main strong{
+        display: contents;
+        line-height: unset;
+    }
     .slide-content {
         width: 80%;
         display: inline-block;
@@ -6212,11 +6220,21 @@
         padding: 40px 0px;
     }
 
-    .novedades .seccion5 * {
+    .novedades .seccion5 *{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .novedades .seccion5 article>*{
+        display: initial ;
+        margin: 0px;
+    }
+
+    .novedades .seccion5 article strong{
+        display: inline;
+    }
+
 
     .novedades .seccion5 div>div * {
         margin-bottom: 1.2em;
